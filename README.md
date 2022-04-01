@@ -153,3 +153,41 @@
     - Determine MAC address based on a IP address
     - Can be captured with a packet capture tool
     - arp -a to view the arp table on your computer
+  
+## [Broadcast Domains and Collision Domains](https://www.youtube.com/watch?v=SGbtLjIEVeo&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=8&ab_channel=ProfessorMesser)
+
+- Collision domains CSMA/CD
+    - Hard to find these days because of full duplex
+    - Only one station can talk at a time
+    - The collision domains are separated by switches
+- Broadcast domains
+    - There are some cases where you need to broadcast something (a necessary evil)
+    - Broadcasts can go through switches and bridges but they stop at a router
+
+## [Unicasts, Broadcasts, and Multicast](https://www.youtube.com/watch?v=jotgabyT-uI&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=9&ab_channel=ProfessorMesser)
+
+- Unicast = one to one (most common, HTTPS, FTP, IMAP3, ect)
+- Multicast = one to many (things like live voice calls with many people, streams, ect)
+- Broadcast = one to all (arp requests, routing updates, ect)
+
+## [Protocol Data Units](https://www.youtube.com/watch?v=3RQW9s-aB6k&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=10&ab_channel=ProfessorMesser)
+
+- Unit of transmission (Frame, packet, bits, TCP, UDP, ect)
+- Lots of headers are needed so each devices service can see the information they need
+    - Frame are encapsulated in headers as they move down the OSI model and de-encapsulated as they move back up the OSI model when they reach their destination
+- MTU
+    - Maximum size of a IP packet that you can transmit
+        - All devices need be able to support the MTU that you have set
+        - A high MTU can greatly increase speeds
+    - 1500 bytes is the standard MTU for IP packets
+        - Some of this packet is the headers not all of it is your payload (only 1472 bytes is the payload)
+    - If the DF bit is set it means that the data cannot be fragmented
+
+## [Network Segmentation](https://www.youtube.com/watch?v=9L4qDmvKPjQ&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=11&ab_channel=ProfessorMesser)
+
+- LANs = Local Area Network
+- Virtual LANs
+    - Separated logically instead of physically
+    - Can have many on a single switch (or use many switches)
+        - You could run a cable for each VLAN when connecting switches in order to keep the traffic separate or you could use one cable for all of the VLANs with VLAN trunking
+            - This is known as a 802.1Q trunk, it adds a header to the frame that notes what VLAN the traffic came from so that it can be routed, once it reaches the end of the trunk the header is removed and the frame is forwarded to the correct VLAN
