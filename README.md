@@ -197,3 +197,50 @@ The table of contents will take you right to the section you click on and the li
     - Can have many on a single switch (or use many switches)
         - You could run a cable for each VLAN when connecting switches in order to keep the traffic separate or you could use one cable for all of the VLANs with VLAN trunking
             - This is known as a 802.1Q trunk, it adds a header to the frame that notes what VLAN the traffic came from so that it can be routed, once it reaches the end of the trunk the header is removed and the frame is forwarded to the correct VLAN
+
+## [Spanning Tree Protocol](https://www.youtube.com/watch?v=mLCpdsOZM9c&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=12)
+
+- Used to prevent loops in networks
+    - Loops will easily overwhelm your network so you need to stop them from happening
+- 802.1D standard
+- There are a few port states for ports using STP
+    - Blocking = not forwarding to prevent a loop
+    - Listening = not forwarding and cleaning the MAC table
+    - Learning = not forwarding and adding to the MAC table
+    - Forwarding = data passes through
+    - Disable = admin turned off the port
+- Root switch
+    - One per network
+    - STP will label ports as “root port” if that is the way to get to the root switch
+    - The designated ports are the other ports that lead to other spots in the network
+    - Blocked ports are well closed port that traffic cannot go through
+- STP may make a route to a certain device a little bit longer, but this is worth it
+- STP can automatically change the port states if a device fails and you need a new path to get somewhere
+- RSTP is 802.1W
+    - Faster than STP
+    - Backwards compatible
+
+## [Switch Interface Properties](https://www.youtube.com/watch?v=dqQny4UXiX0&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=13)
+
+- Speed and duplex settings
+    - The most basic settings you need to config or have config automatically
+- IP addresses may also be needed
+- Switches need to be assigned a VLAN as well
+    - Trunk interfaces need to be config-ed too
+- DMZ Demilitarized zone
+    - Between the internet and your intranet
+    - Security
+- POE (802.3af)
+    - Ethernet and power in one cable
+    - Endspans is what you call a switch with built in POE
+    - Midpsans is what you call it when you use a power injector with your switch for POE
+    - Mode A = POE on the wires that are used for data
+    - Mode B = POE on unused wires
+    - 15.4 watts DC power
+    - Max current of 350 mA
+- POE+ (802.3at)
+    - Improved POE
+    - 25.5 watts DC power
+    - Max current of 600 mA
+- Port mirroring
+    - Connect a monitoring device so you can copy what is happening on the device (switch) and send a copy to your device
