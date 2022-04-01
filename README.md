@@ -144,7 +144,7 @@
     - Has a table MAC addresses
     - Keeping the environment loop free with STP
 - Frame switching
-    - Has a table of MAC dresses to output interface
+    - Has a table of MAC adresses to output interface
     - Only knows the next step, just keeps passing the packet on until it gets to its location or its TTL expires
     - Always adding to its table when it come across something new
         - If it doesn’t know where to send the data it floods the data to all of the devices
