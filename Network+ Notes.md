@@ -1,5 +1,5 @@
 # Network+-Notes
-## Introduction to IP
+## [Introduction to IP](https://www.youtube.com/watch?v=M5c9HdaQqh0&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=3&ab_channel=ProfessorMesser)
 
 - TCP and UDP for moving data across the network
 - Frames have many things inside them including headers and data
@@ -26,7 +26,7 @@
     - Also can be used for devices to alert others when they are not working properly
     - Could alert that a packet timed out and did not reach its destination
 
-## Common Ports
+## [Common Ports](https://www.youtube.com/watch?v=vp_ZxQ0CTJk&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=4&ab_channel=ProfessorMesser)
 
 - Telnet TCP 23
     - Remote login via console
@@ -94,7 +94,7 @@
     - Call, ring, hangup
     - Early VoIP protocol, but still used quite a lot today
 
-**Understanding the OSI Model**
+## [Understanding the OSI Model](https://www.youtube.com/watch?v=G7aVKgGUe9c&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=5&ab_channel=ProfessorMesser)
 
 - Open Systems Interconnection Reference Model
 - 7 Layers
@@ -109,7 +109,7 @@
 - Certain protocols and processes exists at each layer
 - Packet capture tools like Wireshark are where you really start to see OSI model in the real world
 
-**Introduction to Ethernet**
+## [Introduction to Ethernet](https://www.youtube.com/watch?v=iXfBbs9SSFQ&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=6&ab_channel=ProfessorMesser)
 
 - Enterprise networks have the same base functionality has a home network
     - There is just a ton more data and hardware
