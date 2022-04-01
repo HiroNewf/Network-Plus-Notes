@@ -5,6 +5,10 @@
 * 1.2 [Understand the OSI Model](https://github.com/HiroNewf/Network-Notes/blob/main/Network%2B%20Notes.md#understanding-the-osi-model)
 * 1.3 [Introduction to Ethernet](https://github.com/HiroNewf/Network-Notes/blob/main/Network%2B%20Notes.md#introduction-to-ethernet)
 * 1.3 [Network Switching Overview](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#network-switching-overview)
+* 1.3 [Broadcast and Collision Domains](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#broadcast-domains-and-collision-domains)
+* 1.3 [Unicasts, Broadcasts and Multicasts](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#unicasts-broadcasts-and-multicast)
+* 1.3 [Protocol Data Units](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#protocol-data-units)
+* 1.3 [Network Segmentation](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#network-segmentation)
 ## [Introduction to IP](https://www.youtube.com/watch?v=M5c9HdaQqh0&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=3&ab_channel=ProfessorMesser)
 
 - TCP and UDP for moving data across the network
