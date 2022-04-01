@@ -136,3 +136,19 @@
 - CSMA/CA
     - Collision Avoidance, like CD but for wireless networks
     - Can’t hear the other devices so they will ask if the network is in the clear before sending data
+## [Network Switching Overview](https://www.youtube.com/watch?v=jR3VoKZWJyc&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=7&ab_channel=ProfessorMesser)
+
+- The switch is much smart than the hub
+    - Forward or drop frames based on the MAC addresses
+    - Has a table MAC addresses
+    - Keeping the environment loop free with STP
+- Frame switching
+    - Has a table of MAC dresses to output interface
+    - Only knows the next step, just keeps passing the packet on until it gets to its location or its TTL expires
+    - Always adding to its table when it come across something new
+        - If it doesn’t know where to send the data it floods the data to all of the devices
+            - When the data finds the right person the switch gets a response and adds the information to it’s table
+- ARP
+    - Determine MAC address based on a IP address
+    - Can be captured with a packet capture tool
+    - arp -a to view the arp table on your computer
