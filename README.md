@@ -1,5 +1,5 @@
 # Network+ Notes
-The table of contents will take you right the section you click on and the links for the headers of each section will take you to the Professor Messer video for that section.
+The table of contents will take you right to the section you click on and the links for the headers of each section will take you to the Professor Messer video for that section.
 
 ## Table of contents
 * 1.1 [Introduction to IP](https://github.com/HiroNewf/Network-Notes/blob/main/Network%2B%20Notes.md#introduction-to-ip)
