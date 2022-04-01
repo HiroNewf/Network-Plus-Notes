@@ -11,6 +11,8 @@ The table of contents will take you right to the section you click on and the li
 * 1.3 [Unicasts, Broadcasts and Multicasts](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#unicasts-broadcasts-and-multicast)
 * 1.3 [Protocol Data Units](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#protocol-data-units)
 * 1.3 [Network Segmentation](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#network-segmentation)
+* 1.3 [Spanning Tree Protocol](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#spanning-tree-protocol)
+* 1.3 [Switch Interface Properties](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#switch-interface-properties)
 ## [Introduction to IP](https://www.youtube.com/watch?v=M5c9HdaQqh0&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=3&ab_channel=ProfessorMesser)
 
 - TCP and UDP for moving data across the network
