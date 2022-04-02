@@ -246,3 +246,83 @@ The table of contents will take you right to the section you click on and the li
     - Max current of 600 mA
 - Port mirroring
     - Connect a monitoring device so you can copy what is happening on the device (switch) and send a copy to your device
+## [Static and Dynamic Routing](https://www.youtube.com/watch?v=YRzr56cwgCg&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=14&ab_channel=ProfessorMesser)
+
+- Each router only knows the next step
+    - Routing table tells them where to send packets
+- Static routing
+    - Manually add the routes
+    - Good for small networks / bad for large networks
+    - More secure
+    - No overhead for routing protocols
+    - Easy to mess up and make a loop
+    - Have to manually update routes when there is a change
+- Dynamic routing
+    - Routing tables are updated automatically in almost real time
+    - Good for large and complicated networks
+    - Has some router overhead
+    - Still has some initial configuration that is needed
+- Default route
+    - The way of last resort
+    - Great when there is only one way in and out of the network
+    - Can make things a lot simpler depending on your network
+
+## [IGP and EGP](https://www.youtube.com/watch?v=14s-M01m1fQ&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=15&ab_channel=ProfessorMesser)
+
+- AS
+    - Autonomous System
+    - A network of nearly any size with a single routing policy
+    - Within your control
+- IGP
+    - Used within a single AS
+    - IPv4 dynamic routing
+        - OSPFv2 (Open shortest path first)
+        - RIPv2 (Routing information protocol version 2)
+        - EIGRP (Enhanced interior gateway routing protocol)
+    - IPv6 dynamic routing
+        - OSPFv3
+        - EIGRP for IPv6
+        - RIPng (RIP next gen)
+- EGP
+    - Used for routing between AS
+    - BGP (Boarder gateway protocol
+        - Very common
+
+## [Dynamic Routing Protocols](https://www.youtube.com/watch?v=9390huk39mU&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=16&ab_channel=ProfessorMesser)
+
+- Automatically communicate between routers so they are always updating their routing tables
+- Needs a formula to determine the best routes
+- Distance vectoring routing protocols
+    - How many “hops” (number of routers) away is another network
+    - Does not care about the speed of the link only the distance
+    - Very little config as it is quite simple
+    - Not great for large networks
+    - Many different protocols use this
+        - RIP
+        - RIPv2
+        - EIGRP
+- Link-state routing protocols
+    - Care more for the speed of the link than the distance
+    - A ton better for large networks
+        - OSPF (very common for large networks)
+- Hybrid routing protocols
+    - Combining Link state and distance vectoring
+    - BGP
+
+## [IPv4 and IPv6 Addressing](https://www.youtube.com/watch?v=U2IxdEYgoEg&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=17&ab_channel=ProfessorMesser)
+
+- Every device needs an IP address
+- Subnet mask is also needed
+    - Subnet masks tells you which part of the IP address is the network ID and which part is the host ID
+- IPv4 address
+    - 32 bits / 4 bytes / 4 octets long
+    - Lowest number is 0 highest is 255
+- IPv6 address
+    - 128 bit / 16 bytes / 16 octets long
+    - Displayed in hexadecimal
+    - Hard to memorize this type of addresses so DNS is even more important
+    - IPv6 can be shortened
+        - Leading 0’s are optional
+        - Groups of 0’s can be replaced with :: (but only once per address)
+        - So 2001:0000:0000:CD30:0000:0000:0000:0000
+            - is now 2001:0:0:CD30::
