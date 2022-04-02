@@ -13,6 +13,10 @@ The table of contents will take you right to the section you click on and the li
 * 1.3 [Network Segmentation](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#network-segmentation)
 * 1.3 [Spanning Tree Protocol](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#spanning-tree-protocol)
 * 1.3 [Switch Interface Properties](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#switch-interface-properties)
+* 1.3 [Static and Dynamic Routing](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#static-and-dynamic-routing)
+* 1.3 [IGP and EGP](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#igp-and-egp)
+* 1.3 [Dynamic Routing Protocols](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#dynamic-routing-protocols)
+* 1.3 [IPv4 and IPv6 Addressing](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#ipv4-and-ipv6-addressing)
 ## [Introduction to IP](https://www.youtube.com/watch?v=M5c9HdaQqh0&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=3&ab_channel=ProfessorMesser)
 
 - TCP and UDP for moving data across the network
