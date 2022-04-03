@@ -17,6 +17,12 @@ The table of contents will take you right to the section you click on and the li
 * 1.3 [IGP and EGP](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#igp-and-egp)
 * 1.3 [Dynamic Routing Protocols](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#dynamic-routing-protocols)
 * 1.3 [IPv4 and IPv6 Addressing](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#ipv4-and-ipv6-addressing)
+* 1.3 [Configuring IPv6](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#configuring-ipv6)
+* 1.3 [Prioritizing Traffic](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#prioritizing-traffic)
+* 1.3 [Network Address Translation](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#network-address-translation)
+* 1.3 [Access Control Lists](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#access-control-lists)
+* 1.3 [Circuit Switching and Packet Switching](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#circuit-switching-and-packet-switching)
+* 1.3 [Software Defined Networking](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#software-defined-networking)
 ## [Introduction to IP](https://www.youtube.com/watch?v=M5c9HdaQqh0&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=3&ab_channel=ProfessorMesser)
 
 - TCP and UDP for moving data across the network
