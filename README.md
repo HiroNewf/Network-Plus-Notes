@@ -515,7 +515,7 @@ The table of contents will take you right to the section you click on and the li
     - All of the other addresses are host addresses
 - For actually calculating all of these addresses scroll down to the 7 second subnetting section (I will add it soon)
 
-[IPv4 Subnet Masks](https://www.youtube.com/watch?v=L3dsWxn5RBU&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=27&ab_channel=ProfessorMesser)
+## [IPv4 Subnet Masks](https://www.youtube.com/watch?v=L3dsWxn5RBU&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=27&ab_channel=ProfessorMesser)
 
 - Subnet masks could be written in binary with ones all lined up on the left and zeros all on the right
     - Something like 11111111.11111111.0.0 or 255.255.0.0 or /16
