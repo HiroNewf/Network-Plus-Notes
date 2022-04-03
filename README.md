@@ -533,6 +533,26 @@ The table of contents will take you right to the section you click on and the li
         - These / followed by a number are the CDIR notation, it is a way to display what the subnet mask is
 - just simply used Professor Messer’s chart for converting between CDIR notions, binary and decimal for the subnet masks and I am too lazy to make my own chart ATM so nothing goes here
 
+## [IPv6 Subnet Masks](https://www.youtube.com/watch?v=8IqXQ88QXfc&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=28&ab_channel=ProfessorMesser)
+
+- IANA (Internet Assigned Numbers Authority provides addresses to RIRs (Regional Internet Registries
+    - RIRs assign smaller blocks to ISps (Internet Service Providers)
+    - Then that provider will give you a /48 subnet
+- First 48 bits is the Global Routing Prefix
+    - The next 16 bits tend to be the different subnets
+        - Those 16 bits give you 65,536 total subnets
+    - The last 64 bits tend to be Host ID’s on that subnet
+        - Those 64 bits give you about 18 million trillion hosts per subnet (So much more than the total IPv4 address range)
+- So all in all this is quite similar to how subnet masks for IPv4 work there is just so many more subnets and host addresses to work with
+
+## [Calculating IPv4 Subnets and Hosts](https://www.youtube.com/watch?v=qQEaAb_p8_E&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=29&ab_channel=ProfessorMesser)
+
+- VLSM (Variable Length Subnet Masks)
+    - Allows network admins to define their own subnets (not classful)
+    - So many more options and flexibility comes from this
+- 2 to the power of the number of subnet bits you have would allows you to calculate the total numbers of subnets you have
+- 2 to the power of the number of host bits that you have would allow you to calculate the total numbers of hosts you have per subnet (make sure to subtract 2 from that number for the network address and broadcast address)
+- Look at the first number of the IPv4 address to see what range it is in (Class A, B, ect) and that will tell you have many bits are the network ID in this case lets say is Class A, so 8 network bits, then you look at your CIDR notation and see it is for example /24 meaning there are still 16 bits left that are not host ID’s but indeed subnet ID’s. The remaining 8 bits are then your hosts ID’s, this is how you get your numbers for the for the equations above
 ## [Seven Second Subnetting](https://www.youtube.com/watch?v=ZxAwQB8TZsM&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=30&ab_channel=ProfessorMesser)
 
 ## [Assigning IPv4 Addresses](https://www.youtube.com/watch?v=Q0Aq_cYBcR0&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=31&ab_channel=ProfessorMesser)
