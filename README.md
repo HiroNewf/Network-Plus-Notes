@@ -23,6 +23,10 @@ The table of contents will take you right to the section you click on and the li
 * 1.3 [Access Control Lists](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#access-control-lists)
 * 1.3 [Circuit Switching and Packet Switching](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#circuit-switching-and-packet-switching)
 * 1.3 [Software Defined Networking](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#software-defined-networking)
+* 1.4 [Binary Math](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#binary-math)
+* 1.4 [IPv4 Addresses](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#ipv4-addresses)
+* 1.4 [Classful Subnetting](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#classful-subnetting)
+* 1.4 [IPv4 Subnet Masks](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#ipv4-subnet-masks)
 ## [Introduction to IP](https://www.youtube.com/watch?v=M5c9HdaQqh0&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=3&ab_channel=ProfessorMesser)
 
 - TCP and UDP for moving data across the network
