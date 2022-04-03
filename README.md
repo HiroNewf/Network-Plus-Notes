@@ -532,3 +532,9 @@ The table of contents will take you right to the section you click on and the li
     - Or 11111111.11100000.00000000.00000000 or 255.224.0.0 or /11
         - These / followed by a number are the CDIR notation, it is a way to display what the subnet mask is
 - just simply used Professor Messer’s chart for converting between CDIR notions, binary and decimal for the subnet masks and I am too lazy to make my own chart ATM so nothing goes here
+
+## Seven Second Subnetting
+
+## Assigning IPv4 Addresses
+
+## Assigning IPv6 Addresses
