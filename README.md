@@ -453,3 +453,72 @@ The table of contents will take you right to the section you click on and the li
 - Virtualize things with distributed switching
     - Servers can be far away from each other while on the same VLAN
     - Dont need to worry about moving the servers
+## [Binary Math](https://www.youtube.com/watch?v=mIbNZzoWE3k&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=24&ab_channel=ProfessorMesser)
+
+- This is kinda hard to write out without any charts or something but here we go
+- All 0’s and 1’s
+- Each digit is a bit
+    - 8 bits is a byte/octet
+- Each bit represents a number
+    - 0 means that digit is not included in the number while 1 means that digit is included in the number
+    - 0     0     0     0     0     0     0     0
+    - 128   64   32   16    8     4     2     1
+- Every time there is a 0 bring down a 0 every time there is a 1 bring down the number associated with the bit then add them all together
+- So for 10010100
+    - We have 3 1’s in this binary and they are associated with the numbers 128, 16, and 4
+    - So if we simple add all 3 of those numbers together we get 148
+- This can be done is reverse so say we have 186 and needed to make it in binary
+    - First we ask is there is a 128? if so the first number is a 1 (we also now subtract 128 from 186 to get 58)
+    - Now we ask if there is 64 in the remaining number of 58 - there is not so that is a 0
+    - Next is 32 which there is so that is 1 and now we have 26 left
+    - Next is 16 which there is so that is also a 1 and we have 10 left
+    - Next is 8 which there again is so that is 1 and we have 2 left
+    - There is no 4 so that is a 0
+    - There is a 2 so that is a 1 and now we have 0 Left
+    - So this is now 0
+    - In the end we have 10111010 = 186
+
+## [IPv4 Addresses](https://www.youtube.com/watch?v=aEMtAFvouNU&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=25&ab_channel=ProfessorMesser)
+
+- Every device needs one | like 182.23.46.2
+- Also need a subnet mask like 255.255.0.0 or 255.240.0.0
+- Default gateway is needed to talk outside of the local subnet
+- Loopback address is a way to send traffic to yourself
+    - 127.0.0.1-127.255.255.254
+- Reserved addresses are set aside for future use
+    - 240.0.0.1-255.255.255.254
+- Virtual IP addresses
+    - Not for a physical device
+
+## [Classful Subnetting](https://www.youtube.com/watch?v=GxE395bCANM&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=26&ab_channel=ProfessorMesser)
+
+- Class A
+    - Leading bits of 1-126
+    - 8 network bits and 24 remaining bits
+    - like 255.0.0.0
+- Class B
+    - Leading bits of 128-191
+    - 16 network bits and 16 remaining bits
+    - 255.255.0.0
+- Class C
+    - Leading bits of 192-223
+    - 24 network bits and 8 remaining bits
+- Class D (Multicast)
+    - Leading bits of 224-239
+    - Nothing else is defined for class D
+- Class E (reserved)
+    - Leading bits of 240-254
+    - Nothing else is defined for class E
+- For each subnet there are host addresses, network address and broadcast address
+    - The first address in a subnet is the host address
+    - The last address in a subnet is the broadcast address
+    - All of the other addresses are host addresses
+- For actually calculating all of these addresses scroll down to the 7 second subnetting section (I will add it soon)
+
+[IPv4 Subnet Masks](https://www.youtube.com/watch?v=L3dsWxn5RBU&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=27&ab_channel=ProfessorMesser)
+
+- Subnet masks could be written in binary with ones all lined up on the left and zeros all on the right
+    - Something like 11111111.11111111.0.0 or 255.255.0.0 or /16
+    - Or 11111111.11100000.00000000.00000000 or 255.224.0.0 or /11
+        - These / followed by a number are the CDIR notation, it is a way to display what the subnet mask is
+- just simply used Professor Messer’s chart for converting between CDIR notions, binary and decimal for the subnet masks and I am too lazy to make my own chart ATM so nothing goes here
