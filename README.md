@@ -533,8 +533,38 @@ The table of contents will take you right to the section you click on and the li
         - These / followed by a number are the CDIR notation, it is a way to display what the subnet mask is
 - just simply used Professor Messer’s chart for converting between CDIR notions, binary and decimal for the subnet masks and I am too lazy to make my own chart ATM so nothing goes here
 
-## Seven Second Subnetting
+## [Seven Second Subnetting](https://www.youtube.com/watch?v=ZxAwQB8TZsM&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=30&ab_channel=ProfessorMesser)
 
-## Assigning IPv4 Addresses
+## [Assigning IPv4 Addresses](https://www.youtube.com/watch?v=Q0Aq_cYBcR0&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=31&ab_channel=ProfessorMesser)
 
-## Assigning IPv6 Addresses
+- This used to be completely manual
+- BOOTP
+    - Automatically define some things but not everything
+    - Didn’t know when leases were up
+- DHCP
+    - Automatically configured most settings and works with nearly every device
+    - Your IP will expire and you will get a new one every now and then
+        - But you can set it so you always have the same IP if you desire
+            - A DHCP reservation where you tie a MAC address to a IP address
+- APIPA
+    - When you use DHCP but no address is available you can use a link local address to communicate within your subnet
+    - 169.254.0.1-169.254.255.254
+        - First and last 256 addresses are reserved
+    - Your device will pick a link-local address then send an ARP request to make sure that said address is no in use by anyone else, then it assigns it to it’s self if it is available
+
+## [Assigning IPv6 Addresses](https://www.youtube.com/watch?v=lfCFsniHsPk&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=32&ab_channel=ProfessorMesser)
+- DHCPv6
+    - Every device already has a link-local address without the need for DHCP
+        - So your DHCP request can be sent with multicast instead of broadcast
+    - Process of getting an address is a lot like IPv4
+        - Solicit | Advertise | Request | Reply
+- A static IP address with a modified EUI-64 (64 bits)
+    - A modified MAC address (48 bits)
+    - To make this address first split the MAC address in half
+        - Now place FFFE in the middle of the MAC address (the missing 16 bits)
+        - Now invert the 7th bit (The U/L bit aka the Universal/local bit)
+            - This is the second character in the address and it switches like so (They work both ways to while 1 will become a 3, if you simply started with a 3 that will then be a 1)
+            - 0 to 2 | 1 to 3 | 4 to 6 | 5 to 7 | 8 to A | 9 to B | C to E | D to F
+    - Examples
+        - MAC of 8c:2d:aa:4b:98:a7 to EUI-64 of 8e2d:aaff:fe4b:98a7
+        - MAC of a0:21:b7:63:40:3f to EUI-64 of a221:b7ff:fe63:403f
