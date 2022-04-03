@@ -330,3 +330,120 @@ The table of contents will take you right to the section you click on and the li
         - Groups of 0’s can be replaced with :: (but only once per address)
         - So 2001:0000:0000:CD30:0000:0000:0000:0000
             - is now 2001:0:0:CD30::
+## Configuring IPv6
+
+- Duel-stack routing
+    - v4 and v6 in one network (Have both types of addresses for a single device)
+    - Most modern networks can understand both versions of IP
+- Tunneling IPv6
+    - 6to4 addressing
+        - Can send IPv6 between devices that have a IPv4 connection
+        - No NAT support
+        - Needs relay routers
+    - 4in6 tunneling
+        - V4 tunneled in a v6 network
+    - Teredo/Miredo tunnel
+        - IPv6 through IPv4
+        - No special hardware needed
+        - Teredo is Microsoft | Miredo is Linux, Mac OS, ect (Open Source)
+- NDP (Neighbor Discover Protocol)
+    - Sends multicast with ICMPv6
+    - Replaced IPv4 ARP
+    - Finds other devices MAC addresses
+    - SLAAC - automatically config IP address without DHCP servers
+    - DAD - No duplicate IPs
+    - Discover routers with RS and RA
+- NS and NA
+    - NS = Neighbor Solicitation
+        - Sent as a multicast
+        - One workstation searching for the MAC of another workstation
+    - NA = Neighbor advertisement
+        - The response to a NS with the needed info
+
+## Prioritizing Traffic
+
+- Many different apps and devices with many different requirements
+- Some types of traffic are more important than others
+- Packet Shaping
+    - Control bandwidth and data rates
+    - Some apps have higher priority
+- QoS
+    - The process of controlling traffic flows
+    - Many different methods
+    - CoS
+        - Layer 2
+        - In a 802.1Q trunk
+    - DiffServ
+        - Layer 3
+        - QoS is set in the IPv4 header
+
+## Network Address Translation
+
+- All of the IPv4 addresses are used up
+- Private IP addresses
+    - For inside a Intranet only
+    - Not rout-able across the internet
+    - These are the private addresses range
+        - 10.0.0.0-10.255.255.255
+        - 172.16.0.0-172.31.255.255
+        - 192.169.0.0-192.168.255.255
+- NAT changes these private addresses into public addresses (The routers own address with is rout-able across the internet)
+    - Each router directly connected to the internet has its own IPv4 address
+    - Port numbers are used so the router can tell where on the intranet to send internet traffic (Since it can’t use IP addresses due to the changes being made to them)
+- Port forwarding
+    - Someone on the outside gets access to the inside of your network
+    - Maps External IP and port number to an internal IP and port number
+    - Also known as Static NAT or Destination NAT
+    - Does not timeout or expire
+
+## Access Control Lists
+
+- Allow or deny traffic
+- Commonly sits on the outer limits of the network where traffic is going in and out
+- Can evaluate on many different types of criteria
+    - Source IP, Destination IP, Port numbers, ICMP, time of day, application, ect
+- Works from top to bottom
+    - Looks at first rule to see if there is a match there if not it keeps moving down the list of rules
+    - Most specific rules tend to be at the top
+    - At the bottom tends to be a implicit deny rule
+        - If it matches no other rules than it is denied and can’t come through
+
+## Circuit Switching and Packet Switching
+
+- Circuit switching
+    - Circuit is established before data passes through
+    - Nobody else can use it when it is idle
+    - Not an efficient use of resources
+    - Connection is always there and it is all yours
+    - Examples
+        - POTS (Plain Old Telephone Service)
+        - T1, T3, E1, and E3
+        - ISDN
+- Packet Switching
+    - Grouping data into packets and sending it across a network
+    - The media is shared
+        - If you aren’t using it, someone else is
+    - More efficient
+    - Examples
+        - SONET
+        - ATM
+        - DSL
+        - Frame Relay
+        - MPLS
+        - Cable Modem
+        - Satellite
+        - Wireless
+
+## Software-Defined Networking
+
+- Control Plane
+    - Administration and ongoing servicing
+- Data plane
+    - Transferring data
+- Directly programmable
+- Make changes at any time (Dynamically if needed)
+- Centrally managed
+- Vendor neutral
+- Virtualize things with distributed switching
+    - Servers can be far away from each other while on the same VLAN
+    - Dont need to worry about moving the servers
