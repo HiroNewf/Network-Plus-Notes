@@ -330,7 +330,7 @@ The table of contents will take you right to the section you click on and the li
         - Groups of 0’s can be replaced with :: (but only once per address)
         - So 2001:0000:0000:CD30:0000:0000:0000:0000
             - is now 2001:0:0:CD30::
-## Configuring IPv6
+## [Configuring IPv6](https://www.youtube.com/watch?v=NhRjwjt2Aog&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=18)
 
 - Duel-stack routing
     - v4 and v6 in one network (Have both types of addresses for a single device)
@@ -360,7 +360,7 @@ The table of contents will take you right to the section you click on and the li
     - NA = Neighbor advertisement
         - The response to a NS with the needed info
 
-## Prioritizing Traffic
+## [Prioritizing Traffic](https://www.youtube.com/watch?v=uEKDZqI5osA&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=19)
 
 - Many different apps and devices with many different requirements
 - Some types of traffic are more important than others
@@ -377,7 +377,7 @@ The table of contents will take you right to the section you click on and the li
         - Layer 3
         - QoS is set in the IPv4 header
 
-## Network Address Translation
+## [Network Address Translation](https://www.youtube.com/watch?v=JAYpfBvGVI8&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=20)
 
 - All of the IPv4 addresses are used up
 - Private IP addresses
@@ -396,7 +396,7 @@ The table of contents will take you right to the section you click on and the li
     - Also known as Static NAT or Destination NAT
     - Does not timeout or expire
 
-## Access Control Lists
+## [Access Control Lists](https://www.youtube.com/watch?v=6Yj1-pZmHvY&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=21)
 
 - Allow or deny traffic
 - Commonly sits on the outer limits of the network where traffic is going in and out
@@ -408,7 +408,7 @@ The table of contents will take you right to the section you click on and the li
     - At the bottom tends to be a implicit deny rule
         - If it matches no other rules than it is denied and can’t come through
 
-## Circuit Switching and Packet Switching
+## [Circuit Switching and Packet Switching](https://www.youtube.com/watch?v=uBpacYBwYwM&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=22)
 
 - Circuit switching
     - Circuit is established before data passes through
@@ -434,7 +434,7 @@ The table of contents will take you right to the section you click on and the li
         - Satellite
         - Wireless
 
-## Software-Defined Networking
+## [Software-Defined Networking](https://www.youtube.com/watch?v=EdVOeGDYHCU&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=23)
 
 - Control Plane
     - Administration and ongoing servicing
