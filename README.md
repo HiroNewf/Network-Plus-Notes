@@ -27,6 +27,12 @@ The table of contents will take you right to the section you click on and the li
 * 1.4 [IPv4 Addresses](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#ipv4-addresses)
 * 1.4 [Classful Subnetting](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#classful-subnetting)
 * 1.4 [IPv4 Subnet Masks](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#ipv4-subnet-masks)
+* 1.4 [IPv6 Subnet Masks]()
+* 1.4 [Calculating IPv4 Subnets and Hosts]()
+* 1.4 [Seven Second Subnetting]()
+* 1.4 [Assigning IPv4 Addresses]()
+* 1.4 [Assigning IPv6 Addresses]()
+
 ## [Introduction to IP](https://www.youtube.com/watch?v=M5c9HdaQqh0&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=3&ab_channel=ProfessorMesser)
 
 - TCP and UDP for moving data across the network
