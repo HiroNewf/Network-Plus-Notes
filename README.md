@@ -37,7 +37,8 @@ The table of contents will take you right to the section you click on and the li
 * 1.5 [Internet Of Things Topologies](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#internet-of-things-topologies)
 * 1.6 [Wireless Standards](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#wireless-standards)
 * 1.6 [Cellular Network Standards](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#cellular-network-standards)
-* 
+* 1.6 [Wireless Network Topologies](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#wireless-network-technologies)
+* 1.7 [Cloud Services and Delivery Models](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#cloud-services-and-delivery-models)
 
 ## [Introduction to IP](https://www.youtube.com/watch?v=M5c9HdaQqh0&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=3&ab_channel=ProfessorMesser)
 
