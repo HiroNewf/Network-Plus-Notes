@@ -731,3 +731,81 @@ The table of contents will take you right to the section you click on and the li
     - Converged standard
     - Based on GSM and EDGE
     - Downloads of 300Mbit/s for LTE-A (150Mbit/s for normal LTE)
+## [Wireless Network Technologies](https://www.youtube.com/watch?v=eV9Mu3njz_M&ab_channel=ProfessorMesser)
+
+- Channels
+    - Not overlapping channels is necessary (When uses many AP)
+    - So many more channels with 5GHz
+    - For 2.4 GHz channels 1, 6, and 11 are likely what you will want to use
+- Different bandwidths are used
+    - 802.11a 20MHz
+    - 802.11b 22MHz
+    - 802.11g 20MHz
+    - 802.11n 20 or 40MHz (2 20MHz channels)
+    - 802.11ac 40MHz (for 802.11n stations), 80MHz for 802.11ac stations or 160MHz also for 802.11ac
+- Antennas
+    - 802.11n added MIMO which allowed use to send many streams at once on the same frequency
+        - 802.11ac improved upon this
+    - This relied on the number of antennas you have
+        - Information is display like this (Antennas on the AP) x (antennas on the client): number of steams
+        - Like 2x2:2 or 3x3:2 or 4x4:4
+- MIMO could still only send to one device at a single time but this all changed with MU-MIMO which can send to many clients at the same time
+- Power level controls
+    - Set it as low as you can while still getting the coverage you need
+    - Control the distance covered by your AP or router
+- Omnidirectional antennas
+    - Most common on AP
+    - Sends the signal in all directions evenly
+- Directional antenna
+    - Focus the signal
+    - Send the signal from building to building
+    - Yagi antenna
+    - Parabolic antenna
+- Wireless survey tools
+    - Need to know signal coverage and interference
+    - Many built in tools can help with this as well as 3rd party tools
+    - Spectrum analyzer will give you very detailed information
+
+## [Cloud Services and Delivery Models](https://www.youtube.com/watch?v=iiUbTb3s1xc&ab_channel=ProfessorMesser)
+
+- SaaS
+    - On demand software
+    - Nothing is stored locally
+    - Your data is out there, not in your control
+    - Stuff like Google Mail
+- IaaS
+    - Your provided with the hardware but nothing more
+    - Your data is still in the cloud but you have a bit more control
+- PaaS
+    - Nothing physical in your environment (OS is not handled by you)
+    - You just handle the development process
+    - Gives you a sandbox to build your own application
+- Cloud types
+    - Private cloud
+        - Everything is within your control (hardware, software, all of it)
+    - Public cloud
+        - 3rd part data server
+    - Hybrid cloud
+        - Both public and private combined
+    - Community cloud
+        - A group of people get together and share a cloud
+    - On-premise
+        - Your control everything and it is all owned by you
+    - Hosted
+        - Not in your building, you may not even own the servers
+    - Cloud
+        - More modular (can add and remove resources and data very quickly)
+- Connecting to the cloud
+    - SSL or TLS for browser access
+    - VPN for a encrypted private way to access your cloud data
+    - Direction connection is the more secure but also the most costly
+- Cloud policies
+    - Use a CASB for security polices and controls for data on the cloud
+        - Visibility
+            - Make sure the right people are seeing the right things and have the right authority to access things
+        - Compliance
+            - Are you complying with laws and other things
+        - Threat Prevention
+            - Make sure people are authorized
+        - Data Security
+            - Encryption, protect transfers of data with DLP
