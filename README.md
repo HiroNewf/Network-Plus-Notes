@@ -588,3 +588,140 @@ The table of contents will take you right to the section you click on and the li
     - Examples
         - MAC of 8c:2d:aa:4b:98:a7 to EUI-64 of 8e2d:aaff:fe4b:98a7
         - MAC of a0:21:b7:63:40:3f to EUI-64 of a221:b7ff:fe63:403f
+## [Network Topologies](https://www.youtube.com/watch?v=4nPnQVaRj4k&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=33&ab_channel=ProfessorMesser)
+
+- Physical network map
+    - All of the physical devices and cable connections
+    - Physical maps of the racks and the components inside them
+- Logical network map
+    - For virtual devices or high level overview of the network
+    - Visio, OmniGraffle, [Gliffy.com](http://Gliffy.com)
+    - Good for planning and sharing with 3rd parties
+- Star network
+    - A switch in the middle with everything connected to that switch
+- Ring network
+    - All of the devices are connected to each other in a ring form
+    - Used in MANs and WANs
+    - Sometimes you have 2 rings for fault tolerance
+- Mesh network
+    - Many redundant links, sometimes all of the devices are connected to all of the other devices
+    - Redundant, fault tolerant, load balancing
+    - Used in WANs
+- Bus network
+    - Single cable with every device connected to that cable
+    - Easy to implement, very horrible for fault tolerance
+    - CAN (in your car) is a modern bus network
+- Wireless Topologies
+    - Infrastructure
+        - All devices communicate through an AP
+        - Most common
+    - Ad hoc networking
+        - No preexisting hardware
+        - Just configure both devices to communicate directly with each other
+    - Mesh
+        - Ad hoc devices working together to create a mesh “cloud”
+        - Self form and self heal
+
+## [Common Network Types](https://www.youtube.com/watch?v=BrGirZH0FzQ&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=34&ab_channel=ProfessorMesser)
+
+- LAN = local area network
+    - A single building, group of buildings, ect
+    - High speed and small
+- WLAN = Wireless local area network
+    - Same thing as LAN but wireless
+    - Can be extended with more AP’s
+- MAN = metropolitan area network
+    - Between the side of a LAN and a WAN
+    - Size of like a city or something
+    - Often owned by governments
+- WAN = Wide area network
+    - Spanning around the globe
+    - Tends to be slower in speeds
+- CAN = Campus Area network
+    - Many buildings owned by a company or a college | group of building close to each other
+    - LAN technologies so very high speed (many times fiber)
+- SAN = Software area network
+    - Looks and feels like a local storage device
+    - Block level access (More efficient)
+- NAS = Network attached storage
+    - Remote storage device
+    - File level access
+- PAN = personal area network
+    - Bluetooth, IR, NFC
+    - Common inside a house or car (Audio, Mobile phone, workout/health devices, ect)
+
+## [Internet of Things Topologies](https://www.youtube.com/watch?v=g9F5FauEWL4&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=35&ab_channel=ProfessorMesser)
+
+- Wearable tech, home automation, ect
+- Z-Wave
+    - Mainly for home automation
+    - Control lights, locks, garage doors
+    - Wireless mesh network
+- ANT / ANT+
+    - Fitness devices, heart monitors, ect
+    - Uses 2.4GHZ so it could be jammed
+    - Optional encryption
+- Bluetooth
+    - Uses PAN
+    - Wireless headphones, smart phones, smart watches, tethering, ect
+- NFC (near field communication)
+    - Common on phones
+    - 2 way communication (commonly for payments)
+    - Can help with Bluetooth pairing
+    - Could also use it as an access token
+- IR (Infrared)
+    - Included on phones and much more
+    - Control entertainment center with your phone (most common use case)
+- RFID (Radio-frequency Identification)
+    - Tracking, access badges, ect
+    - Not usually powered devices
+- IEEE 802.11 wireless networks
+    - Most common IoT networks
+    - Always being updating
+
+## [Wireless Standards](https://www.youtube.com/watch?v=r3pZ0WYSk9g&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=36&ab_channel=ProfessorMesser)
+
+- 802.11a (one of the first standards)
+    - 5GHZ range
+    - 54Mbit/s
+- 802.11b (also one of the first standards)
+    - 2.4 GHZ range
+    - 11Mbit/s
+    - Better range than 802.11a
+    - More conflict with other devices
+- 802.11g
+    - “upgrade of 802.11b”
+    - 2.4GHZ range
+    - 54Mbit/s
+    - Backwards compatible with 802.11b
+- 802.11n
+    - 5 or 2.4GHZ range
+    - Much more bandwidth
+    - 600Mbit/s
+    - Uses MIMO (Multiple input multiple output)
+- 802.11ac
+    - 5GHZ range
+    - Can use channel bonding for large channel bandwidths
+    - 6.8 Gbit/s
+    - Uses 8MU-MIMO
+
+## [Cellular Network Standards](https://www.youtube.com/watch?v=GShWfJH6p2c&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=37&ab_channel=ProfessorMesser)
+
+- Separate land into cells
+    - One antenna per cell
+- 2G networks
+    - GSM (Global System for Mobile Communications)
+    - CDMA (Code division multiple access)
+    - Poor data support
+- GSM
+    - 90% of the market for a while (AT&T, Tmobile)
+    - Could move SIM from phone to phone
+    - Uses TDMA (Everyone gets a little slice of time)
+        - Streams are combined into a single stream then broken out again when they reach the location
+- CDMA
+    - Everyone is using the same frequency, but they have their own code
+    - Verizon and Sprint used this
+- 4G LTE
+    - Converged standard
+    - Based on GSM and EDGE
+    - Downloads of 300Mbit/s for LTE-A (150Mbit/s for normal LTE)
