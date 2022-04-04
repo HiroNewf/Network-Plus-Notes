@@ -32,6 +32,12 @@ The table of contents will take you right to the section you click on and the li
 * 1.4 [Seven Second Subnetting](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#seven-second-subnetting)
 * 1.4 [Assigning IPv4 Addresses](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#assigning-ipv4-addresses)
 * 1.4 [Assigning IPv6 Addresses](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#assigning-ipv6-addresses)
+* 1.5 [Network Topologies](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#network-topologies)
+* 1.5 [Common Network Types](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#common-network-types)
+* 1.5 [Internet Of Things Topologies](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#internet-of-things-topologies)
+* 1.6 [Wireless Standards](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#wireless-standards)
+* 1.6 [Cellular Network Standards](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#cellular-network-standards)
+* 
 
 ## [Introduction to IP](https://www.youtube.com/watch?v=M5c9HdaQqh0&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=3&ab_channel=ProfessorMesser)
 
