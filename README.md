@@ -930,3 +930,172 @@ The table of contents will take you right to the section you click on and the li
     - 2 is synced to 1, ect
 - May use many NTP servers for redundancy
     - If there is a choice between which clock to sync yourself with the device will choose to sync will the lowest number
+## [Copper Cabling](https://www.youtube.com/watch?v=v9m6uBaKD2s&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=45&ab_channel=ProfessorMesser)
+
+- There are twisted pairs inside the cable
+    - One of the signals will be positive and one will be negative
+    - Twist helps to stop interference
+    - The different pairs in the cable will have different twist rates
+- UTP
+    - UnShielded Twisted pairs (No shielding anywhere)
+- STP
+    - Shielded twisted pairs (shielding around the whole cable or the individual pairs)
+    - Has a grounding wire
+- Abbriveations
+    - U = Unshielded
+    - S = Shielded with braided shield
+    - F = Foil shield
+    - (Over cable shielding) / (Individual pairs shielding)TP
+        - Like U/STP (No whole cable shielded but braided shield around each pair)
+- EIA set a lot of these cabling standards
+- TIA also set standards as well as ISO/IEC
+- Cable specs
+    - Cat 3 = 10Base-T at 100m
+    - Cat 5 = 100BASE-TX or 1000BASE-T at 100m
+    - Cat 5e = 100BASE-TX or 1000BASE-T at 100m
+    - Cat 6 = 10GBASE-T at 37-55m
+    - Cat 6a = 10GBASE-T at 100m
+    - Cat 7 = 10GBASE-T at 100m
+- The plenum
+    - A non circulating air space above the ceiling is a non plenum
+    - If the air ducts go into a shared air space in the ceiling that is a plenum
+        - There are fire regulations for this area
+        - You also need to make sure your cable inside the plenum need to be plenum rated cable
+            - May not be as flexible as other cables
+- Coaxial cables
+    - Wire conductor right in center with an insulator around that, metal shielding around all of that, and finally a plastic jacket on the outside
+    - For TV and modems mostly
+
+## [Copper Connectors](https://www.youtube.com/watch?v=_MF8oQdTCgo&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=46&ab_channel=ProfessorMesser)
+
+- RJ11 connector
+    - Cable (6P2C) for telephones and modems
+- RJ45 connector
+    - For our Ethernet (8P8C) cable
+- BNC connector
+    - Commonly used on WAN connections like DX3
+    - Bulky and hard to work with
+- DB-9 and DB-25
+    - Serial connections
+    - Early on they were used for almost anything
+    - Still today the 9 pin one is sometime used for a console connection
+- F-connector
+    - Cable televisions or modem
+    - RG-6 cable
+
+## [Optical Fiber](https://www.youtube.com/watch?v=_AnY7JMKVCg&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=47&ab_channel=ProfessorMesser)
+
+- Communication using light wavelengths (LED or lazer)
+- Over km of distance
+- No external interference or tapping
+- You have a core, cladding and coating on a fiber cable
+- Multi mode fiber
+    - For short distances, 2 km or less (often with an LED)
+    - More than one signal at once
+- Signal mode fiber
+    - For long distances, up to 100km
+    - More expensive with lazers
+- UPC
+    - Ultra polished connector
+    - 0 degree angle connection
+    - High return loss
+- APC
+    - Angled polished connector
+    - 8 degree angle connection
+    - Lower return loss, little higher insertion loss
+
+## [Optical Fiber Connectors](https://www.youtube.com/watch?v=WyMNUdi0ZRM&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=48&ab_channel=ProfessorMesser)
+
+- ST connector
+    - Straight tip connector
+    - Bayonet connector
+    - Round at the end
+- SC connector
+    - Subscriber connector
+        - Square connector
+    - Have a plastic key on the side
+- LC
+    - Lucent connector
+        - Little connector
+    - The connectors are getting smaller and smaller
+- MT-RJ
+    - Mechanical Transfer Registered Jack
+    - Smallest connector
+    - About the same size as an RJ-45 connector
+
+## [Copper Termination Standards](https://www.youtube.com/watch?v=jaUww4A8LeU&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=49&ab_channel=ProfessorMesser)
+
+- Cable tester can verify the the termination is done properly
+- Dont mix and match the cable pin outs on a single cables
+- T568A
+    1. White and Green
+    2. Green
+    3. White and Orange
+    4. Blue
+    5. White and Blue
+    6. Orange
+    7. White and Brown
+    8. Brown
+- T568B
+    1. Orange and White
+    2. Orange
+    3. Green and White
+    4. Blue
+    5. Blue and White
+    6. Green
+    7. Brown and White
+    8. Brown 
+- Straight through cables
+    - Pin 1 is connected to pin 1
+    - 2 is connected to 2, ect
+- Cross over cable
+    - For connecting like devices together
+    - Pin 1 no longer does to pin one it goes to pin 3
+    - Pin 2 to pin 6, ect
+    - May not need to do the crossover on the physical cable because if your device support Auto-MDI-X the device can do the crossover digitally
+    - Does not deal with 568A or 568B standards
+
+## [Network Termination Points](https://www.youtube.com/watch?v=QYdYnF-YUG8&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=50&ab_channel=ProfessorMesser)
+
+- Patch panels
+    - Take the connections from say office cubicals punching them down then on the other end have a RJ45 connection that goes into your networking equipment (switch)
+    - If someone changes desk locations you can simply change the small cable length from the patch panel to the switch instead of having to run a completely new cable
+    - 66 block is used for older standards
+    - 110 block is more common for modern networks
+        - Wire to wire patch panel
+        - For cat 5 or 6 cables
+- Distribution panels for fiber
+    - Patch panel at both ends at times
+    - Need to watch the bend radius of the cable
+    - Leave some cable slack for future changes
+
+## [Network Transceivers](https://www.youtube.com/watch?v=_K1r5f97nyg&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=51&ab_channel=ProfessorMesser)
+
+- Transmit and receive mostly in a single device
+- Modular interface
+- Most often there are two fibers, one for transmit and one for receive
+    - You could also have both transmit and receive in one cable with BiDi transceivers
+- GBIC
+    - Early standard
+    - Something like an SC connector
+    - Copper and fiber support
+    - Rather large though
+- SFP
+    - Replaced GBIC for the most part
+    - 1G fiber or copper connections
+    - Much smaller form factor
+- SFP+
+    - Much faster than SFP (16Gib)
+- QSFP or QSFP+
+    - 4 SFP’s or SFP+’s in one connector that is not that much bigger
+    - Crazy speeds
+    - Saves money because there is less fiber and equipment needed
+
+## [Ethernet Standards](https://www.youtube.com/watch?v=X8MofnwqOSI&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=52&ab_channel=ProfessorMesser)
+
+- Most of this was already covered in the Copper Cabling video so like hardly anything is here because I am not writing it again
+- 100BASE-T used 2 pairs of wires
+- 1000BASE-T uses all 4 pairs of wires
+- 1000BASE-SX = multi mode fiber of 220-500m distance
+- 1000BASE-LX = Multi mode fiber of 550m or single mode fiber for 5km distances
+- 10GBASE-T = Much higher frequency (500MHZ)
