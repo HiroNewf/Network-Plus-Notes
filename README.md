@@ -1,7 +1,8 @@
 # Network+ Notes
 The table of contents will take you right to the section you click on and the links for the headers of each section will take you to the Professor Messer video for that section. This probably isn't really going to help anyone else because it is for the 007 version of Network+ but it is here anyways 
 
-## Table of contents
+# Table of contents
+## 1.0 Networking Concepts (23% of the exam)
 * 1.1 [Introduction to IP](https://github.com/HiroNewf/Network-Notes/blob/main/Network%2B%20Notes.md#introduction-to-ip)
 * 1.1 [Common Ports](https://github.com/HiroNewf/Network-Notes/blob/main/Network%2B%20Notes.md#common-ports)
 * 1.2 [Understand the OSI Model](https://github.com/HiroNewf/Network-Notes/blob/main/Network%2B%20Notes.md#understanding-the-osi-model)
@@ -44,6 +45,7 @@ The table of contents will take you right to the section you click on and the li
 * 1.8 [DHCP Addressing Overview](https://github.com/HiroNewf/Network-Notes#dhcp-addressing-overview)
 * 1.8 [Configuring DHCP](https://github.com/HiroNewf/Network-Notes#configuring-dhcp)
 * 1.8 [An Overview of NTP](https://github.com/HiroNewf/Network-Notes#an-overview-of-ntp)
+## Infrastucture (18% of the exam)
 * 2.1 [Copper Cabling](https://github.com/HiroNewf/Network-Notes#copper-cabling)
 * 2.1 [Copper Connectors](https://github.com/HiroNewf/Network-Notes#copper-connectors)
 * 2.1 [Optical Fiber](https://github.com/HiroNewf/Network-Notes#optical-fiber)
