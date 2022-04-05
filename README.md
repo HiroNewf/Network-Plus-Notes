@@ -810,3 +810,123 @@ The table of contents will take you right to the section you click on and the li
             - Make sure people are authorized
         - Data Security
             - Encryption, protect transfers of data with DLP
+## [An Overview of DNS](https://www.youtube.com/watch?v=VqQQMXNhZBM&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=40&ab_channel=ProfessorMesser)
+
+- Translate human readable names into computer readable names
+- Has a hierarchy
+    - At the top is the .com, .net, .org, ect
+    - Next up is name like .professormesser or .youtube
+    - Then is the web sever something like www or mail
+    - You could even have another level down lower for certain sections of your website
+- A huge distributed data bases with so many servers and server clusters
+    - You likely need to ask many different servers before you can find the IP address you need
+    1. Client queries local name server
+    2. Local name server queries root server
+    3. Root sever replies to local name server
+    4. Local name server queries .com name server
+    5. .com name server replies to local name server
+    6. Local name server queries [ProfessorMesser.com](http://ProfessorMesser.com) name server
+    7. [Professermesser.com](http://Professermesser.com) name server replies to local name server
+    8. Local name server gives the client the info and logs the data into a cache 
+- Internal DNS
+    - Managed on internal network and has the internet routing information that you don’t want anyone else to be able to see
+- External DNS
+    - Like Google or Quad9
+    - Won’t have local information but they can help with external DNS queries
+- Third-party DNS
+    - Middle ground between internet and external
+    - Good for large environments
+    - Run in the cloud
+    - May have more features compared to internal DNS servers
+
+## [DNS Record Types](https://www.youtube.com/watch?v=D37RhTJ0ALY&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=41&ab_channel=ProfessorMesser)
+
+- RR (resource records)
+    - Database records of domain name severs
+- Configure the DNS and the lookups will simply take place in a text file
+- A or AAAA
+    - Name with an IP address
+    - A for IPv4
+    - AAAA for IPv6
+- CNAME record
+    - Alias of another name
+    - Make it so [www.youtube.com](http://www.youtube.com) could be just “videos” or something along that line
+- Service record (SRV)
+    - Find a certain service on the network
+    - find the Windows Domain Controller, or the messing server, or the VoIP controller, ect
+- Mail exchange record (MX)
+    - Determines the host name for the name server (not IP the NAME)
+- Name server records (NS)
+    - Points to the name of the name server
+- Pointer record (PTR)
+    - Reverse of A or AAAA records
+    - You give it an IP and it gives you the name
+- Text record (TXT)
+    - Human readable information
+    - Likely valuable to 3rd parties viewing your DNS
+    - Things like SPF to prevent mail spoofing
+    - Or DKIM to digitally sign outgoing mail
+
+## [DHCP Addressing Overview](https://www.youtube.com/watch?v=uLJpp8HFNBc&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=42&ab_channel=ProfessorMesser)
+
+- Starts as a broadcast (Discover message)
+    - Stops at a router of course
+- Next the DHCP will offer an IP (if it got the broadcast)
+- If many offers were given (more than one DHCP server) then the computer will pick one and send them a DHCP Request
+- Finally the DHCP will send an acknowledgment that that said address is now for your computer
+- Large organizations DHCP
+    - Routers stop the traffic (could config a DHCP relay so that the traffic would not stop at the router but be turned into a unicast and sent to the DHCP server)
+    - Multiple servers likely needed for redundancy
+    - Ability to scale well is also a good thing to have
+- IPAM
+    - Manage IP addressing (plan, track and config DHCP)
+    - Reports on all sorts of things
+    - Lots of controls you can use
+    - IPv4 and IPv6 on one console
+
+## [Configuring DHCP](https://www.youtube.com/watch?v=pEDFFH0Y4C4&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=43&ab_channel=ProfessorMesser)
+
+- Scope properties
+    - A list of IP addresses that will be available for a certain subnet
+        - Subnet masks info as well
+        - Lease duration
+        - ect
+- Pools
+    - Grouping of IP addresses that will be leased out by the DHCP server
+    - Pools are inside the scope (scope if larger and contains other data including the pool)
+- Dynamic allocations
+    - IP addresses are reclaimed after a lease period
+    - May or may not get the same address each time
+- Automatic allocations
+    - You will always get the same address (if it can, but since the IP may not be reserved the same IP may not be available for you to have)
+    - Ties IP addresses to MAC addresses
+- Static Allocations
+    - Admin configs it
+    - Always have the same IP address
+    - Tying the IP to the MAC address
+- DHCP leases
+    - Temporary IP addresses
+    - You get the IP for a certain amount of time
+    - You could also manually release the IP address if you wanted
+    - T1 timer
+        - When the devices will try to renew the IP address (50% of the lease time)
+    - T2 timer
+        - If the original DHCP server if down it will try to keep the IP address by talking to another DHCP server around (87.5% of the lease time)
+
+## [An Overview of NTP](https://www.youtube.com/watch?v=1GtySPUW-XA&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=44&ab_channel=ProfessorMesser)
+
+- Sync all of the clocks (everything has a clock and syncing them is important)
+- Automatically happens with NTP
+    - And very accurate as well
+- You have lots of control on how this will work
+- May have an NTP server
+    - In charge of the clock for all the devices
+    - NTP client may request the time from the NTP server and get updates for their clocks
+    - Devices could be both a client and a server at once
+- Stratum layers
+    - Lower is better
+    - The number 0 is the original reference clock
+    - Next closest clock is number 1 (synced to number 0)
+    - 2 is synced to 1, ect
+- May use many NTP servers for redundancy
+    - If there is a choice between which clock to sync yourself with the device will choose to sync will the lowest number
