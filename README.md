@@ -1114,3 +1114,308 @@ The table of contents will take you right to the section you click on and the li
 - 1000BASE-SX = multi mode fiber of 220-500m distance
 - 1000BASE-LX = Multi mode fiber of 550m or single mode fiber for 5km distances
 - 10GBASE-T = Much higher frequency (500MHZ)
+## [Networking Devices]
+
+- Hub
+    - Layer 1
+    - Very basic (Sends data out of every single port because it doesn’t know where it needs to go)
+    - Everything is half duplex
+    - Not efficient at all
+- Bridge
+    - Basically a switch with 2 ports on (Bridging 2 networks together)
+    - Forwarding decision made via software
+    - Layer 2 device (Forwards based on MAC addresses)
+    - Today's WAP are bridges (Bridging between Ethernet and wireless networks)
+- Switch
+    - Layer 2 device
+    - Forwarding decision made in the hardware (ASIC)
+    - Modern ones have many more features such a PoE
+- Router
+    - Layer 3
+    - Forwarding decisions based on IP addresses
+    - Can connect different types of networks together
+- Firewall
+    - Layer 4 (Could be layer 3 or 7 as well)
+    - Allows or denies traffic based on certain criteria (TCP/UDP)
+    - Modern firewalls could even look at the application information and see rather or not that would be allowed into the network (Layer 7)
+    - May also be an VPN enpoint
+    - Can proxy traffic
+- WAP
+    - Not a wireless router (this is just the wireless part)
+    - Layer 2 device
+- Modem
+    - Converts analog sounds to digital signals
+    - On traditional phone lines
+    - Allow you to POTS as a backup way of communicating if everything else fails
+    - Can be used for internet access if they are ADSL modems
+- Converting media
+    - Layer 1
+    - Signal conversion (Copper to fiber, or fiber to copper)
+    - Helpful for extending the range of your connection
+    - Almost always a powered device
+- Wireless range extender
+    - A wireless repeater
+- VoIP endpoint
+    - Some people still use voice for some reason
+    - Can be used like POTS or on some sort of software like modern phones
+
+## [Advanced Networking Devices]
+
+- Mutlilayer switch
+    - A switch and a router in a single device
+    - Switching still happens at layer 2 and the routing happens at level 3
+- Wireless networks
+    - Many AP to manage
+    - Security controls
+    - Should be easy for your users
+- Wireless LAN controllers
+    - Centralized management of all of your WAP’s (on single console)
+    - Make changes to all of the WAP easily
+    - Monitor and reports on the WAP
+- Balancing the load (Load balancer)
+    - Many servers sharing the load of one task
+    - Used for large scale implementations
+    - Could be used for fault tolerance
+    - The load balancer decides which server will handle which request
+    - TCP offload, SSL off load, cacheing, and many more features
+    - Prioritizing QoS at times, content switching
+- IDS
+    - Intrusion detection system
+    - Looking for security events
+    - Will simply alert when it detects something
+- IPS
+    - Intrusion prevention system
+    - Looking for security event
+    - Will actually prevent the harmful traffic from entering your network
+- Identification technologies
+    - Signature based
+        - Looking for an exact match
+    - Anomaly based
+        - Build a baseline of what is normal and notify you of anything odd
+    - Behavior based
+        - Observed and report certain actions
+    - Heuristics
+        - Uses AI to determine if traffic flow is malicious
+- Proxy
+    - Sits between the users and the external network
+    - Makes requests and accept data on the users behalf (So it can examine things to make sure nothing dangerous is going on)
+    - Can filter through data
+- Application proxies
+    - Understands maybe only one application
+- VPN concentrator
+    - Allows you support VPNs
+    - Could be a stand alone device or be part of a firewall
+        - Could also be simply software
+    - The client will need software for this to work
+    - very common to config VPN’s to be always on
+- AAA framework
+    - Identification
+        - Username most often
+    - Authentication
+        - Prove you are who you say you are (password)
+    - Authorization
+        - What level of access do you have?
+    - Accounting
+        - Logging times, data transfers, ect
+- RADIUS
+    - Common service for the AAA framework
+    - can be used as authentication for almost any type of device
+- UTM (unified threat management)
+    - An all in one security appliance
+    - Filtering, inspection, spam filter, CSU/DSU, routing and switching, firewall, IDS/IPS, bandwidth shaping, VPN endpoint, so much stuff in one device
+- NGFW (Next gen firewalls)
+    - Layer 7 firewalls (inspect application layer information)
+    - Looking at every frame and making security decision based on all of that data
+    - Can get very detailed and specific with their understanding
+- VoIP tech
+    - PBX
+        - For analog phones
+        - Connects phone to provider
+    - VoIP PBX
+        - Integrate all VoIP devices to work over a normal network
+        - No need for extra cables
+    - VoIP gateway
+        - Convert VoIP information into something that the normal PSTN network can understand
+- Content filtering
+    - Could detect if sensitive information is being shared across the network
+    - Could look for inappropriate content
+    - Can detect malware
+    - Filtering out what you dont want
+
+## [Virtual Networking]
+
+- Make 100 physical devices seem like one single logical device virtually
+- Still need to be able to communicate to the physical world
+    - This is done via a hypervisor
+        - Your hardware (CPU) needs to support this
+- Networking requirements
+    - Has their own private network for all of the VMs
+    - Likely uses a shared networking address with NAT for outside communication
+        - They could also all have their own IP address
+        - Or could have a private address
+- Virtualization
+    - Much more flexible
+    - Can add and remove things very easily
+
+## [Network Storage]
+
+- NAS
+    - Remote access to a file server
+    - File level access
+- SAN
+    - More efficient
+    - Block level access
+- Jumbo frames
+    - More than 1500 bytes of a payload
+    - Up to 9,216 (9,000 is the norm) bytes in a single frame
+    - Increase network speeds
+    - All of your devices need to support this option
+- Fibre Channel (FC)
+    - Built for SANs
+    - Up to 16Gbit/s
+        - Fiber or copper
+    - Uses SCSI, SAS, or SATA commands
+- FCoE (Fibre channel over Ethernet)
+    - No new hardware needed
+    - Can’t go through a router
+- FCIP
+    - FC encapsulated into IP packets
+    - Can go through routers to other subnets
+- iSCSI
+    - Send SCSI commands over an IP network
+    - Make remote drives look and feel like a local drive
+    - Managed well in software
+- Infiniband
+    - High speed
+    - Has it’s own hardware
+        - Copper or fiber
+    - Popular for supercomputers and the likes
+    - 200Gbit/s speeds are quite common
+
+## [WAN Services]
+
+- ISDN
+    - Can use BRI
+        - Two 64kbit/s bearer channels (for the data)
+        - One 16kbit/s signaling channel (Setting up the ending the call)
+    - PRI
+        - T1 or E1 line
+        - T1 has 23 Bearer channels and one signaling channel
+        - E1 has 30 bearer channels, one signaling channel and one alarm channel
+    - Common for old phone network and the likes (not used that often though)
+- T1
+    - NA, Japan, South Korea
+    - 1.544Mbit/s over 24 channels
+- E1
+    - Europe
+    - 32 channels for a total of 2.048Mbit/s
+- T3
+    - Also known as DS3
+    - On coax mostly
+    - 28 T1 circuits
+    - 44.736Mbit
+- E3
+    - 16 E1 circuits
+    - 34.36Mbit/s
+- OC (packet switching instead of the T and E stuff that was circuit switching)
+    - The new and more used today stuff
+    - SONET
+        - Have different line rates (speeds)
+        - OC-3 = 155.52Mbit/sec
+        - OC-12 = 622.08Mbit/sec
+        - OC-48 = 2.49Gbit/sec | 2.5G
+        - OC-192 = 9.95Gbit/sec | 10G
+- DLS and ADLS (Digital subscriber line)
+    - Common for our homes
+    - WAN network that uses phone lines
+    - Downloads are faster than uploads
+    - 10,000 feet distance limitation
+- Metro Ethernet
+    - A single city
+    - Connect with Ethernet on a WAN (Not common)
+    - Often is running over a different topology
+- Broadband
+    - Many frequencies
+    - DOCSIS
+        - Data over the cable network
+        - 4-250Mbit/sec (maybe even a gig of speed)
+- Dial-up
+    - Using the existing voice lines for digital signals
+    - Very slow speeds 56kbit/sec
+    - hard to scale
+
+## [WAN Transmission Mediums]
+
+- Satellite
+    - Into space
+    - Slow and expensive
+    - 50Mbit/s down and 3Mbit/s up
+    - For hard to reach sites
+    - High latency 250ms up and down
+    - High frequency around 2GHz
+    - Rain and other things and interfere with the connection
+- Copper
+    - Cheap and easy to install and maintain
+    - Not as fast as fiber (often combined with fiber)
+    - Very popular
+- Fiber
+    - High speeds
+    - Higher costs than fiber
+    - Long distances
+    - Common for the core of the WAN
+    - Becoming much more popular for end users
+- Wireless
+    - Mobile providers
+    - Roaming communication
+    - Limited coverage and speed (remote areas dont tend to work well)
+
+## [WAN Technologies]
+
+- Frame relay
+    - Cost effective WAN types
+    - Part of the departure of T1’s
+    - Frames are passed through the cloud and appear on the other side
+    - 64Kbit/sec through 45Mbit/sec speeds
+    - Replaced by MPLS nowadays
+- ATM
+    - Common for SONET
+    - No frames or packets, it uses cells that were 53 bytes large
+    - High speeds, low latency
+    - Max speeds of 10Gbit/s
+- MPLS (Multi protocol layer switching)
+    - Best of ATM and frame relay
+    - Traffic through the WAN are labeled
+    - Supports many types of traffic
+    - Common for WANs
+    - Labels are pushing onto packets as they enter the MPLS cloud
+    - Labels are popped off on the way out of the cloud
+- PPP (Point to point protocol)
+    - Connect 2 devices
+    - Works almost anywhere
+    - Supports authentication, compression, error detection, and miltilink for larger speeds
+- PPPoE (PPP over Ethernet)
+    - Common on DSL networks
+    - Easy to implement, supported in most OS out of the box
+- DMVPN (Dynamic Multi-point VPN)
+    - VPN builds itself as it is needed
+    - A dynamic mesh
+- SIP trunking
+    - Control protocol for VoIP
+    - Using a VoIP connection to an IP-PBX
+    - Most efficient and gives you more control over the bandwidth and other things
+
+## [WAN Termination]()
+
+- Demarc point
+    - Where you connect to the outside world
+    - Used everywhere
+    - On one side is your ISP’s hardware and on the other side is your own hardware
+- CSU/DSU
+    - Sits between your router and the demarc
+    - Commonly providers the conversion between your provider and your own equipment
+    - Could be built into a router
+    - Many types of connections are used for these devices
+- Smarjack
+    - More intelligent than just a cable hand off
+    - Owned by the provider
+    - Could provide diagnostics, alarms, re-configuration, ect
