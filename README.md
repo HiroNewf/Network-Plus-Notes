@@ -54,6 +54,15 @@ The table of contents will take you right to the section you click on and the li
 * 2.1 [Network Termination Points](https://github.com/HiroNewf/Network-Notes#network-termination-points)
 * 2.1 [Network Transceivers](https://github.com/HiroNewf/Network-Notes#network-transceivers)
 * 2.1 [Ethernet Standards](https://github.com/HiroNewf/Network-Notes#ethernet-standards)
+* 2.2 [Networking Devices](https://github.com/HiroNewf/Network-Notes#networking-devices)
+* 2.3 [Advanced Networking Devices](https://github.com/HiroNewf/Network-Notes#advanced-networking-devices)
+* 2.4 [Virtual Networking](https://github.com/HiroNewf/Network-Notes#virtual-networking)
+* 2.4 [Network Storage](https://github.com/HiroNewf/Network-Notes#network-storage)
+* 2.5 [WAN Services](https://github.com/HiroNewf/Network-Notes#wan-services)
+* 2.5 [WAN Transmission Mediums](https://github.com/HiroNewf/Network-Notes#wan-transmission-mediums)
+* 2.5 [WAN Technolgies](https://github.com/HiroNewf/Network-Notes#wan-technologies)
+* 2.5 [WAN Termination](https://github.com/HiroNewf/Network-Notes#wan-termination)
+## Network Operations (
 
 ## [Introduction to IP](https://www.youtube.com/watch?v=M5c9HdaQqh0&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=3&ab_channel=ProfessorMesser)
 
