@@ -104,7 +104,7 @@ The table of contents will take you right to the section you click on and the li
 * 5.3 Wired Network Troubleshooting
 * 5.4 Wireless Network Trounleshooting
 * 5.5 Network Service Troubleshooting
-# Network+ Notes 
+# 1.0
 ## [Introduction to IP](https://www.youtube.com/watch?v=M5c9HdaQqh0&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=3&ab_channel=ProfessorMesser)
 
 - TCP and UDP for moving data across the network
@@ -995,6 +995,7 @@ The table of contents will take you right to the section you click on and the li
     - 2 is synced to 1, ect
 - May use many NTP servers for redundancy
     - If there is a choice between which clock to sync yourself with the device will choose to sync will the lowest number
+# 2.0 
 ## [Copper Cabling](https://www.youtube.com/watch?v=v9m6uBaKD2s&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=45&ab_channel=ProfessorMesser)
 
 - There are twisted pairs inside the cable
@@ -1470,3 +1471,6 @@ The table of contents will take you right to the section you click on and the li
     - More intelligent than just a cable hand off
     - Owned by the provider
     - Could provide diagnostics, alarms, re-configuration, ect
+# 3.0
+# 4.0
+# 5.0 
