@@ -1114,7 +1114,8 @@ The table of contents will take you right to the section you click on and the li
 - 1000BASE-SX = multi mode fiber of 220-500m distance
 - 1000BASE-LX = Multi mode fiber of 550m or single mode fiber for 5km distances
 - 10GBASE-T = Much higher frequency (500MHZ)
-## [Networking Devices]
+
+## [Networking Devices](https://www.youtube.com/watch?v=kKKm5InEmH8&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=53&ab_channel=ProfessorMesser)
 
 - Hub
     - Layer 1
@@ -1159,7 +1160,7 @@ The table of contents will take you right to the section you click on and the li
     - Some people still use voice for some reason
     - Can be used like POTS or on some sort of software like modern phones
 
-## [Advanced Networking Devices]
+## [Advanced Networking Devices](https://www.youtube.com/watch?v=5i3yxEksaiU&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=54&ab_channel=ProfessorMesser)
 
 - Mutlilayer switch
     - A switch and a router in a single device
@@ -1242,7 +1243,7 @@ The table of contents will take you right to the section you click on and the li
     - Can detect malware
     - Filtering out what you dont want
 
-## [Virtual Networking]
+## [Virtual Networking](https://www.youtube.com/watch?v=CQsGjPWasAI&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=55&ab_channel=ProfessorMesser)
 
 - Make 100 physical devices seem like one single logical device virtually
 - Still need to be able to communicate to the physical world
@@ -1257,7 +1258,7 @@ The table of contents will take you right to the section you click on and the li
     - Much more flexible
     - Can add and remove things very easily
 
-## [Network Storage]
+## [Network Storage](https://www.youtube.com/watch?v=41OgCdAjLI4&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=56&ab_channel=ProfessorMesser)
 
 - NAS
     - Remote access to a file server
@@ -1292,7 +1293,7 @@ The table of contents will take you right to the section you click on and the li
     - Popular for supercomputers and the likes
     - 200Gbit/s speeds are quite common
 
-## [WAN Services]
+## [WAN Services](https://www.youtube.com/watch?v=7JUpUDYUSxY&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=57&ab_channel=ProfessorMesser)
 
 - ISDN
     - Can use BRI
@@ -1344,7 +1345,7 @@ The table of contents will take you right to the section you click on and the li
     - Very slow speeds 56kbit/sec
     - hard to scale
 
-## [WAN Transmission Mediums]
+## [WAN Transmission Mediums](https://www.youtube.com/watch?v=aCoSDXdg68A&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=58&ab_channel=ProfessorMesser)
 
 - Satellite
     - Into space
@@ -1369,7 +1370,7 @@ The table of contents will take you right to the section you click on and the li
     - Roaming communication
     - Limited coverage and speed (remote areas dont tend to work well)
 
-## [WAN Technologies]
+## [WAN Technologies](https://www.youtube.com/watch?v=byENdIkwBpA&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=59&ab_channel=ProfessorMesser)
 
 - Frame relay
     - Cost effective WAN types
@@ -1404,7 +1405,7 @@ The table of contents will take you right to the section you click on and the li
     - Using a VoIP connection to an IP-PBX
     - Most efficient and gives you more control over the bandwidth and other things
 
-## [WAN Termination]()
+## [WAN Termination](https://www.youtube.com/watch?v=LYzvM6i14wI&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=60&ab_channel=ProfessorMesser)
 
 - Demarc point
     - Where you connect to the outside world
