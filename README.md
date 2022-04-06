@@ -62,8 +62,50 @@ The table of contents will take you right to the section you click on and the li
 * 2.5 [WAN Transmission Mediums](https://github.com/HiroNewf/Network-Notes#wan-transmission-mediums)
 * 2.5 [WAN Technolgies](https://github.com/HiroNewf/Network-Notes#wan-technologies)
 * 2.5 [WAN Termination](https://github.com/HiroNewf/Network-Notes#wan-termination)
-## Network Operations (
-
+## Network Operations (17% of the exam)
+* 3.1 Network Documentation
+* 3.2 Availabilty Concepts
+* 3.2 Power Management
+* 3.2 Backup and Recovery
+* 3.3 Process Monitoring
+* 3.3 Event Management
+* 3.3 Performance Metrics 
+* 3.4 Remote Access
+* 3.5 Policies and Best Practices 
+## Network Security (20% of the exam)
+* 4.1 Physical Security
+* 4.2 Authorization, Authenication, and Accounting
+* 4.2 Multi-factor Authentication
+* 4.2 Access Control
+* 4.3 Wireless Encryption
+* 4.3 Wireless Authentication and Security
+* 4.4 Denial of Service
+* 4.4 Social Engineering
+* 4.4 Insider Threats
+* 4.4 Loigc Bombs 
+* 4.4 Rogue Access Points
+* 4.4 Wardriving
+* 4.4 Phishing
+* 4.4 Ransomware
+* 4.4 DNS Poisoning
+* 4.4 Spoofing
+* 4.4 Wireless Deauthentication
+* 4.4 Brute Force Attacks
+* 4.4 VLAN Hopping
+* 4.4 Man-In-The_Middle 
+* 4.4 Vulnerabilities and Exploits
+* 4.5 Device Hardening 
+* 4.6 Mitigation Techniques
+* 4.6 Switch Port Protection
+* 4.6 Network Segmentation
+## Network Trounleshotting and Tools (22% of the exam)
+* 5.1 Network Troubleshooting Methodology 
+* 5.2 Hardware Tools
+* 5.2 Software Tools
+* 5.2 Command Line Tools
+* 5.3 Wired Network Troubleshooting
+* 5.4 Wireless Network Trounleshooting
+* 5.5 Network Service Troubleshooting
 ## [Introduction to IP](https://www.youtube.com/watch?v=M5c9HdaQqh0&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=3&ab_channel=ProfessorMesser)
 
 - TCP and UDP for moving data across the network
