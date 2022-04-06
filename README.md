@@ -45,7 +45,7 @@ The table of contents will take you right to the section you click on and the li
 * 1.8 [DHCP Addressing Overview](https://github.com/HiroNewf/Network-Notes#dhcp-addressing-overview)
 * 1.8 [Configuring DHCP](https://github.com/HiroNewf/Network-Notes#configuring-dhcp)
 * 1.8 [An Overview of NTP](https://github.com/HiroNewf/Network-Notes#an-overview-of-ntp)
-## Infrastucture (18% of the exam)
+## 2.0 Infrastucture (18% of the exam)
 * 2.1 [Copper Cabling](https://github.com/HiroNewf/Network-Notes#copper-cabling)
 * 2.1 [Copper Connectors](https://github.com/HiroNewf/Network-Notes#copper-connectors)
 * 2.1 [Optical Fiber](https://github.com/HiroNewf/Network-Notes#optical-fiber)
@@ -62,7 +62,7 @@ The table of contents will take you right to the section you click on and the li
 * 2.5 [WAN Transmission Mediums](https://github.com/HiroNewf/Network-Notes#wan-transmission-mediums)
 * 2.5 [WAN Technolgies](https://github.com/HiroNewf/Network-Notes#wan-technologies)
 * 2.5 [WAN Termination](https://github.com/HiroNewf/Network-Notes#wan-termination)
-## Network Operations (17% of the exam)
+## 3.0 Network Operations (17% of the exam)
 * 3.1 Network Documentation
 * 3.2 Availabilty Concepts
 * 3.2 Power Management
@@ -72,7 +72,7 @@ The table of contents will take you right to the section you click on and the li
 * 3.3 Performance Metrics 
 * 3.4 Remote Access
 * 3.5 Policies and Best Practices 
-## Network Security (20% of the exam)
+## 4.0 Network Security (20% of the exam)
 * 4.1 Physical Security
 * 4.2 Authorization, Authenication, and Accounting
 * 4.2 Multi-factor Authentication
@@ -98,7 +98,7 @@ The table of contents will take you right to the section you click on and the li
 * 4.6 Mitigation Techniques
 * 4.6 Switch Port Protection
 * 4.6 Network Segmentation
-## Network Trounleshotting and Tools (22% of the exam)
+## 5.0 Network Trounleshotting and Tools (22% of the exam)
 * 5.1 Network Troubleshooting Methodology 
 * 5.2 Hardware Tools
 * 5.2 Software Tools
