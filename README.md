@@ -1,7 +1,5 @@
-# Network+ Notes
-The table of contents will take you right to the section you click on and the links for the headers of each section will take you to the Professor Messer video for that section. This probably isn't really going to help anyone else because it is for the 007 version of Network+ but it is here anyways 
-
 # Table of contents
+The table of contents will take you right to the section you click on and the links for the headers of each section will take you to the Professor Messer video for that section. This probably isn't really going to help anyone else because it is for the 007 version of Network+ but it is here anyways 
 ## 1.0 Networking Concepts (23% of the exam)
 * 1.1 [Introduction to IP](https://github.com/HiroNewf/Network-Notes/blob/main/Network%2B%20Notes.md#introduction-to-ip)
 * 1.1 [Common Ports](https://github.com/HiroNewf/Network-Notes/blob/main/Network%2B%20Notes.md#common-ports)
@@ -106,6 +104,7 @@ The table of contents will take you right to the section you click on and the li
 * 5.3 Wired Network Troubleshooting
 * 5.4 Wireless Network Trounleshooting
 * 5.5 Network Service Troubleshooting
+# Network+ Notes 
 ## [Introduction to IP](https://www.youtube.com/watch?v=M5c9HdaQqh0&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=3&ab_channel=ProfessorMesser)
 
 - TCP and UDP for moving data across the network
