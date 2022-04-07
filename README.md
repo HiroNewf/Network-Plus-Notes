@@ -1473,4 +1473,333 @@ The table of contents will take you right to the section you click on and the li
     - Could provide diagnostics, alarms, re-configuration, ect
 # 3.0
 # 4.0
+## [Physical Security]()
+
+- CCTV / IP cameras
+    - Video surveillance
+    - Need to get the right specs (Depth of field, illumination requirements, focal length, ect)
+    - Networked together and recorded over time
+    - Motion detection for alerts
+- Asset tracking tags
+    - Record of every single asset
+    - Good for financial records, audits, deprecation, ect
+    - Barcode, RFID, tracking number, ect
+- Tamper detection
+    - Have systems be able to monitor themselves
+    - Sensors, firewalls, ect
+    - Asset tags that could provide tamper notification
+- ID badge
+    - Can help track who has been where and give you access to certain things
+- Bio-metrics
+    - Tied to a certain person (fingerprint, iris, voice print)
+    - Useful for 2FA
+    - Hard to change (Could be duplicated though)
+    - Not foolproof but still pretty good
+- Tokens and cards
+    - Smart card, USB token, hardware or software tokens, key fobs, SMS code to your phone
+- Door access controls
+    - Lock and key, electronic locks, deadbolt
+    - Token based locks with a card or the likes
+    - Multi factor (smart card and pin)
+
+## [Authorization, Authentication, and Accounting]()
+
+- AAA framework
+    - Identification
+        - Who you say you are (username)
+    - Authentication
+        - Prove you are who you say you are (Passwords or other)
+    - Authorization
+        - Make sure you get access to what you need too and dont have access to what you should not
+    - Accounting
+        - Tracking information and logging everything
+- RADIUS
+    - More common AAA protocol
+    - Centralized authentication for users
+    - Works on almost any OS
+- TACACS
+    - Alternative to RADIUS
+    - For dial-up lines
+- XTACACS
+    - Made by Cisco
+    - Added more accounting and auditing to TACACS
+- TACACC+
+    - Latest version of TACACS
+    - Works with many OS and services
+- Kerberos
+    - Authentication protocol
+    - A one and done login
+    - Protects against man in the middle attacks
+    - Works with many OS’s
+- SSO with Kerberos
+    - Uses cryptographic tickets
+    - No constant username and password input
+    - Not everything works with Kerberos
+- LDAP
+    - Read and write information to a directory
+    - DAP was an early version of LDAP
+    - Uses attributes to describe data in the directory
+        - CN = Common name
+        - O = Organization
+        - L = Locality
+        - C = Country
+        - ect (there are more)
+    - Makes a tree of information
+- Local Authentication
+    - Most devices have an initial account (make sure to change the password for this)
+    - Hard to scale local accounts with large networks
+    - Useful as a backup if AAA is down
+- Certificate based authentication
+    - Private keys stored somewhere (like a smart card)
+    - PIV cards are used by US federal government
+    - CAC is used by the Department of Defense
+    - Could also be stored on a laptop, USB fob, ect
+- Auditing
+    - Logs of everything
+    - Who logged in, what did they do, when did they do it
+    - Network usage
+    - Security logs
+
+## [Multi-factor Authentication]()
+
+- Something you are (Bio-metrics, ex: fingerprint, iris scan, voiceprint)
+- Something you have (smart card, key fob, USB stick, phone for SMS)
+- Something you know (Password, pin)
+- Somewhere you are (location)
+- Something you do (hand writing, typing style)
+- Some of this can be expensive, others can be quite cheap
+
+## [Access Control]()
+
+- NAC (Network Access Control) 802.1X
+    - You dont get access until you authenticate
+    - Port access (Physical ports)
+    - Makes use of EAP and either RADIUS or TACACS
+    - Disable unused ports, check for duplicate MAC
+- Port security
+    - Prevent unauthorized users from connecting to a switch
+    - Based on the MAC address of the connecting device
+    - Can setup your own rules for this
+        - Setup how many MAC and which MAC addresses can connect to each physical port
+- MAC filtering
+    - Allow or deny based on the MAC
+    - Easy through packet captures (Can also be easily spoofed)
+- Captive Portals
+    - Common for wireless networks
+    - Has a list of allowed device and if you are not on that list it gives you a login screen
+        - Once you login you now have access to the network
+- ACL
+    - Looks at the packets of allow or disallow traffic
+        - Can filter on very specific criteria
+    - On routers or switches (for ingress or egress)
+
+## [Wireless Encryption]()
+
+- Wireless Encryption
+    - Anyone can listen in so this needs to be encrypted
+    - WPA and WPA2 (you need the password to listen)
+- WPA
+    - Upgrade to WEP
+    - Short term bridge between WEP and the new standard
+    - Uses TKIP
+        - Combined the secret key with the IV
+        - 64 bit message integrity check to prevent tampering
+        - Still had it’s own set of issues
+- WPA2
+    - Uses CCMP for encryption (replaced TKIP)
+        - Uses AES for data confidentiality
+        - More advanced encryption
+    - The long term standard
+
+## [Wireless Authentication and Security]()
+
+- EAP (Extensible Authentication protocol)
+    - Authenticate framework
+    - WPA and WPA2 use EAP
+- LEAP
+    - Used with WEP
+- EAP-FAST
+    - Lightweight
+    - More security
+- EAP-TLS
+    - Strong security
+    - Lots of people use it
+- EAP-TTLS
+    - Other types of authenticate through the TLS tunnel
+- PEAP
+    - EAP within a TLS tunnel
+- Open system
+    - No authentication
+- WPA2-Personal / WPA2PSK
+    - Has a per shared key that you need to login
+- WPA2-Enterprise / WPA-802.1X
+    - Authenticates users individually
+- MAC filtering
+    - Can do it on wireless networks as well
+    - Can use a wireless analyzer to help with this (but can be spoofed)
+- Geo-fencing
+    - Using the GPS to determine rather or not to give someone access
+    - Authentication method
+
+## [Denial of Service]()
+
+- Force a service to fail by overloading it
+    - Could take advantage of a vulnerability
+    - Could just turn off the power
+- Could be a smoke screen for other attacks
+- Could happen accidentally
+    - Network loop or bandwidth limitation, ect
+- DDOS
+    - The attack is coming from many places at once
+    - At botnet
+    - Make a small attack into a big attack
+        - A small request is now a large response overloading servers
+
+## [Social Engineering]()
+
+- Manipulate people as they are weakest point in security
+- Authority
+    - Act like they are in charge so its okay to do what they say
+- Intimidation
+    - Bad things will happen if you dont help
+- Consensus
+    - Convince someone this is what is normally done
+    - “your co-worker did this last week but is out today, could you help?”
+- Scarcity
+    - Limited amount of time so we have to act fast
+- Urgency
+    - Make things move faster
+    - Dont think about it or ask others if it is okay
+- Familiarity
+    - Become your friend and talk with you
+- Trust
+    - Someone who is safe and can fix the issues
+
+## [Insider Threats]()
+
+- Someone from within the organization with knowledge and access about the network
+- Usually causes more harm than other types of attacks
+    - Can harm reputation
+- Could be accidental or intentional
+
+## [Logic Bombs]()
+
+- When a event occurs the attack goes off
+    - Time and date or a certain event
+- Often deleting things from systems
+- Hard to identify
+    - Need processes to procedures
+    - Lots of monitoring
+    - Auditing
+
+## [Rogue Access Points]()
+
+- A backdoor into your network
+- Simply buy an AP and plug it into the network
+    - Needs to be monitored to prevent
+- Require everyone to Authenticate before using the network
+- Wireless Evil Twin
+    - This one is config just like all the other WAP
+    - Get other users to use their WAP not the legitimate WAPs
+
+## [Wardriving]()
+
+- Driving down the street and gathering information about different wireless network around you
+- All of this is free with certain applications
+- Also works on drones or bikes
+
+## [Phishing]()
+
+- Social engineering with a touch of spoofing
+- Often done via email then sends you a fake website to login
+    - Check the URL to see if it checks out
+        - Or just dont click links from emails
+- Vishing
+    - Phishing dont over the phone
+- Spear Phishing
+    - Customize the attacks for a certain person or group of people
+- Spear phishing against the CEO is called Whaling
+
+## [Ransomware]()
+
+- Take control of your data on your computer until you give them the money they want
+    - Could be fake ransomware where just trying to trick you
+- Crypto-malware
+    - Ransomware that asked for crypto to unlock
+- Can protect against this with a backup on a different computer (ideally offline)
+
+## [DNS Poisoning]()
+
+- Modify the DNS server
+    - To send someone to a different IP address
+    - Send a fake response to a valid DNS request
+- Modify the workstation files
+
+## [Spoofing]()
+
+- Pretend to be something you are not
+- Fake web server, fake DNS, fake MAC address, fake email addresses, fake caller ID, fake IP address, ect
+- Man in the middle attack use ARP spoofing to sit between the conversation of 2 devices
+
+## [Wireless Deauthentication]()
+
+- Keep connecting and dropping off a wireless network
+- Significant DoS attack
+- 802.11 management frames that make everything work
+    - Some wireless networks don’t protect these management frames
+    - So attackers can make their own management frames and send them through the network to your devices
+- 802.11w addressed this problem by making the management frame encrypted
+    - Still not everything is encrypted
+    - Is required for 802.11ac and all versions going forward
+
+## [Brute Force Attacks]()
+
+- Dictionary attacks
+    - Using a word list in order to try and crack a password
+        - Start with the easy and most common words
+    - Catch the low hanging fruit / the bad password people
+- Brute force attacks
+    - You try every possible combinations of characters
+        - Very slow and most system will not allow this many attempts
+    - Best if you can fine the hashed password and try to crack that offline where you dont have a limited number of attempts
+    - Lots of computing power required for this
+
+## [VLAN Hopping]()
+
+- You should only have access to your VLAN
+- You may be able to hop to another VLAN
+    - Switch spoofing
+        - You pretend to be a switch
+        - Setup trunks so you can now send a receive from any VLANs
+        - Switch admins should disable trunk negotiation so this can’t happen
+    - Double tagging
+        - When a switch sees a frame with a 802.1Q header and the header specified the current native VLAN, and that frame must be forwarded out of a trunk interface then the switch will remove the header
+        - If you had 2 headers on that frame and the first one was then removed your second header is what the second switch would see and that is where it would route the traffic allowing you to talk with other VLANs
+
+## [Man-in-the-Middle]()
+
+- Get in the middle of a conversation of 2 devices
+- Neither end station knows someone is watching they communication
+- Arp poisoning
+    - Arp has no security
+    - Arp maps IP’s to MAC address so if you modify the arp table in a device you could make it send traffic to a different MAC address
+        - This man in the middle would then continue to send the traffic to the right location in order to keep both devices from noticing something is wrong, so that the man in the middle can keep spying and gathering intel
+- Often done from inside the browser where it will send the traffic to the attacker
+    - The attacker does not need to be on your local network
+    - Requires malware on your machine
+
+## [Vulnerabilities and Exploits]()
+
+- Vulnerabilities
+    - A weakness the allows bad guys to gain access to things that they shouldn’t have access too
+    - Some are never discovered
+    - Many different types of vulnerabilities
+- Exploits
+    - Takes advantage of a vulnerability
+    - Many different methods to exploit a vulnerability
+        - Can get quite complex
+- Zero Day attacks
+    - When someone finds a brand new vulnerability they could  notify the organization that has the vulnerability or if they are bad guys they could trade them or exploit that vulnerability
+    - Zero-day vulnerability are when it has been discovered that there is a vulnerability but it is yet to be patched
+        - If they are exploited then it is a Zero-Day attacks
 # 5.0 
