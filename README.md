@@ -71,27 +71,27 @@ The table of contents will take you right to the section you click on and the li
 * 3.4 Remote Access
 * 3.5 Policies and Best Practices 
 ## 4.0 Network Security (20% of the exam)
-* 4.1 Physical Security
-* 4.2 Authorization, Authenication, and Accounting
-* 4.2 Multi-factor Authentication
-* 4.2 Access Control
-* 4.3 Wireless Encryption
-* 4.3 Wireless Authentication and Security
-* 4.4 Denial of Service
-* 4.4 Social Engineering
-* 4.4 Insider Threats
-* 4.4 Loigc Bombs 
-* 4.4 Rogue Access Points
-* 4.4 Wardriving
-* 4.4 Phishing
-* 4.4 Ransomware
-* 4.4 DNS Poisoning
-* 4.4 Spoofing
-* 4.4 Wireless Deauthentication
-* 4.4 Brute Force Attacks
-* 4.4 VLAN Hopping
-* 4.4 Man-In-The_Middle 
-* 4.4 Vulnerabilities and Exploits
+* 4.1 [Physical Security](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#physical-security)
+* 4.2 [Authorization, Authenication, and Accounting](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#authorization-authentication-and-accounting)
+* 4.2 [Multi-factor Authentication](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#multi-factor-authentication)
+* 4.2 [Access Control](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#access-control)
+* 4.3 [Wireless Encryption](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#wireless-encryption)
+* 4.3 [Wireless Authentication and Security](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#wireless-authentication-and-security)
+* 4.4 [Denial of Service](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#denial-of-service)
+* 4.4 [Social Engineering](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#social-engineering)
+* 4.4 [Insider Threats](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#insider-threats)
+* 4.4 [Loigc Bombs](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#logic-bombs)
+* 4.4 [Rogue Access Points](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#rogue-access-points)
+* 4.4 [Wardriving](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#wardriving)
+* 4.4 [Phishing](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#phishing)
+* 4.4 [Ransomware](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#ransomware)
+* 4.4 [DNS Poisoning](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#dns-poisoning)
+* 4.4 [Spoofing](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#spoofing)
+* 4.4 [Wireless Deauthentication](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#wireless-deauthentication)
+* 4.4 [Brute Force Attacks](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#brute-force-attacks)
+* 4.4 [VLAN Hopping](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#vlan-hopping)
+* 4.4 [Man-In-The_Middle ](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#man-in-the-middle)
+* 4.4 [Vulnerabilities and Exploits](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#vulnerabilities-and-exploits)
 * 4.5 Device Hardening 
 * 4.6 Mitigation Techniques
 * 4.6 Switch Port Protection
