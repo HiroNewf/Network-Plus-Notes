@@ -1473,7 +1473,7 @@ The table of contents will take you right to the section you click on and the li
     - Could provide diagnostics, alarms, re-configuration, ect
 # 3.0
 # 4.0
-## [Physical Security]()
+## [Physical Security](https://www.youtube.com/watch?v=jMlbasNbgiY&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=71&ab_channel=ProfessorMesser)
 
 - CCTV / IP cameras
     - Video surveillance
@@ -1502,7 +1502,7 @@ The table of contents will take you right to the section you click on and the li
     - Token based locks with a card or the likes
     - Multi factor (smart card and pin)
 
-## [Authorization, Authentication, and Accounting]()
+## [Authorization, Authentication, and Accounting](https://www.youtube.com/watch?v=i0l6UCiybRI&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=72&ab_channel=ProfessorMesser)
 
 - AAA framework
     - Identification
@@ -1560,7 +1560,7 @@ The table of contents will take you right to the section you click on and the li
     - Network usage
     - Security logs
 
-## [Multi-factor Authentication]()
+## [Multi-factor Authentication](https://www.youtube.com/watch?v=HKrJyfxi6xw&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=73&ab_channel=ProfessorMesser)
 
 - Something you are (Bio-metrics, ex: fingerprint, iris scan, voiceprint)
 - Something you have (smart card, key fob, USB stick, phone for SMS)
@@ -1569,7 +1569,7 @@ The table of contents will take you right to the section you click on and the li
 - Something you do (hand writing, typing style)
 - Some of this can be expensive, others can be quite cheap
 
-## [Access Control]()
+## [Access Control](https://www.youtube.com/watch?v=de2enL6JmnY&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=74&ab_channel=ProfessorMesser)
 
 - NAC (Network Access Control) 802.1X
     - You dont get access until you authenticate
@@ -1593,7 +1593,7 @@ The table of contents will take you right to the section you click on and the li
         - Can filter on very specific criteria
     - On routers or switches (for ingress or egress)
 
-## [Wireless Encryption]()
+## [Wireless Encryption](https://www.youtube.com/watch?v=UUQ4mhDAt1w&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=75&ab_channel=ProfessorMesser)
 
 - Wireless Encryption
     - Anyone can listen in so this needs to be encrypted
@@ -1611,7 +1611,7 @@ The table of contents will take you right to the section you click on and the li
         - More advanced encryption
     - The long term standard
 
-## [Wireless Authentication and Security]()
+## [Wireless Authentication and Security](https://www.youtube.com/watch?v=N5A1NsE2nhM&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=76&ab_channel=ProfessorMesser)
 
 - EAP (Extensible Authentication protocol)
     - Authenticate framework
@@ -1641,7 +1641,7 @@ The table of contents will take you right to the section you click on and the li
     - Using the GPS to determine rather or not to give someone access
     - Authentication method
 
-## [Denial of Service]()
+## [Denial of Service](https://www.youtube.com/watch?v=H9O4CDTdu58&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=77&ab_channel=ProfessorMesser)
 
 - Force a service to fail by overloading it
     - Could take advantage of a vulnerability
@@ -1655,7 +1655,7 @@ The table of contents will take you right to the section you click on and the li
     - Make a small attack into a big attack
         - A small request is now a large response overloading servers
 
-## [Social Engineering]()
+## [Social Engineering](https://www.youtube.com/watch?v=gIt2sRfLVMY&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=78&ab_channel=ProfessorMesser)
 
 - Manipulate people as they are weakest point in security
 - Authority
@@ -1675,14 +1675,14 @@ The table of contents will take you right to the section you click on and the li
 - Trust
     - Someone who is safe and can fix the issues
 
-## [Insider Threats]()
+## [Insider Threats](https://www.youtube.com/watch?v=48GNDVbY3v4&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=79&ab_channel=ProfessorMesser)
 
 - Someone from within the organization with knowledge and access about the network
 - Usually causes more harm than other types of attacks
     - Can harm reputation
 - Could be accidental or intentional
 
-## [Logic Bombs]()
+## [Logic Bombs](https://www.youtube.com/watch?v=k9F4pB0x4Rc&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=80&ab_channel=ProfessorMesser)
 
 - When a event occurs the attack goes off
     - Time and date or a certain event
@@ -1692,7 +1692,7 @@ The table of contents will take you right to the section you click on and the li
     - Lots of monitoring
     - Auditing
 
-## [Rogue Access Points]()
+## [Rogue Access Points](https://www.youtube.com/watch?v=e5zZ2E4huHE&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=81&ab_channel=ProfessorMesser)
 
 - A backdoor into your network
 - Simply buy an AP and plug it into the network
@@ -1702,13 +1702,13 @@ The table of contents will take you right to the section you click on and the li
     - This one is config just like all the other WAP
     - Get other users to use their WAP not the legitimate WAPs
 
-## [Wardriving]()
+## [Wardriving](https://www.youtube.com/watch?v=_zRPEPIJGxs&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=82&ab_channel=ProfessorMesser)
 
 - Driving down the street and gathering information about different wireless network around you
 - All of this is free with certain applications
 - Also works on drones or bikes
 
-## [Phishing]()
+## [Phishing](https://www.youtube.com/watch?v=CMElCzT1Oa4&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=83&ab_channel=ProfessorMesser)
 
 - Social engineering with a touch of spoofing
 - Often done via email then sends you a fake website to login
@@ -1720,7 +1720,7 @@ The table of contents will take you right to the section you click on and the li
     - Customize the attacks for a certain person or group of people
 - Spear phishing against the CEO is called Whaling
 
-## [Ransomware]()
+## [Ransomware](https://www.youtube.com/watch?v=PgCbukxo0_A&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=84&ab_channel=ProfessorMesser)
 
 - Take control of your data on your computer until you give them the money they want
     - Could be fake ransomware where just trying to trick you
@@ -1728,20 +1728,20 @@ The table of contents will take you right to the section you click on and the li
     - Ransomware that asked for crypto to unlock
 - Can protect against this with a backup on a different computer (ideally offline)
 
-## [DNS Poisoning]()
+## [DNS Poisoning](https://www.youtube.com/watch?v=JT2K1CD4X-E&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=85&ab_channel=ProfessorMesser)
 
 - Modify the DNS server
     - To send someone to a different IP address
     - Send a fake response to a valid DNS request
 - Modify the workstation files
 
-## [Spoofing]()
+## [Spoofing](https://www.youtube.com/watch?v=ViPS9REmxXM&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=86&ab_channel=ProfessorMesser)
 
 - Pretend to be something you are not
 - Fake web server, fake DNS, fake MAC address, fake email addresses, fake caller ID, fake IP address, ect
 - Man in the middle attack use ARP spoofing to sit between the conversation of 2 devices
 
-## [Wireless Deauthentication]()
+## [Wireless Deauthentication](https://www.youtube.com/watch?v=6Jmq3JSXB0c&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=87&ab_channel=ProfessorMesser)
 
 - Keep connecting and dropping off a wireless network
 - Significant DoS attack
@@ -1752,7 +1752,7 @@ The table of contents will take you right to the section you click on and the li
     - Still not everything is encrypted
     - Is required for 802.11ac and all versions going forward
 
-## [Brute Force Attacks]()
+## [Brute Force Attacks](https://www.youtube.com/watch?v=whHqMWtGUhw&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=88&ab_channel=ProfessorMesser)
 
 - Dictionary attacks
     - Using a word list in order to try and crack a password
@@ -1764,7 +1764,7 @@ The table of contents will take you right to the section you click on and the li
     - Best if you can fine the hashed password and try to crack that offline where you dont have a limited number of attempts
     - Lots of computing power required for this
 
-## [VLAN Hopping]()
+## [VLAN Hopping](https://www.youtube.com/watch?v=lmI_Yp9vQH4&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=89&ab_channel=ProfessorMesser)
 
 - You should only have access to your VLAN
 - You may be able to hop to another VLAN
@@ -1776,7 +1776,7 @@ The table of contents will take you right to the section you click on and the li
         - When a switch sees a frame with a 802.1Q header and the header specified the current native VLAN, and that frame must be forwarded out of a trunk interface then the switch will remove the header
         - If you had 2 headers on that frame and the first one was then removed your second header is what the second switch would see and that is where it would route the traffic allowing you to talk with other VLANs
 
-## [Man-in-the-Middle]()
+## [Man-in-the-Middle](https://www.youtube.com/watch?v=7j_dVStN08o&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=90&ab_channel=ProfessorMesser)
 
 - Get in the middle of a conversation of 2 devices
 - Neither end station knows someone is watching they communication
@@ -1788,7 +1788,7 @@ The table of contents will take you right to the section you click on and the li
     - The attacker does not need to be on your local network
     - Requires malware on your machine
 
-## [Vulnerabilities and Exploits]()
+## [Vulnerabilities and Exploits](https://www.youtube.com/watch?v=CGRTJTsRJVM&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=91&ab_channel=ProfessorMesser)
 
 - Vulnerabilities
     - A weakness the allows bad guys to gain access to things that they shouldn’t have access too
