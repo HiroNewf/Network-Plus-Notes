@@ -1915,3 +1915,105 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Additional security between the internet and you
     - Public access to local resources
 # 5.0 
+## [Network Troubleshooting Methodology](https://www.youtube.com/watch?v=lQPFIysOqYg&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=96&ab_channel=ProfessorMesser)
+
+1. Identify the problem
+    1. Perhaps see if you can duplicate the problem
+    2. Idenitify symptoms 
+    3. Question the users ecperiencing the issues 
+    4. See if any changes have taken place
+    5. Some of the problems might not related to each other
+2. Establish a theory
+    1. Start with the most simply explanation
+    2. Consider everything
+    3. List all of the possible causes 
+3. Test the theory
+    1. Go into a lab and try and recreate the problem to test your theories on
+    2. You may run out of theories 
+4. Create a plan of action
+    1. Correct the issues with minimum impact on the users 
+    2. Idenify that possible side effects of fixing the issue 
+    3. Have a backup plan
+5. Implement the solution
+    1. Probably done during non production times
+    2. May need other peoples assistance 
+6. Verify full system functionality
+    1. Ask users and customers that everything is all good
+    2. Check yourself for the problem
+    3. Impliment preventive measure so it does not happen again
+7. Document findings 
+    1. Write down everything, as much as possible
+    2. Consider having a formal database for these types of documents 
+
+## [Hardware Tools](https://www.youtube.com/watch?v=XgKUjrK5BqA&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=97&ab_channel=ProfessorMesser)
+
+- Cable crimpers
+    - Pinch connector to a wire
+    - Good for ethernet cables and other types as well
+    - Wirestrippers and cable snips are also needed for installing these cables
+- Cable testers
+    - Continuity test
+    - Make sure pin 1 is conencted to pin 1
+        - 2 to pin 2, ect
+    - Simple devices, will simple readouts
+- TDR and OTDR
+    - TDR for copper
+    - OTDR for fiber
+    - Lots of information
+        - Estimated cable lengths
+        - Find splice locations
+        - Cable impedance information
+        - Signal loss
+        - Cerify cable installations
+            - Log everything
+        - Locate breaks
+    - Can be very costly
+    - Need a person that knows how to properly use the tool
+- Punch down tools
+    - Punch a wire into a wiring block (66 or 110 block)
+    - Each wire must be punched down on its own
+        - Can take time
+    - Keep things orignized
+    - Make sure to keep the twists as close as possible to the block itself, dont do a lot of untwisting
+- Light meter
+    - For fiber to see how much light is making it all the way through the fiber run
+    - Very useful for testing very long fiber runs
+- Tone generator
+    - Sends a tone down the cable so you can easily find the other end of the cable
+    - Useful when working with large amounts of cabling
+- Loopback plug
+    - Loop the signal coming out of a device back into the same device
+    - Can test all types of connections
+    - This is not a crossover cable
+- Multimeters
+    - Check AC and DC voltage
+    - Continuity tests to see if connections are working
+        - Wire mapping
+- Spectrum analyzers
+    - Examine all of the frequencies comming from wireless networks in the area
+    - Helps when checking for interference
+
+## [Software Tools](https://www.youtube.com/watch?v=RXgPsoreBDk&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=98&ab_channel=ProfessorMesser)
+
+- Protocol analyzer
+    - Gathers every frame on the network
+        - Wireshark
+        - Or even built-in tools
+    - Solve complex application issues
+    - Good for find security issues as well
+- Port scanner
+    - Scan for IP addresses and open ports
+        - OS and service information as well
+    - Nmap is the most popular one
+        - And Zenmap
+    - Can grpahically see the results on some port scanners
+    - Good for finding rogue devices
+- Wireless packet analysis
+    - Wireless networks are very easy to monitor
+    - You cant hear the network if you are transmitting so turn that off
+    - Need the right hardware to capture this information
+    - Gather lots of data from the network
+- Speed test sites
+    - Bandwidth testing, or ping testing
+    - Very easy to use
+    - Useful when comparing the impact of changes you made
