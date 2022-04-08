@@ -1879,5 +1879,39 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Can be done yourself or from a hired 3rd party
     - Often these penetration tests are required
 ## Switch Port Protection
+- At the MAC address layer there is no way to count how many times a frame has been sent around
+    - This leads to loops if config the network incorrectly
+    - The IEEE 802.1D standard is the STP protocol and is used everywhere
+- STP
+    - This was already talk about somewhere above but
+    - Root Ports are ports that lead to the root switch
+    - Designated ports are other open ports
+    - Blocked ports are blocked to prevent a loop
+- BPDU Guard
+    - STP could take quite a lot of time but you could bypass with a BPDU guard
+    - Is the protocol used to communicate between STP devices (switches)
+- Root Guard
+    - One switch will also be the root swtich (or bridge)
+        - Can be set manually
+- Flood guard
+    - Config a maximun number of MAC address on a interface
+        - Could be a single MAC or a group of MAC addresses
+    - When this maximum number is exceeded the port will be disbaled
+    - Prevents people from flooding the network with MAC addresses
+- DHCP snooping
+    - Switch becomes a DHCP firewall
+        - Filters out trusted DHCP servers as trusted and everything else is untrusted
+        - Makes a table of this information and filter things through
 ## Network Segmentation
+- Physical, logical, virtual
+- Could increase the performance and security
+- Physical segmenttation
+    - Completely separate devices that are not connected in any way
+    - Could keep different applications separate, custom information separate, ect
+- Logically segmentation with VLANs
+    - On the same hardware but still separted logically
+    - Can make it so they cant talk to each other
+- DMZ
+    - Additional security between the internet and you
+    - Public access to local resources
 # 5.0 
