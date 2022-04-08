@@ -1,5 +1,7 @@
 # Table of contents
 The table of contents will take you right to the section you click on and the links for the headers of each section will take you to the Professor Messer video for that section. This probably isn't really going to help anyone else because it is for the 007 version of Network+ but it is here anyways 
+
+Also there are some spelling errors that I will try and fix soon, but I can't be bothered too right now. On top of that at times you will find that I never typed the spelled out version for a certain acronym, this is either because I already knew the spelled out version or because I didn't feel like it was all that important to write down. Perhaps at some points I will go through this again and add all of the spelled out versions, but that is not important to me right now. 
 ## 1.0 Networking Concepts (23% of the exam)
 * 1.1 [Introduction to IP](https://github.com/HiroNewf/Network-Notes/blob/main/Network%2B%20Notes.md#introduction-to-ip)
 * 1.1 [Common Ports](https://github.com/HiroNewf/Network-Notes/blob/main/Network%2B%20Notes.md#common-ports)
