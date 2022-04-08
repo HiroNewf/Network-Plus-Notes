@@ -1,7 +1,7 @@
 # Table of contents
-The table of contents will take you right to the section you click on and the links for the headers of each section will take you to the Professor Messer video for that section. This probably isn't really going to help anyone else because it is for the 007 version of Network+ but it is here anyways 
+The table of contents will take you right to the section you click on and the links for the headers of each section will take you to the Professor Messer video for that section. This probably isn't really going to help anyone else because it is for the 007 version of Network+ but it is here anyways
 
-Also there are some spelling errors that I will try and fix soon, but I can't be bothered too right now. On top of that at times you will find that I never typed the spelled out version for a certain acronym, this is either because I already knew the spelled out version or because I didn't feel like it was all that important to write down. Perhaps at some points I will go through this again and add all of the spelled out versions, but that is not important to me right now. 
+Also there are some spelling errors that I will try and fix soon, but I can't be bothered too right now. On top of that at times you will find that I never typed the spelled out version for a certain acronym, this is either because I already knew the spelled out version or because I didn't feel like it was all that important to write down. Perhaps at some points I will go through this again and add all of the spelled out versions, but that is not important to me right now.
 ## 1.0 Networking Concepts (23% of the exam)
 * 1.1 [Introduction to IP](https://github.com/HiroNewf/Network-Notes/blob/main/Network%2B%20Notes.md#introduction-to-ip)
 * 1.1 [Common Ports](https://github.com/HiroNewf/Network-Notes/blob/main/Network%2B%20Notes.md#common-ports)
@@ -45,7 +45,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 * 1.8 [DHCP Addressing Overview](https://github.com/HiroNewf/Network-Notes#dhcp-addressing-overview)
 * 1.8 [Configuring DHCP](https://github.com/HiroNewf/Network-Notes#configuring-dhcp)
 * 1.8 [An Overview of NTP](https://github.com/HiroNewf/Network-Notes#an-overview-of-ntp)
-## 2.0 Infrastucture (18% of the exam)
+## 2.0 Infrastructure (18% of the exam)
 * 2.1 [Copper Cabling](https://github.com/HiroNewf/Network-Notes#copper-cabling)
 * 2.1 [Copper Connectors](https://github.com/HiroNewf/Network-Notes#copper-connectors)
 * 2.1 [Optical Fiber](https://github.com/HiroNewf/Network-Notes#optical-fiber)
@@ -64,17 +64,17 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 * 2.5 [WAN Termination](https://github.com/HiroNewf/Network-Notes#wan-termination)
 ## 3.0 Network Operations (17% of the exam)
 * 3.1 Network Documentation
-* 3.2 Availabilty Concepts
+* 3.2 Availability Concepts
 * 3.2 Power Management
 * 3.2 Backup and Recovery
 * 3.3 Process Monitoring
 * 3.3 Event Management
-* 3.3 Performance Metrics 
+* 3.3 Performance Metrics
 * 3.4 Remote Access
-* 3.5 Policies and Best Practices 
+* 3.5 Policies and Best Practices
 ## 4.0 Network Security (20% of the exam)
 * 4.1 [Physical Security](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#physical-security)
-* 4.2 [Authorization, Authenication, and Accounting](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#authorization-authentication-and-accounting)
+* 4.2 [Authorization, Authentication, and Accounting](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#authorization-authentication-and-accounting)
 * 4.2 [Multi-factor Authentication](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#multi-factor-authentication)
 * 4.2 [Access Control](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#access-control)
 * 4.3 [Wireless Encryption](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#wireless-encryption)
@@ -98,13 +98,13 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 * 4.6 [Mitigation Techniques](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#mitigation-techniques)
 * 4.6 [Switch Port Protection](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#switch-port-protection)
 * 4.6 [Network Segmentation](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#network-segmentation-1)
-## 5.0 Network Trounleshotting and Tools (22% of the exam)
+## 5.0 Network Troubleshooting and Tools (22% of the exam)
 * 5.1 [Network Troubleshooting Methodology](https://github.com/HiroNewf/Network-Plus-Notes/blob/main/README.md#network-troubleshooting-methodology)
 * 5.2 [Hardware Tools](https://github.com/HiroNewf/Network-Plus-Notes/blob/main/README.md#hardware-tools)
 * 5.2 [Software Tools](https://github.com/HiroNewf/Network-Plus-Notes/blob/main/README.md#software-tools)
 * 5.2 Command Line Tools
 * 5.3 Wired Network Troubleshooting
-* 5.4 Wireless Network Trounleshooting
+* 5.4 Wireless Network Troubleshooting
 * 5.5 Network Service Troubleshooting
 # 1.0
 ## [Introduction to IP](https://www.youtube.com/watch?v=M5c9HdaQqh0&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=3&ab_channel=ProfessorMesser)
@@ -241,12 +241,12 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Can’t hear the other devices so they will ask if the network is in the clear before sending data
 ## [Network Switching Overview](https://www.youtube.com/watch?v=jR3VoKZWJyc&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=7&ab_channel=ProfessorMesser)
 
-- The switch is much smart than the hub
+- The switch is much smarter than the hub
     - Forward or drop frames based on the MAC addresses
     - Has a table MAC addresses
     - Keeping the environment loop free with STP
 - Frame switching
-    - Has a table of MAC adresses to output interface
+    - Has a table of MAC addresses to output interface
     - Only knows the next step, just keeps passing the packet on until it gets to its location or its TTL expires
     - Always adding to its table when it come across something new
         - If it doesn’t know where to send the data it floods the data to all of the devices
@@ -255,7 +255,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Determine MAC address based on a IP address
     - Can be captured with a packet capture tool
     - arp -a to view the arp table on your computer
-  
+ 
 ## [Broadcast Domains and Collision Domains](https://www.youtube.com/watch?v=SGbtLjIEVeo&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=8&ab_channel=ProfessorMesser)
 
 - Collision domains CSMA/CD
@@ -379,7 +379,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
         - RIPng (RIP next gen)
 - EGP
     - Used for routing between AS
-    - BGP (Boarder gateway protocol
+    - BGP (Border gateway protocol
         - Very common
 
 ## [Dynamic Routing Protocols](https://www.youtube.com/watch?v=9390huk39mU&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=16&ab_channel=ProfessorMesser)
@@ -422,7 +422,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
             - is now 2001:0:0:CD30::
 ## [Configuring IPv6](https://www.youtube.com/watch?v=NhRjwjt2Aog&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=18)
 
-- Duel-stack routing
+- Dual-stack routing
     - v4 and v6 in one network (Have both types of addresses for a single device)
     - Most modern networks can understand both versions of IP
 - Tunneling IPv6
@@ -436,7 +436,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
         - IPv6 through IPv4
         - No special hardware needed
         - Teredo is Microsoft | Miredo is Linux, Mac OS, ect (Open Source)
-- NDP (Neighbor Discover Protocol)
+- NDP (Neighbor Discovery Protocol)
     - Sends multicast with ICMPv6
     - Replaced IPv4 ARP
     - Finds other devices MAC addresses
@@ -536,7 +536,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 - Vendor neutral
 - Virtualize things with distributed switching
     - Servers can be far away from each other while on the same VLAN
-    - Dont need to worry about moving the servers
+    - Don't need to worry about moving the servers
 ## [Binary Math](https://www.youtube.com/watch?v=mIbNZzoWE3k&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=24&ab_channel=ProfessorMesser)
 
 - This is kinda hard to write out without any charts or something but here we go
@@ -552,7 +552,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - We have 3 1’s in this binary and they are associated with the numbers 128, 16, and 4
     - So if we simple add all 3 of those numbers together we get 148
 - This can be done is reverse so say we have 186 and needed to make it in binary
-    - First we ask is there is a 128? if so the first number is a 1 (we also now subtract 128 from 186 to get 58)
+    - First we ask if there is a 128? if so the first number is a 1 (we also now subtract 128 from 186 to get 58)
     - Now we ask if there is 64 in the remaining number of 58 - there is not so that is a 0
     - Next is 32 which there is so that is 1 and now we have 26 left
     - Next is 16 which there is so that is also a 1 and we have 10 left
@@ -604,8 +604,8 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 - Subnet masks could be written in binary with ones all lined up on the left and zeros all on the right
     - Something like 11111111.11111111.0.0 or 255.255.0.0 or /16
     - Or 11111111.11100000.00000000.00000000 or 255.224.0.0 or /11
-        - These / followed by a number are the CDIR notation, it is a way to display what the subnet mask is
-- just simply used Professor Messer’s chart for converting between CDIR notions, binary and decimal for the subnet masks and I am too lazy to make my own chart ATM so nothing goes here
+        - These / followed by a number are the CIDR notation, it is a way to display what the subnet mask is
+- just simply used Professor Messer’s chart for converting between CIDR notions, binary and decimal for the subnet masks and I am too lazy to make my own chart ATM so nothing goes here
 
 ## [IPv6 Subnet Masks](https://www.youtube.com/watch?v=8IqXQ88QXfc&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=28&ab_channel=ProfessorMesser)
 
@@ -626,7 +626,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - So many more options and flexibility comes from this
 - 2 to the power of the number of subnet bits you have would allows you to calculate the total numbers of subnets you have
 - 2 to the power of the number of host bits that you have would allow you to calculate the total numbers of hosts you have per subnet (make sure to subtract 2 from that number for the network address and broadcast address)
-- Look at the first number of the IPv4 address to see what range it is in (Class A, B, ect) and that will tell you have many bits are the network ID in this case lets say is Class A, so 8 network bits, then you look at your CIDR notation and see it is for example /24 meaning there are still 16 bits left that are not host ID’s but indeed subnet ID’s. The remaining 8 bits are then your hosts ID’s, this is how you get your numbers for the for the equations above
+- Look at the first number of the IPv4 address to see what range it is in (Class A, B, ect) and that will tell you have many bits are the network ID in this case lets say is Class A, so 8 network bits, then you look at your CIDR notation and see it is for example /24 meaning there are still 16 bits left that are not host IDs but indeed subnet ID’s. The remaining 8 bits are then your hosts ID’s, this is how you get your numbers for the for the equations above
 ## [Seven Second Subnetting](https://www.youtube.com/watch?v=ZxAwQB8TZsM&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=30&ab_channel=ProfessorMesser)
 
 ## [Assigning IPv4 Addresses](https://www.youtube.com/watch?v=Q0Aq_cYBcR0&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=31&ab_channel=ProfessorMesser)
@@ -644,7 +644,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - When you use DHCP but no address is available you can use a link local address to communicate within your subnet
     - 169.254.0.1-169.254.255.254
         - First and last 256 addresses are reserved
-    - Your device will pick a link-local address then send an ARP request to make sure that said address is no in use by anyone else, then it assigns it to it’s self if it is available
+    - Your device will pick a link-local address then send an ARP request to make sure that said address is no in use by anyone else, then it assigns it to itself if it is available
 
 ## [Assigning IPv6 Addresses](https://www.youtube.com/watch?v=lfCFsniHsPk&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=32&ab_channel=ProfessorMesser)
 - DHCPv6
@@ -690,7 +690,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
         - All devices communicate through an AP
         - Most common
     - Ad hoc networking
-        - No preexisting hardware
+        - No pre existing hardware
         - Just configure both devices to communicate directly with each other
     - Mesh
         - Ad hoc devices working together to create a mesh “cloud”
@@ -757,21 +757,21 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 
 - 802.11a (one of the first standards)
     - 5GHZ range
-    - 54Mbit/s
+    - 54 Mbit/s
 - 802.11b (also one of the first standards)
     - 2.4 GHZ range
-    - 11Mbit/s
+    - 11 Mbit/s
     - Better range than 802.11a
     - More conflict with other devices
 - 802.11g
     - “upgrade of 802.11b”
     - 2.4GHZ range
-    - 54Mbit/s
+    - 54 Mbit/s
     - Backwards compatible with 802.11b
 - 802.11n
     - 5 or 2.4GHZ range
     - Much more bandwidth
-    - 600Mbit/s
+    - 600 Mbit/s
     - Uses MIMO (Multiple input multiple output)
 - 802.11ac
     - 5GHZ range
@@ -798,7 +798,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 - 4G LTE
     - Converged standard
     - Based on GSM and EDGE
-    - Downloads of 300Mbit/s for LTE-A (150Mbit/s for normal LTE)
+    - Downloads of 300Mbit/s for LTE-A (150 Mbit/s for normal LTE)
 ## [Wireless Network Technologies](https://www.youtube.com/watch?v=eV9Mu3njz_M&ab_channel=ProfessorMesser)
 
 - Channels
@@ -815,7 +815,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - 802.11n added MIMO which allowed use to send many streams at once on the same frequency
         - 802.11ac improved upon this
     - This relied on the number of antennas you have
-        - Information is display like this (Antennas on the AP) x (antennas on the client): number of steams
+        - Information is display like this (Antennas on the AP) x (antennas on the client): number of streams
         - Like 2x2:2 or 3x3:2 or 4x4:4
 - MIMO could still only send to one device at a single time but this all changed with MU-MIMO which can send to many clients at the same time
 - Power level controls
@@ -852,7 +852,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Private cloud
         - Everything is within your control (hardware, software, all of it)
     - Public cloud
-        - 3rd part data server
+        - 3rd party data server
     - Hybrid cloud
         - Both public and private combined
     - Community cloud
@@ -868,7 +868,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - VPN for a encrypted private way to access your cloud data
     - Direction connection is the more secure but also the most costly
 - Cloud policies
-    - Use a CASB for security polices and controls for data on the cloud
+    - Use a CASB for security policies and controls for data on the cloud
         - Visibility
             - Make sure the right people are seeing the right things and have the right authority to access things
         - Compliance
@@ -882,19 +882,19 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 - Translate human readable names into computer readable names
 - Has a hierarchy
     - At the top is the .com, .net, .org, ect
-    - Next up is name like .professormesser or .youtube
+    - Next up is name like .professor messer or .youtube
     - Then is the web sever something like www or mail
     - You could even have another level down lower for certain sections of your website
-- A huge distributed data bases with so many servers and server clusters
+- A huge distributed databases with so many servers and server clusters
     - You likely need to ask many different servers before you can find the IP address you need
     1. Client queries local name server
     2. Local name server queries root server
-    3. Root sever replies to local name server
+    3. Root server replies to local name server
     4. Local name server queries .com name server
     5. .com name server replies to local name server
     6. Local name server queries [ProfessorMesser.com](http://ProfessorMesser.com) name server
     7. [Professermesser.com](http://Professermesser.com) name server replies to local name server
-    8. Local name server gives the client the info and logs the data into a cache 
+    8. Local name server gives the client the info and logs the data into a cache
 - Internal DNS
     - Managed on internal network and has the internet routing information that you don’t want anyone else to be able to see
 - External DNS
@@ -909,7 +909,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 ## [DNS Record Types](https://www.youtube.com/watch?v=D37RhTJ0ALY&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=41&ab_channel=ProfessorMesser)
 
 - RR (resource records)
-    - Database records of domain name severs
+    - Database records of domain name servers
 - Configure the DNS and the lookups will simply take place in a text file
 - A or AAAA
     - Name with an IP address
@@ -997,7 +997,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - 2 is synced to 1, ect
 - May use many NTP servers for redundancy
     - If there is a choice between which clock to sync yourself with the device will choose to sync will the lowest number
-# 2.0 
+# 2.0
 ## [Copper Cabling](https://www.youtube.com/watch?v=v9m6uBaKD2s&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=45&ab_channel=ProfessorMesser)
 
 - There are twisted pairs inside the cable
@@ -1009,7 +1009,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 - STP
     - Shielded twisted pairs (shielding around the whole cable or the individual pairs)
     - Has a grounding wire
-- Abbriveations
+- Abbreviations
     - U = Unshielded
     - S = Shielded with braided shield
     - F = Foil shield
@@ -1053,7 +1053,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 
 ## [Optical Fiber](https://www.youtube.com/watch?v=_AnY7JMKVCg&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=47&ab_channel=ProfessorMesser)
 
-- Communication using light wavelengths (LED or lazer)
+- Communication using light wavelengths (LED or laser)
 - Over km of distance
 - No external interference or tapping
 - You have a core, cladding and coating on a fiber cable
@@ -1094,7 +1094,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 ## [Copper Termination Standards](https://www.youtube.com/watch?v=jaUww4A8LeU&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=49&ab_channel=ProfessorMesser)
 
 - Cable tester can verify the the termination is done properly
-- Dont mix and match the cable pin outs on a single cables
+- Don't mix and match the cable pin outs on a single cables
 - T568A
     1. White and Green
     2. Green
@@ -1112,11 +1112,11 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     5. Blue and White
     6. Green
     7. Brown and White
-    8. Brown 
+    8. Brown
 - Straight through cables
     - Pin 1 is connected to pin 1
     - 2 is connected to 2, ect
-- Cross over cable
+- Crossover cable
     - For connecting like devices together
     - Pin 1 no longer does to pin one it goes to pin 3
     - Pin 2 to pin 6, ect
@@ -1126,7 +1126,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 ## [Network Termination Points](https://www.youtube.com/watch?v=QYdYnF-YUG8&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=50&ab_channel=ProfessorMesser)
 
 - Patch panels
-    - Take the connections from say office cubicals punching them down then on the other end have a RJ45 connection that goes into your networking equipment (switch)
+    - Take the connections from say office cubicles punching them down then on the other end have a RJ45 connection that goes into your networking equipment (switch)
     - If someone changes desk locations you can simply change the small cable length from the patch panel to the switch instead of having to run a completely new cable
     - 66 block is used for older standards
     - 110 block is more common for modern networks
@@ -1155,7 +1155,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 - SFP+
     - Much faster than SFP (16Gib)
 - QSFP or QSFP+
-    - 4 SFP’s or SFP+’s in one connector that is not that much bigger
+    - 4 SFP or SFP+ in one connector that is not that much bigger
     - Crazy speeds
     - Saves money because there is less fiber and equipment needed
 
@@ -1166,7 +1166,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 - 1000BASE-T uses all 4 pairs of wires
 - 1000BASE-SX = multi mode fiber of 220-500m distance
 - 1000BASE-LX = Multi mode fiber of 550m or single mode fiber for 5km distances
-- 10GBASE-T = Much higher frequency (500MHZ)
+- 10GBASE-T = Much higher frequency (500 MHZ)
 
 ## [Networking Devices](https://www.youtube.com/watch?v=kKKm5InEmH8&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=53&ab_channel=ProfessorMesser)
 
@@ -1192,7 +1192,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Layer 4 (Could be layer 3 or 7 as well)
     - Allows or denies traffic based on certain criteria (TCP/UDP)
     - Modern firewalls could even look at the application information and see rather or not that would be allowed into the network (Layer 7)
-    - May also be an VPN enpoint
+    - May also be an VPN endpoint
     - Can proxy traffic
 - WAP
     - Not a wireless router (this is just the wireless part)
@@ -1215,7 +1215,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 
 ## [Advanced Networking Devices](https://www.youtube.com/watch?v=5i3yxEksaiU&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=54&ab_channel=ProfessorMesser)
 
-- Mutlilayer switch
+- Multilayer switch
     - A switch and a router in a single device
     - Switching still happens at layer 2 and the routing happens at level 3
 - Wireless networks
@@ -1231,7 +1231,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Used for large scale implementations
     - Could be used for fault tolerance
     - The load balancer decides which server will handle which request
-    - TCP offload, SSL off load, cacheing, and many more features
+    - TCP offload, SSL off load, caching, and many more features
     - Prioritizing QoS at times, content switching
 - IDS
     - Intrusion detection system
@@ -1247,7 +1247,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Anomaly based
         - Build a baseline of what is normal and notify you of anything odd
     - Behavior based
-        - Observed and report certain actions
+        - Observe and report certain actions
     - Heuristics
         - Uses AI to determine if traffic flow is malicious
 - Proxy
@@ -1261,7 +1261,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Could be a stand alone device or be part of a firewall
         - Could also be simply software
     - The client will need software for this to work
-    - very common to config VPN’s to be always on
+    - very common to config VPN to be always on
 - AAA framework
     - Identification
         - Username most often
@@ -1294,7 +1294,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Could detect if sensitive information is being shared across the network
     - Could look for inappropriate content
     - Can detect malware
-    - Filtering out what you dont want
+    - Filtering out what you don't want
 
 ## [Virtual Networking](https://www.youtube.com/watch?v=CQsGjPWasAI&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=55&ab_channel=ProfessorMesser)
 
@@ -1341,7 +1341,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Managed well in software
 - Infiniband
     - High speed
-    - Has it’s own hardware
+    - Has its own hardware
         - Copper or fiber
     - Popular for supercomputers and the likes
     - 200Gbit/s speeds are quite common
@@ -1350,7 +1350,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 
 - ISDN
     - Can use BRI
-        - Two 64kbit/s bearer channels (for the data)
+        - Two 64 kbit/s bearer channels (for the data)
         - One 16kbit/s signaling channel (Setting up the ending the call)
     - PRI
         - T1 or E1 line
@@ -1403,7 +1403,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 - Satellite
     - Into space
     - Slow and expensive
-    - 50Mbit/s down and 3Mbit/s up
+    - 50 Mbit/s down and 3 Mbit/s up
     - For hard to reach sites
     - High latency 250ms up and down
     - High frequency around 2GHz
@@ -1421,7 +1421,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 - Wireless
     - Mobile providers
     - Roaming communication
-    - Limited coverage and speed (remote areas dont tend to work well)
+    - Limited coverage and speed (remote areas don't tend to work well)
 
 ## [WAN Technologies](https://www.youtube.com/watch?v=byENdIkwBpA&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=59&ab_channel=ProfessorMesser)
 
@@ -1429,7 +1429,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Cost effective WAN types
     - Part of the departure of T1’s
     - Frames are passed through the cloud and appear on the other side
-    - 64Kbit/sec through 45Mbit/sec speeds
+    - 64 Kbit/sec through 45Mbit/sec speeds
     - Replaced by MPLS nowadays
 - ATM
     - Common for SONET
@@ -1446,11 +1446,11 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 - PPP (Point to point protocol)
     - Connect 2 devices
     - Works almost anywhere
-    - Supports authentication, compression, error detection, and miltilink for larger speeds
+    - Supports authentication, compression, error detection, and multilink for larger speeds
 - PPPoE (PPP over Ethernet)
     - Common on DSL networks
     - Easy to implement, supported in most OS out of the box
-- DMVPN (Dynamic Multi-point VPN)
+- DMVPN (Dynamic Multipoint VPN)
     - VPN builds itself as it is needed
     - A dynamic mesh
 - SIP trunking
@@ -1512,7 +1512,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Authentication
         - Prove you are who you say you are (Passwords or other)
     - Authorization
-        - Make sure you get access to what you need too and dont have access to what you should not
+        - Make sure you get access to what you need to and don't have access to what you should not
     - Accounting
         - Tracking information and logging everything
 - RADIUS
@@ -1525,7 +1525,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 - XTACACS
     - Made by Cisco
     - Added more accounting and auditing to TACACS
-- TACACC+
+- TACACS+
     - Latest version of TACACS
     - Works with many OS and services
 - Kerberos
@@ -1574,7 +1574,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 ## [Access Control](https://www.youtube.com/watch?v=de2enL6JmnY&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=74&ab_channel=ProfessorMesser)
 
 - NAC (Network Access Control) 802.1X
-    - You dont get access until you authenticate
+    - You don't get access until you authenticate
     - Port access (Physical ports)
     - Makes use of EAP and either RADIUS or TACACS
     - Disable unused ports, check for duplicate MAC
@@ -1606,7 +1606,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Uses TKIP
         - Combined the secret key with the IV
         - 64 bit message integrity check to prevent tampering
-        - Still had it’s own set of issues
+        - Still had its own set of issues
 - WPA2
     - Uses CCMP for encryption (replaced TKIP)
         - Uses AES for data confidentiality
@@ -1633,7 +1633,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 - Open system
     - No authentication
 - WPA2-Personal / WPA2PSK
-    - Has a per shared key that you need to login
+    - Has a pre shared key that you need to login
 - WPA2-Enterprise / WPA-802.1X
     - Authenticates users individually
 - MAC filtering
@@ -1661,9 +1661,9 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 
 - Manipulate people as they are weakest point in security
 - Authority
-    - Act like they are in charge so its okay to do what they say
+    - Act like they are in charge so it's okay to do what they say
 - Intimidation
-    - Bad things will happen if you dont help
+    - Bad things will happen if you don't help
 - Consensus
     - Convince someone this is what is normally done
     - “your co-worker did this last week but is out today, could you help?”
@@ -1671,7 +1671,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Limited amount of time so we have to act fast
 - Urgency
     - Make things move faster
-    - Dont think about it or ask others if it is okay
+    - Don't think about it or ask others if it is okay
 - Familiarity
     - Become your friend and talk with you
 - Trust
@@ -1715,9 +1715,9 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 - Social engineering with a touch of spoofing
 - Often done via email then sends you a fake website to login
     - Check the URL to see if it checks out
-        - Or just dont click links from emails
+        - Or just don't click links from emails
 - Vishing
-    - Phishing dont over the phone
+    - Phishing don't over the phone
 - Spear Phishing
     - Customize the attacks for a certain person or group of people
 - Spear phishing against the CEO is called Whaling
@@ -1763,7 +1763,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 - Brute force attacks
     - You try every possible combinations of characters
         - Very slow and most system will not allow this many attempts
-    - Best if you can fine the hashed password and try to crack that offline where you dont have a limited number of attempts
+    - Best if you can find the hashed password and try to crack that offline where you don't have a limited number of attempts
     - Lots of computing power required for this
 
 ## [VLAN Hopping](https://www.youtube.com/watch?v=lmI_Yp9vQH4&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=89&ab_channel=ProfessorMesser)
@@ -1807,7 +1807,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 ## [Device Hardening](https://www.youtube.com/watch?v=ZBI8H_VdkUE&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=92)
 
 - Changing default credentials
-    - The default username and password can be easily found by anyone so dont use them!
+    - The default username and password can be easily found by anyone so don't use them!
 - Avoid common passwords
     - Something that you can’t find in the dictionary is best
     - Longer is better and special characters/numbers are very good to use
@@ -1837,7 +1837,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Need to make sure no one gains access to these keys
     - Update or change these keys if you have a default key
 - Disabling unused TCP and UDP ports
-    - If you don’t need the port why take the risk?
+    - If you don’t need the port, why take the risk?
     - Add this type of filtering on a firewall or appliance
 - Disabling unused interfaces
     - The physical ports that are unused should be disabled
@@ -1860,7 +1860,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 - Privileged accounts
     - Admin or Root
     - Needs to be highly secure
-    - User accounts need to have limited access, dont give them more than they need
+    - User accounts need to have limited access, don't give them more than they need
 - FIM (File integrity Monitoring)
     - Some files should NEVER change
     - Monitor to see when important files change
@@ -1875,7 +1875,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
         - Could be a single device or a whole network (honeynet)
     - Make them look as real as possible
 - Penetration testing
-    - Simulate an attack to find vulnerbiltys
+    - Simulate an attack to find vulnerabilities
     - Can be done yourself or from a hired 3rd party
     - Often these penetration tests are required
 ## [Switch Port Protection](https://www.youtube.com/watch?v=2ufRXD3Jm2U&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=94&ab_channel=ProfessorMesser)
@@ -1891,10 +1891,10 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - STP could take quite a lot of time but you could bypass with a BPDU guard
     - Is the protocol used to communicate between STP devices (switches)
 - Root Guard
-    - One switch will also be the root swtich (or bridge)
+    - One switch will also be the root switch (or bridge)
         - Can be set manually
 - Flood guard
-    - Config a maximun number of MAC address on a interface
+    - Config a maximum number of MAC address on a interface
         - Could be a single MAC or a group of MAC addresses
     - When this maximum number is exceeded the port will be disbaled
     - Prevents people from flooding the network with MAC addresses
@@ -1905,45 +1905,45 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 ## [Network Segmentation](https://www.youtube.com/watch?v=JKKJl9ozqmU&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=95&ab_channel=ProfessorMesser)
 - Physical, logical, virtual
 - Could increase the performance and security
-- Physical segmenttation
+- Physical segmentation
     - Completely separate devices that are not connected in any way
     - Could keep different applications separate, custom information separate, ect
 - Logically segmentation with VLANs
-    - On the same hardware but still separted logically
+    - On the same hardware but still separated logically
     - Can make it so they cant talk to each other
 - DMZ
     - Additional security between the internet and you
     - Public access to local resources
-# 5.0 
+# 5.0
 ## [Network Troubleshooting Methodology](https://www.youtube.com/watch?v=lQPFIysOqYg&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=96&ab_channel=ProfessorMesser)
 
 1. Identify the problem
     1. Perhaps see if you can duplicate the problem
-    2. Idenitify symptoms 
-    3. Question the users ecperiencing the issues 
+    2. Identify symptoms
+    3. Question the users experiencing the issues
     4. See if any changes have taken place
     5. Some of the problems might not related to each other
 2. Establish a theory
     1. Start with the most simply explanation
     2. Consider everything
-    3. List all of the possible causes 
+    3. List all of the possible causes
 3. Test the theory
     1. Go into a lab and try and recreate the problem to test your theories on
-    2. You may run out of theories 
+    2. You may run out of theories
 4. Create a plan of action
-    1. Correct the issues with minimum impact on the users 
-    2. Idenify that possible side effects of fixing the issue 
+    1. Correct the issues with minimum impact on the users
+    2. Identify that possible side effects of fixing the issue
     3. Have a backup plan
 5. Implement the solution
     1. Probably done during non production times
-    2. May need other peoples assistance 
+    2. May need other people's assistance
 6. Verify full system functionality
     1. Ask users and customers that everything is all good
     2. Check yourself for the problem
-    3. Impliment preventive measure so it does not happen again
-7. Document findings 
+    3. Implement preventive measure so it does not happen again
+7. Document findings
     1. Write down everything, as much as possible
-    2. Consider having a formal database for these types of documents 
+    2. Consider having a formal database for these types of documents
 
 ## [Hardware Tools](https://www.youtube.com/watch?v=XgKUjrK5BqA&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=97&ab_channel=ProfessorMesser)
 
@@ -1953,7 +1953,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Wirestrippers and cable snips are also needed for installing these cables
 - Cable testers
     - Continuity test
-    - Make sure pin 1 is conencted to pin 1
+    - Make sure pin 1 is connected to pin 1
         - 2 to pin 2, ect
     - Simple devices, will simple readouts
 - TDR and OTDR
@@ -1964,7 +1964,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
         - Find splice locations
         - Cable impedance information
         - Signal loss
-        - Cerify cable installations
+        - Certify cable installations
             - Log everything
         - Locate breaks
     - Can be very costly
@@ -1973,8 +1973,8 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Punch a wire into a wiring block (66 or 110 block)
     - Each wire must be punched down on its own
         - Can take time
-    - Keep things orignized
-    - Make sure to keep the twists as close as possible to the block itself, dont do a lot of untwisting
+    - Keep things organized
+    - Make sure to keep the twists as close as possible to the block itself, don't do a lot of untwisting
 - Light meter
     - For fiber to see how much light is making it all the way through the fiber run
     - Very useful for testing very long fiber runs
@@ -1990,7 +1990,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Continuity tests to see if connections are working
         - Wire mapping
 - Spectrum analyzers
-    - Examine all of the frequencies comming from wireless networks in the area
+    - Examine all of the frequencies coming from wireless networks in the area
     - Helps when checking for interference
 
 ## [Software Tools](https://www.youtube.com/watch?v=RXgPsoreBDk&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=98&ab_channel=ProfessorMesser)
@@ -2006,14 +2006,15 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
         - OS and service information as well
     - Nmap is the most popular one
         - And Zenmap
-    - Can grpahically see the results on some port scanners
+    - Can graphically see the results on some port scanners
     - Good for finding rogue devices
 - Wireless packet analysis
     - Wireless networks are very easy to monitor
-    - You cant hear the network if you are transmitting so turn that off
+    - You can't hear the network if you are transmitting so turn that off
     - Need the right hardware to capture this information
     - Gather lots of data from the network
 - Speed test sites
     - Bandwidth testing, or ping testing
     - Very easy to use
     - Useful when comparing the impact of changes you made
+
