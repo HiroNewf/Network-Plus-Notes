@@ -99,9 +99,9 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 * 4.6 [Switch Port Protection](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#switch-port-protection)
 * 4.6 [Network Segmentation](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#network-segmentation-1)
 ## 5.0 Network Trounleshotting and Tools (22% of the exam)
-* 5.1 Network Troubleshooting Methodology 
-* 5.2 Hardware Tools
-* 5.2 Software Tools
+* 5.1 [Network Troubleshooting Methodology](https://github.com/HiroNewf/Network-Plus-Notes/blob/main/README.md#network-troubleshooting-methodology)
+* 5.2 [Hardware Tools](https://github.com/HiroNewf/Network-Plus-Notes/blob/main/README.md#hardware-tools)
+* 5.2 [Software Tools](https://github.com/HiroNewf/Network-Plus-Notes/blob/main/README.md#software-tools)
 * 5.2 Command Line Tools
 * 5.3 Wired Network Troubleshooting
 * 5.4 Wireless Network Trounleshooting
