@@ -1802,4 +1802,80 @@ The table of contents will take you right to the section you click on and the li
     - When someone finds a brand new vulnerability they could  notify the organization that has the vulnerability or if they are bad guys they could trade them or exploit that vulnerability
     - Zero-day vulnerability are when it has been discovered that there is a vulnerability but it is yet to be patched
         - If they are exploited then it is a Zero-Day attacks
+## [Device Hardening](https://www.youtube.com/watch?v=ZBI8H_VdkUE&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=92)
+
+- Changing default credentials
+    - The default username and password can be easily found by anyone so dont use them!
+- Avoid common passwords
+    - Something that you can’t find in the dictionary is best
+    - Longer is better and special characters/numbers are very good to use
+- Upgrading Firmware
+    - To a version that does not have any known vulnerabilities
+        - Make a plan for the new security risks and issues you may run into
+- Patch management
+    - Security fixed, system stability, ect
+    - Monthly updates or emergency updates for important security issues
+- File hashing
+    - A way to keep your data security and not in the clear
+    - Allows you to do some integrity checks to make sure the data has not been changed
+- Disabling unnecessary services
+    - Hard to tell which are unnecessary at times, but every service is a potential risk
+    - requires and lot of research and trial and error
+- Watching the network
+    - It is quite easy to steal wireless data that is going across a network
+    - Use encrypted protocols and technologies to try and avoid this
+- Secure protocols
+    - SSH instead of Telnet
+    - HTTPS instead of HTTP
+    - SFTP instead of FTP
+    - SNMPv3 because v3 is the only encrypted version
+    - IPsec encrypt everything at the IP packet level
+- Generating new keys
+    - Encrypted data requires a key
+    - Need to make sure no one gains access to these keys
+    - Update or change these keys if you have a default key
+- Disabling unused TCP and UDP ports
+    - If you don’t need the port why take the risk?
+    - Add this type of filtering on a firewall or appliance
+- Disabling unused interfaces
+    - The physical ports that are unused should be disabled
+    - More effort to maintain but much more secure
+    - Could also use NAC to help mitigate the risk of unused ports
+
+## [Mitigation Techniques](https://www.youtube.com/watch?v=AHg0eDLygHs&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=93)
+
+- IPS signature management
+    - Determine what happens when unwanted traffic appears
+    - Thousands of rules and you need to determine the outcome for these rules
+        - Can be done one by one or by groups
+    - This can take a lot of time to get just right
+- Device hardening
+    - Use harden guides for your services and platforms
+        - From the manufacture or a 3rd party
+- Native VLAN
+    - When you are sending traffic across a trunk and the traffic belong to the native VLAN then it does not need a header
+    - You may want to change this value to separate management traffic from other types of traffic
+- Privileged accounts
+    - Admin or Root
+    - Needs to be highly secure
+    - User accounts need to have limited access, dont give them more than they need
+- FIM (File integrity Monitoring)
+    - Some files should NEVER change
+    - Monitor to see when important files change
+        - Windows can check its files with SFC
+        - Linux can check its files with Tripwire
+        - Many other host based options
+- Restricting access with ACLs
+    - Drop all traffic except for admins when accessing management devices
+    - Different for ACL for application access
+- Honeypots
+    - Trap the bad guys into a fake network that looks real
+        - Could be a single device or a whole network (honeynet)
+    - Make them look as real as possible
+- Penetration testing
+    - Simulate an attack to find vulnerbiltys
+    - Can be done yourself or from a hired 3rd party
+    - Often these penetration tests are required
+## Switch Port Protection
+## Network Segmentation
 # 5.0 
