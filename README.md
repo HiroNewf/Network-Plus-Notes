@@ -1878,7 +1878,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Simulate an attack to find vulnerbiltys
     - Can be done yourself or from a hired 3rd party
     - Often these penetration tests are required
-## Switch Port Protection
+## [Switch Port Protection](https://www.youtube.com/watch?v=2ufRXD3Jm2U&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=94&ab_channel=ProfessorMesser)
 - At the MAC address layer there is no way to count how many times a frame has been sent around
     - This leads to loops if config the network incorrectly
     - The IEEE 802.1D standard is the STP protocol and is used everywhere
@@ -1902,7 +1902,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Switch becomes a DHCP firewall
         - Filters out trusted DHCP servers as trusted and everything else is untrusted
         - Makes a table of this information and filter things through
-## Network Segmentation
+## [Network Segmentation](https://www.youtube.com/watch?v=JKKJl9ozqmU&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=95&ab_channel=ProfessorMesser)
 - Physical, logical, virtual
 - Could increase the performance and security
 - Physical segmenttation
