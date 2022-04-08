@@ -92,10 +92,10 @@ The table of contents will take you right to the section you click on and the li
 * 4.4 [VLAN Hopping](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#vlan-hopping)
 * 4.4 [Man-In-The_Middle ](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#man-in-the-middle)
 * 4.4 [Vulnerabilities and Exploits](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#vulnerabilities-and-exploits)
-* 4.5 Device Hardening 
-* 4.6 Mitigation Techniques
-* 4.6 Switch Port Protection
-* 4.6 Network Segmentation
+* 4.5 [Device Hardening](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#device-hardening)
+* 4.6 [Mitigation Techniques](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#mitigation-techniques)
+* 4.6 [Switch Port Protection](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#switch-port-protection)
+* 4.6 [Network Segmentation](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#network-segmentation-1)
 ## 5.0 Network Trounleshotting and Tools (22% of the exam)
 * 5.1 Network Troubleshooting Methodology 
 * 5.2 Hardware Tools
