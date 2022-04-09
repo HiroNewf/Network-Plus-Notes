@@ -102,7 +102,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 * 5.1 [Network Troubleshooting Methodology](https://github.com/HiroNewf/Network-Plus-Notes/blob/main/README.md#network-troubleshooting-methodology)
 * 5.2 [Hardware Tools](https://github.com/HiroNewf/Network-Plus-Notes/blob/main/README.md#hardware-tools)
 * 5.2 [Software Tools](https://github.com/HiroNewf/Network-Plus-Notes/blob/main/README.md#software-tools)
-* 5.2 Command Line Tools
+* 5.2 [Command Line Tools](https://github.com/HiroNewf/Network-Plus-Notes/blob/main/README.md#command-line-tools)
 * 5.3 Wired Network Troubleshooting
 * 5.4 Wireless Network Troubleshooting
 * 5.5 Network Service Troubleshooting
