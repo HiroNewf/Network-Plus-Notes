@@ -2017,4 +2017,55 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Bandwidth testing, or ping testing
     - Very easy to use
     - Useful when comparing the impact of changes you made
+## [Command Line Tools](https://www.youtube.com/watch?v=Ml1cfQnxSd0&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=99&ab_channel=ProfessorMesser)
+
+- Ping
+    - See if a device is reachable using ICMP
+    - Determine round trip time between between devices
+- Traceroute / tracert
+    - Map the entire path to a device
+    - Uses ICMP
+    - Many different options and control over how exactly this happens
+- NS lookup and Dig
+    - Look up information from DNS servers
+        - Names, ip addresses, cache timers, ect
+    - NS look up is on alsmost any OS
+        - Not really used anymore
+    - DIg
+        - More advanced than NS look up
+        - Much more common today
+- Ipconfig and ifconfig
+    - ipconfig for windows and ifconfig for linux and mac
+    - Lots of IP details can be seen here
+- iptables
+    - A stateful firewall for linux
+    - Advanced filtering by all sorts of things
+        - IP address, port, application, content, ect
+- netstat
+    - Network statistics for many OS
+        - -a shows all active connections
+        - -b shows binaries (windows)
+- tcpdump
+    - Capture packets from the command line
+    - Included in linux and mac and windows has its own version called windump
+    - Apply filters and view in real time
+    - Save the data to use later
+        - Readable by things like wireshark
+    - Lots of data to shift through
+- Pathping
+    - For windows
+    - Both ping and traceroute in one (also adds a few things)
+    - All of this happends in 2 phases
+        - Frist phases run a traceroute
+        - Second phase measures the round trip time and packet loss at each hop along the way
+- Nmap
+    - Network mapper, port scanner, OS sanners, services scan
+    - It is all types of things in one with tons of options of what you can do
+        - NSE is a secripting language you can use to extend its capabilities
+- Route / route print
+    - View the devices routing table
+- arp
+    - Determine MAC address based on IP address
+        - arp
+        - arp -a
 
