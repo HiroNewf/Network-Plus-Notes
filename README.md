@@ -2235,3 +2235,74 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
         - Equal amounts of each would be terrible
 ## [Network Service Troubleshooting](https://www.youtube.com/watch?v=OzltYOATxIE&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=102&ab_channel=ProfessorMesser)
 
+- Names not resolving
+    - Web browsing and other application will not work
+        - Try to ping IP addresses to make sure it is not a connection issue
+    - Check all of your IP settings (IP, subnet mask, defualt gateway, DNS server IP adresses, ect)
+        - Use nslookup or dig to test if you can get a response from the DNS server
+- IP configuration issues
+    - Can’t communicate outside the subnet, no communication at all, or can only communicate to some IP addresses on your subnet
+    - Assure that you have the correct information (Ip address, subnet masks, gateway, ect)
+    - Traceroute and ping to try and see if the issue is you or something else in your infrastucture
+- Duplicate IP addresses
+    - Static assignment must be the very orginized
+    - DHCP could make a mistake, overlap, or be rogue causing issues
+    - Most modern OS have systems in place to prevent duplicate IPs
+    - Troubleshooting them
+        - Check the manually configured ones first
+        - Ping the IP addresses
+        - Capture the DHCP process
+- Duplicate MAC addresses
+    - Not common
+        - Could be someone messed up a manual config
+        - Could be a manufacturing error but that is VERY rare
+    - Could be man in the middle attack
+    - Likely causes intermittent connectivity
+- Expired IP address
+    - A device failed to be able to renew it’s IP address
+    - Could be a issue with a DHCP server
+        - Not functioning right
+        - No avible IP adresses
+- Rogue DHCP server
+    - Could make someone have an invalid or duplicate IP address
+    - Enable security on your switch to stop this
+        - DHCP snooping
+        - Authorized DHCP servers in Active Directory
+    - Disable any Rogue DHCP you find and make sure to not keep any IP addresses they may have assigned
+- Untrusted SSL certificate
+    - Browsers don’t trust the certificate
+    - Look at the Certiicate details for the issueing CA and compare it to the trusted list of CA’s on your computer
+- Incorrect time
+    - Lots of things, expsiecally security is time sensitive
+        - Kerberos, Active Directory and more
+- Exhuasted DHCP scope
+    - No more addresses in the pool so you get an APIPA address
+        - Add more addresses if possible to avoid this
+    - IPAM can report and monitor on IP address shortages
+    - Lowering the lease time can also help if you have a lot of users coming and going from your network
+- Blocked TCP/UDP ports
+    - Applications not working because the traffic can’t get through
+        - Especially new applications may have issues
+    - Confirm this is the issue with a packet capture
+    - Could run a traceroute tool to see how far your packet can go to find where the filtering is occuring
+- Incorrect host-based firewall setting
+    - Also will cause applications to not work
+    - Filtering on your device
+        - Check the settings of your firewall (might need to be done by an admin)
+        - Could be centerally administered
+    - Packet capture from an external device could give you more information on the firewall and its filtering
+- Incorrect ACL settings
+    - Only some IP addresses may be accessible
+    - Confirm with packet capture that this is indeed the issue
+        - Tracerout could also help with idientifying the point of no return
+- Unresponsive service
+    - No answer at all
+    - Make sure your port number and protocol is correct
+    - Confirm that there is connectivity
+        - Ping or traceroute
+    - Could try and use Telnet to see if it responds
+- Hardware failure
+    - No response
+    - Confirm connectivity
+        - Ping and traceroute likely wont work
+    - Check the server itself
