@@ -169,7 +169,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 - HTTPS 443
     - Encrypted browser protocol
 - SNMP UDP 161
-    - Managing network devices, gather logs and statistics from the devices
+    - Managing network devices, gathering logs and statistics from the devices
     - V1 & V2 not encrypted, V3 is encrypted, has integrity, authentication and authorization
 - RDP TCP 3389
     - Remotely share a desktop (or just an application)
@@ -214,14 +214,14 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
         - Frame fragmentation is when you break a frame into smaller pieces so the data can be sent across the network
     - Layer 2 Data Link (MAC, Frames, Switches, Bridges)
     - Layer 1 Physical (Signaling, cabling, connectors, hubs, bits, ect)
-- Certain protocols and processes exists at each layer
+- Certain protocols and processes exist at each layer
 - Packet capture tools like Wireshark are where you really start to see OSI model in the real world
 
 ## [Introduction to Ethernet](https://www.youtube.com/watch?v=iXfBbs9SSFQ&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=6&ab_channel=ProfessorMesser)
 
-- Enterprise networks have the same base functionality has a home network
+- Enterprise networks have the same base functionality as a home network
     - There is just a ton more data and hardware
-    - May even be many building connected to each other
+    - May even be many buildings connected to each other
 - MAC addresses
     - Physical unique address
     - 48 bits long, displayed in hexadecimal
@@ -248,7 +248,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 - Frame switching
     - Has a table of MAC addresses to output interface
     - Only knows the next step, just keeps passing the packet on until it gets to its location or its TTL expires
-    - Always adding to its table when it come across something new
+    - Always adding to its table when it comes across something new
         - If it doesn’t know where to send the data it floods the data to all of the devices
             - When the data finds the right person the switch gets a response and adds the information to it’s table
 - ARP
@@ -309,7 +309,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - One per network
     - STP will label ports as “root port” if that is the way to get to the root switch
     - The designated ports are the other ports that lead to other spots in the network
-    - Blocked ports are well closed port that traffic cannot go through
+    - Blocked ports are well closed ports that traffic cannot go through
 - STP may make a route to a certain device a little bit longer, but this is worth it
 - STP can automatically change the port states if a device fails and you need a new path to get somewhere
 - RSTP is 802.1W
@@ -477,7 +477,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
         - 10.0.0.0-10.255.255.255
         - 172.16.0.0-172.31.255.255
         - 192.169.0.0-192.168.255.255
-- NAT changes these private addresses into public addresses (The routers own address with is rout-able across the internet)
+- NAT changes these private addresses into public addresses (The routers own address which is rout-able across the internet)
     - Each router directly connected to the internet has its own IPv4 address
     - Port numbers are used so the router can tell where on the intranet to send internet traffic (Since it can’t use IP addresses due to the changes being made to them)
 - Port forwarding
@@ -550,8 +550,8 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 - Every time there is a 0 bring down a 0 every time there is a 1 bring down the number associated with the bit then add them all together
 - So for 10010100
     - We have 3 1’s in this binary and they are associated with the numbers 128, 16, and 4
-    - So if we simple add all 3 of those numbers together we get 148
-- This can be done is reverse so say we have 186 and needed to make it in binary
+    - So if we simply add all 3 of those numbers together we get 148
+- This can be done in reverse so say we have 186 and needed to make it in binary
     - First we ask if there is a 128? if so the first number is a 1 (we also now subtract 128 from 186 to get 58)
     - Now we ask if there is 64 in the remaining number of 58 - there is not so that is a 0
     - Next is 32 which there is so that is 1 and now we have 26 left
@@ -624,7 +624,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 - VLSM (Variable Length Subnet Masks)
     - Allows network admins to define their own subnets (not classful)
     - So many more options and flexibility comes from this
-- 2 to the power of the number of subnet bits you have would allows you to calculate the total numbers of subnets you have
+- 2 to the power of the number of subnet bits you have would allow you to calculate the total numbers of subnets you have
 - 2 to the power of the number of host bits that you have would allow you to calculate the total numbers of hosts you have per subnet (make sure to subtract 2 from that number for the network address and broadcast address)
 - Look at the first number of the IPv4 address to see what range it is in (Class A, B, ect) and that will tell you have many bits are the network ID in this case lets say is Class A, so 8 network bits, then you look at your CIDR notation and see it is for example /24 meaning there are still 16 bits left that are not host IDs but indeed subnet ID’s. The remaining 8 bits are then your hosts ID’s, this is how you get your numbers for the for the equations above
 ## [Seven Second Subnetting](https://www.youtube.com/watch?v=ZxAwQB8TZsM&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=30&ab_channel=ProfessorMesser)
@@ -644,7 +644,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - When you use DHCP but no address is available you can use a link local address to communicate within your subnet
     - 169.254.0.1-169.254.255.254
         - First and last 256 addresses are reserved
-    - Your device will pick a link-local address then send an ARP request to make sure that said address is no in use by anyone else, then it assigns it to itself if it is available
+    - Your device will pick a link-local address then send an ARP request to make sure that said address is not in use by anyone else, then it assigns it to itself if it is available
 
 ## [Assigning IPv6 Addresses](https://www.youtube.com/watch?v=lfCFsniHsPk&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=32&ab_channel=ProfessorMesser)
 - DHCPv6
@@ -712,8 +712,8 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Spanning around the globe
     - Tends to be slower in speeds
 - CAN = Campus Area network
-    - Many buildings owned by a company or a college | group of building close to each other
-    - LAN technologies so very high speed (many times fiber)
+    - Many buildings owned by a company or a college | group of buildings close to each other
+    - LAN technologies are very high speed (many times fiber)
 - SAN = Software area network
     - Looks and feels like a local storage device
     - Block level access (More efficient)
@@ -802,7 +802,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 ## [Wireless Network Technologies](https://www.youtube.com/watch?v=eV9Mu3njz_M&ab_channel=ProfessorMesser)
 
 - Channels
-    - Not overlapping channels is necessary (When uses many AP)
+    - Not overlapping channels is necessary (When using many AP)
     - So many more channels with 5GHz
     - For 2.4 GHz channels 1, 6, and 11 are likely what you will want to use
 - Different bandwidths are used
@@ -812,10 +812,10 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - 802.11n 20 or 40MHz (2 20MHz channels)
     - 802.11ac 40MHz (for 802.11n stations), 80MHz for 802.11ac stations or 160MHz also for 802.11ac
 - Antennas
-    - 802.11n added MIMO which allowed use to send many streams at once on the same frequency
+    - 802.11n added MIMO which allowed us to send many streams at once on the same frequency
         - 802.11ac improved upon this
     - This relied on the number of antennas you have
-        - Information is display like this (Antennas on the AP) x (antennas on the client): number of streams
+        - Information is displayed like this (Antennas on the AP) x (antennas on the client): number of streams
         - Like 2x2:2 or 3x3:2 or 4x4:4
 - MIMO could still only send to one device at a single time but this all changed with MU-MIMO which can send to many clients at the same time
 - Power level controls
@@ -858,7 +858,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Community cloud
         - A group of people get together and share a cloud
     - On-premise
-        - Your control everything and it is all owned by you
+        - You control everything and it is all owned by you
     - Hosted
         - Not in your building, you may not even own the servers
     - Cloud
@@ -882,7 +882,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 - Translate human readable names into computer readable names
 - Has a hierarchy
     - At the top is the .com, .net, .org, ect
-    - Next up is name like .professor messer or .youtube
+    - Next up is a name like .professor messer or .youtube
     - Then is the web sever something like www or mail
     - You could even have another level down lower for certain sections of your website
 - A huge distributed databases with so many servers and server clusters
@@ -978,7 +978,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - T1 timer
         - When the devices will try to renew the IP address (50% of the lease time)
     - T2 timer
-        - If the original DHCP server if down it will try to keep the IP address by talking to another DHCP server around (87.5% of the lease time)
+        - If the original DHCP server is down it will try to keep the IP address by talking to another DHCP server around (87.5% of the lease time)
 
 ## [An Overview of NTP](https://www.youtube.com/watch?v=1GtySPUW-XA&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=44&ab_channel=ProfessorMesser)
 
@@ -996,7 +996,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Next closest clock is number 1 (synced to number 0)
     - 2 is synced to 1, ect
 - May use many NTP servers for redundancy
-    - If there is a choice between which clock to sync yourself with the device will choose to sync will the lowest number
+    - If there is a choice between which clock to sync yourself with the device will choose to sync with the lowest number
 # 2.0
 ## [Copper Cabling](https://www.youtube.com/watch?v=v9m6uBaKD2s&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=45&ab_channel=ProfessorMesser)
 
@@ -1093,7 +1093,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 
 ## [Copper Termination Standards](https://www.youtube.com/watch?v=jaUww4A8LeU&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=49&ab_channel=ProfessorMesser)
 
-- Cable tester can verify the the termination is done properly
+- Cable tester can verify the termination is done properly
 - Don't mix and match the cable pin outs on a single cables
 - T568A
     1. White and Green
@@ -1118,9 +1118,9 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - 2 is connected to 2, ect
 - Crossover cable
     - For connecting like devices together
-    - Pin 1 no longer does to pin one it goes to pin 3
+    - Pin 1 no longer goes to pin one it goes to pin 3
     - Pin 2 to pin 6, ect
-    - May not need to do the crossover on the physical cable because if your device support Auto-MDI-X the device can do the crossover digitally
+    - May not need to do the crossover on the physical cable because if your device supports Auto-MDI-X the device can do the crossover digitally
     - Does not deal with 568A or 568B standards
 
 ## [Network Termination Points](https://www.youtube.com/watch?v=QYdYnF-YUG8&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=50&ab_channel=ProfessorMesser)
@@ -1179,7 +1179,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Basically a switch with 2 ports on (Bridging 2 networks together)
     - Forwarding decision made via software
     - Layer 2 device (Forwards based on MAC addresses)
-    - Today's WAP are bridges (Bridging between Ethernet and wireless networks)
+    - Today's WAPs are bridges (Bridging between Ethernet and wireless networks)
 - Switch
     - Layer 2 device
     - Forwarding decision made in the hardware (ASIC)
@@ -1252,7 +1252,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
         - Uses AI to determine if traffic flow is malicious
 - Proxy
     - Sits between the users and the external network
-    - Makes requests and accept data on the users behalf (So it can examine things to make sure nothing dangerous is going on)
+    - Makes requests and accepts data on the users behalf (So it can examine things to make sure nothing dangerous is going on)
     - Can filter through data
 - Application proxies
     - Understands maybe only one application
@@ -1279,7 +1279,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Filtering, inspection, spam filter, CSU/DSU, routing and switching, firewall, IDS/IPS, bandwidth shaping, VPN endpoint, so much stuff in one device
 - NGFW (Next gen firewalls)
     - Layer 7 firewalls (inspect application layer information)
-    - Looking at every frame and making security decision based on all of that data
+    - Looking at every frame and making security decisions based on all of that data
     - Can get very detailed and specific with their understanding
 - VoIP tech
     - PBX
@@ -1588,7 +1588,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Easy through packet captures (Can also be easily spoofed)
 - Captive Portals
     - Common for wireless networks
-    - Has a list of allowed device and if you are not on that list it gives you a login screen
+    - Has a list of allowed devices and if you are not on that list it gives you a login screen
         - Once you login you now have access to the network
 - ACL
     - Looks at the packets of allow or disallow traffic
@@ -1706,7 +1706,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 
 ## [Wardriving](https://www.youtube.com/watch?v=_zRPEPIJGxs&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=82&ab_channel=ProfessorMesser)
 
-- Driving down the street and gathering information about different wireless network around you
+- Driving down the street and gathering information about different wireless networks around you
 - All of this is free with certain applications
 - Also works on drones or bikes
 
@@ -1717,7 +1717,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Check the URL to see if it checks out
         - Or just don't click links from emails
 - Vishing
-    - Phishing don't over the phone
+    - Phishing over the phone
 - Spear Phishing
     - Customize the attacks for a certain person or group of people
 - Spear phishing against the CEO is called Whaling
@@ -1741,7 +1741,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 
 - Pretend to be something you are not
 - Fake web server, fake DNS, fake MAC address, fake email addresses, fake caller ID, fake IP address, ect
-- Man in the middle attack use ARP spoofing to sit between the conversation of 2 devices
+- Man in the middle attack uses ARP spoofing to sit between the conversation of 2 devices
 
 ## [Wireless Deauthentication](https://www.youtube.com/watch?v=6Jmq3JSXB0c&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=87&ab_channel=ProfessorMesser)
 
@@ -1761,8 +1761,8 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
         - Start with the easy and most common words
     - Catch the low hanging fruit / the bad password people
 - Brute force attacks
-    - You try every possible combinations of characters
-        - Very slow and most system will not allow this many attempts
+    - You try every possible combination of characters
+        - Very slow and most systems will not allow this many attempts
     - Best if you can find the hashed password and try to crack that offline where you don't have a limited number of attempts
     - Lots of computing power required for this
 
@@ -1781,7 +1781,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 ## [Man-in-the-Middle](https://www.youtube.com/watch?v=7j_dVStN08o&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=90&ab_channel=ProfessorMesser)
 
 - Get in the middle of a conversation of 2 devices
-- Neither end station knows someone is watching they communication
+- Neither end station knows someone is watching their communication
 - Arp poisoning
     - Arp has no security
     - Arp maps IP’s to MAC address so if you modify the arp table in a device you could make it send traffic to a different MAC address
@@ -1793,7 +1793,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 ## [Vulnerabilities and Exploits](https://www.youtube.com/watch?v=CGRTJTsRJVM&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=91&ab_channel=ProfessorMesser)
 
 - Vulnerabilities
-    - A weakness the allows bad guys to gain access to things that they shouldn’t have access too
+    - A weakness that allows bad guys to gain access to things that they shouldn’t have access too
     - Some are never discovered
     - Many different types of vulnerabilities
 - Exploits
@@ -1822,7 +1822,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Allows you to do some integrity checks to make sure the data has not been changed
 - Disabling unnecessary services
     - Hard to tell which are unnecessary at times, but every service is a potential risk
-    - requires and lot of research and trial and error
+    - requires a lot of research and trial and error
 - Watching the network
     - It is quite easy to steal wireless data that is going across a network
     - Use encrypted protocols and technologies to try and avoid this
@@ -1855,7 +1855,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Use harden guides for your services and platforms
         - From the manufacture or a 3rd party
 - Native VLAN
-    - When you are sending traffic across a trunk and the traffic belong to the native VLAN then it does not need a header
+    - When you are sending traffic across a trunk and the traffic belongs to the native VLAN then it does not need a header
     - You may want to change this value to separate management traffic from other types of traffic
 - Privileged accounts
     - Admin or Root
@@ -1883,7 +1883,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - This leads to loops if config the network incorrectly
     - The IEEE 802.1D standard is the STP protocol and is used everywhere
 - STP
-    - This was already talk about somewhere above but
+    - This was already talked about somewhere above but
     - Root Ports are ports that lead to the root switch
     - Designated ports are other open ports
     - Blocked ports are blocked to prevent a loop
@@ -1894,7 +1894,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - One switch will also be the root switch (or bridge)
         - Can be set manually
 - Flood guard
-    - Config a maximum number of MAC address on a interface
+    - Config a maximum number of MAC addresses on a interface
         - Could be a single MAC or a group of MAC addresses
     - When this maximum number is exceeded the port will be disbaled
     - Prevents people from flooding the network with MAC addresses
@@ -1922,9 +1922,9 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     2. Identify symptoms
     3. Question the users experiencing the issues
     4. See if any changes have taken place
-    5. Some of the problems might not related to each other
+    5. Some of the problems might not be related to each other
 2. Establish a theory
-    1. Start with the most simply explanation
+    1. Start with the most simple explanation
     2. Consider everything
     3. List all of the possible causes
 3. Test the theory
@@ -2000,7 +2000,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
         - Wireshark
         - Or even built-in tools
     - Solve complex application issues
-    - Good for find security issues as well
+    - Good for finding security issues as well
 - Port scanner
     - Scan for IP addresses and open ports
         - OS and service information as well
@@ -2021,7 +2021,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 
 - Ping
     - See if a device is reachable using ICMP
-    - Determine round trip time between between devices
+    - Determine round trip time between devices
 - Traceroute / tracert
     - Map the entire path to a device
     - Uses ICMP
@@ -2029,7 +2029,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 - NS lookup and Dig
     - Look up information from DNS servers
         - Names, ip addresses, cache timers, ect
-    - NS look up is on alsmost any OS
+    - NS look up is on almost any OS
         - Not really used anymore
     - DIg
         - More advanced than NS look up
@@ -2055,13 +2055,13 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 - Pathping
     - For windows
     - Both ping and traceroute in one (also adds a few things)
-    - All of this happends in 2 phases
-        - Frist phases run a traceroute
+    - All of this happens in 2 phases
+        - First phases run a traceroute
         - Second phase measures the round trip time and packet loss at each hop along the way
 - Nmap
     - Network mapper, port scanner, OS sanners, services scan
     - It is all types of things in one with tons of options of what you can do
-        - NSE is a secripting language you can use to extend its capabilities
+        - NSE is a scripting language you can use to extend its capabilities
 - Route / route print
     - View the devices routing table
 - arp
@@ -2236,16 +2236,16 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 ## [Network Service Troubleshooting](https://www.youtube.com/watch?v=OzltYOATxIE&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=102&ab_channel=ProfessorMesser)
 
 - Names not resolving
-    - Web browsing and other application will not work
+    - Web browsing and other applications will not work
         - Try to ping IP addresses to make sure it is not a connection issue
-    - Check all of your IP settings (IP, subnet mask, defualt gateway, DNS server IP adresses, ect)
+    - Check all of your IP settings (IP, subnet mask, default gateway, DNS server IP addresses, ect)
         - Use nslookup or dig to test if you can get a response from the DNS server
 - IP configuration issues
     - Can’t communicate outside the subnet, no communication at all, or can only communicate to some IP addresses on your subnet
     - Assure that you have the correct information (Ip address, subnet masks, gateway, ect)
-    - Traceroute and ping to try and see if the issue is you or something else in your infrastucture
+    - Traceroute and ping to try and see if the issue is you or something else in your infrastructure
 - Duplicate IP addresses
-    - Static assignment must be the very orginized
+    - Static assignment must be the very organized
     - DHCP could make a mistake, overlap, or be rogue causing issues
     - Most modern OS have systems in place to prevent duplicate IPs
     - Troubleshooting them
@@ -2259,10 +2259,10 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Could be man in the middle attack
     - Likely causes intermittent connectivity
 - Expired IP address
-    - A device failed to be able to renew it’s IP address
+    - A device failed to be able to renew its IP address
     - Could be a issue with a DHCP server
         - Not functioning right
-        - No avible IP adresses
+        - No available IP addresses
 - Rogue DHCP server
     - Could make someone have an invalid or duplicate IP address
     - Enable security on your switch to stop this
@@ -2271,11 +2271,11 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Disable any Rogue DHCP you find and make sure to not keep any IP addresses they may have assigned
 - Untrusted SSL certificate
     - Browsers don’t trust the certificate
-    - Look at the Certiicate details for the issueing CA and compare it to the trusted list of CA’s on your computer
+    - Look at the Certificate details for the issuing CA and compare it to the trusted list of CA’s on your computer
 - Incorrect time
-    - Lots of things, expsiecally security is time sensitive
+    - Lots of things, especially security is time sensitive
         - Kerberos, Active Directory and more
-- Exhuasted DHCP scope
+- Exhausted DHCP scope
     - No more addresses in the pool so you get an APIPA address
         - Add more addresses if possible to avoid this
     - IPAM can report and monitor on IP address shortages
@@ -2289,12 +2289,12 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Also will cause applications to not work
     - Filtering on your device
         - Check the settings of your firewall (might need to be done by an admin)
-        - Could be centerally administered
+        - Could be centrally administered
     - Packet capture from an external device could give you more information on the firewall and its filtering
 - Incorrect ACL settings
     - Only some IP addresses may be accessible
     - Confirm with packet capture that this is indeed the issue
-        - Tracerout could also help with idientifying the point of no return
+        - Tracerout could also help with identifying the point of no return
 - Unresponsive service
     - No answer at all
     - Make sure your port number and protocol is correct
@@ -2304,5 +2304,6 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 - Hardware failure
     - No response
     - Confirm connectivity
-        - Ping and traceroute likely wont work
+        - Ping and traceroute likely won't work
     - Check the server itself
+
