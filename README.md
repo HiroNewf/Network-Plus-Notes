@@ -105,7 +105,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 * 5.2 [Command Line Tools](https://github.com/HiroNewf/Network-Plus-Notes/blob/main/README.md#command-line-tools)
 * 5.3 [Wired Network Troubleshooting](https://github.com/HiroNewf/Network-Plus-Notes/blob/main/README.md#wired-network-troubleshooting)
 * 5.4 [Wireless Network Troubleshooting](https://github.com/HiroNewf/Network-Plus-Notes/blob/main/README.md#wireless-network-troubleshooting)
-* 5.5 [Network Service Troubleshooting]()
+* 5.5 [Network Service Troubleshooting](https://github.com/HiroNewf/Network-Plus-Notes/blob/main/README.md#network-service-troubleshooting)
 # 1.0
 ## [Introduction to IP](https://www.youtube.com/watch?v=M5c9HdaQqh0&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=3&ab_channel=ProfessorMesser)
 
