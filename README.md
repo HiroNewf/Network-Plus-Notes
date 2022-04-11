@@ -2068,4 +2068,169 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Determine MAC address based on IP address
         - arp
         - arp -a
+## [Wired Network Troubleshooting](https://www.youtube.com/watch?v=AMjNCtI78W4&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=100&ab_channel=ProfessorMesser)
+
+- Signal loss
+    - Signal strength diminishes over distance
+        - This is signal attenuation
+    - Happens with wireless networking, copper, and fiber
+    - dB is the measurement of signal strength
+    - Common symptoms
+        - No connectivity
+        - Intermittent connectivity
+        - Poor performance
+    - Good to have a TDR or OTDR for troubleshooting this
+- Latency
+    - Waiting time (some is normal)
+    - Examine the response time of an application with all types of tools
+        - Packet captures, protocol analyzers, ect
+- Jitter
+    - When data does not arrive at regular intervals
+    - Really bad for real time information because if the packet is dropped it is gone forever
+    - Jitter itself is the time between frames
+        - A high number can lead to a choppy voice call
+    - Troubleshooting it
+        - Confirm that you have enough bandwidth
+        - Make sure your hardware is fast enough for real time interaction
+        - Make sure to use QoS to help with jitter
+- Crosstalk (XT)
+    - Signals on one circuit affect another in a bad way
+        - Causes interference
+    - Measure it with a TDR
+    - NEXT is near end crosstalk
+        - Crosstalk at the transmitting end
+    - FEXT Far end crosstalk
+        - At the receiving end
+    - Troubleshooting it
+        - Almost always a wiring issues
+            - Maintain twists
+            - Check your crimp
+            - Use a shielded cable if needed
+            - 6A for increased cable diameter
+        - Always test and certify your installations
+- EMI and interference
+    - Cable handling
+        - Don't twist, pull, or stretch cables too much
+        - Watch your bend radius
+        - Don't use staples
+    - EMI is anywhere there is a power source
+    - Always test with a TDR after installation
+- Open and Shorts
+    - Short circuits
+        - When two connections are touching
+        - Some communication may still occur (inconsistently)
+    - Open circuits
+        - When the cable is broken completely
+        - No communication can occur
+    - Troubleshooting them
+        - May be hard to find where the problem is
+        - Replace the cable (hard to repair)
+        - TDR helps find the location of the issue
+- Pin-outs
+    - When they are incorrect, you may have a slow link or a link that does not work at all
+    - Cable testers are good for verifying the pinouts
+    - 2 popular ways of doing pinouts
+        - T568A
+        - T568B
+- Incorrect cable type
+    - Outside of the cable is likely labeled with some helpful information
+        - TDR is also good for making sure the labing is correct and getting more info
+- Troubleshooting interfaces
+    - Interface errors may indicate a hardware issue
+    - Verifying the configurations to make sure they are set correctly
+    - Verify two way traffic connectivity
+- Transceiver mismatch
+    - Transceivers need to match the fiber type (single mode, multi mode) and the wavelength
+    - Check across the entire link that you have the right transceiver
+- Reversing transmit and receive
+    - Wiring mistake
+    - Easy problem to catch (visually or with a cable tester)
+    - Some internet hardware can automatically fix this in software so everything still works (Auto-MDIX)
+- Damaged cables
+    - Cables can be out in the open and easily damaged
+    - Hard to see inside the cable so you may need a TDR
+- Bottlenecks
+    - One or more of the devices in the network are much slower than the others bring down the performance significantly
+    - Must continue to monitor all of these to find the slowest ones
+        - A baseline is good to help with find abnormality
+- Interface configuration problems
+    - Could cause poor throughput or no connectivity at all (with or without link lights)
+    - Some people prefer to set this up manually instead of automatically
+    - Settings need to match on both sides for it to work properly
+- VLAN configuration
+    - May have a link light no internet surfing
+        - Automatically IP’s have the wrong subnet and manual assignment won’t work
+    - Check the VLAN config on the switch itself
+- Duplex and speed mismatch
+    - Incorrect speed will lead to performance issues, slowing down everything
+    - Incorrect duplex will also cause significant slowdowns
+
+## [Wireless Network Troubleshooting](https://www.youtube.com/watch?v=tKcr4T6APhg&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=101&ab_channel=ProfessorMesser)
+
+- Reflection
+    - Signals can bounce off some surfaces
+    - Too much of this and the signal will be weaker
+    - Changing the location of the antennas and where they are pointed could help solve this
+    - Not as big of a problem when using MIMI in 802.11n or 802.11 ac
+- Refraction
+    - Signal passes through an object and exits the object at a different angle
+    - Can affect data rates
+        - For long links the most
+- Absorption
+    - Passes through an object and loses a bit of signal
+        - Changes how much this happens based on the material it is passing through and the frequency used
+    - Put the antennas on the ceiling to try and avoid most walls
+- Latency and Jitter
+    - The delay between transmitting and receiving the response is latency
+    - Jitter is an unpredictable data stream and inconsistent intervals
+    - There is more interference and signal issues on wireless networks because everything could conflict with everything else
+        - May run into these problems when there are too many people on the network
+- Attenuation
+    - Signal gets weaker as you move away from the AP
+        - Measured with a WI-FI analyzer
+    - Control the power output if it is an option
+    - Use a higher gain antenna
+    - Move closer to the antenna
+- Interference
+    - Something else is using the same frequency
+    - Can be predictable or unpredictable
+        - Multi tenant buildings are very unpredictable
+    - Use netstat -s or performance monitor in windows to measure this
+- Incorrect antenna type
+    - Must fit the room and the situation
+    - Omnidirectional
+        - Good on the ceiling, poor between buildings
+    - Directional
+        - Good for connecting two points together, or for a wall mounted AP
+- Incorrect antenna placement
+    - Don't put AP too close to each other
+    - Don't put AP too far away from your users
+    - Make sure to check frequencies and channels you are using
+        - Hard to make sure channels don't overlap in 2.4GHZ because there are only so many channels to work with
+- Overcapacity
+    - Hitting the limit of devices you can use
+        - 5GHZ can help with this
+    - Bandwidth saturation
+        - Not enough bandwidth
+    - Large environments suffer from this a lot more
+- Frequency mismatch
+    - Devices need to match the AP
+        - May not operate properly
+    - Mixing standards can cause issues with performance
+- SSID (Service set identifier)
+    - Indicates the name of the wireless network
+        - Make sure to connect to the correct one
+- Wrong passphrase
+    - Wireless authentication through many methods
+    - A single shared passphrase may get you into the network (not common on large enterprise networks)
+        - For enterprise things like 802.1X would authenticate you to the network
+            - Different credentials for each person
+- Security type mismatch
+    - Encryption on wireless networks is very important
+        - Make sure the client matches the AP
+    - Much easier these days since most things use WPA2 for this
+- Signal to noise ratio
+    - What to you to what you don't want ratio
+    - A very large ration is best
+        - Equal amounts of each would be terrible
 
