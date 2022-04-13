@@ -1474,6 +1474,196 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Owned by the provider
     - Could provide diagnostics, alarms, re-configuration, ect
 # 3.0
+## [Network Documentation](https://www.youtube.com/watch?v=Q5wv592XxlE&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=61&ab_channel=ProfessorMesser)
+
+- Operations procedures
+    - Downtime notifications, facilities issues, ect
+- Software upgrades
+    - Testing and change control
+- Document everything in a way that is easy to reference
+- Mapping the network
+    - Both physical and logical maps
+    - This is important and very usful to everyone involved
+    - Logical network maps is a broad perspective of the network
+        - Shows how things move across the network but not the physical hardware
+    - Physical network maps shows all the physical cables and hardware and how they connect
+        - Show interferences, IP addressing, server racks, ect
+- Change managment
+    - The process of how and when to make a change
+        - Documentation, fall back plans, installation process, ect
+    - This can be hard to impliment in a orginziation that is not already using it
+- Managing your cables
+    - The ANSI/TIA/EIA 606 is the standard for documenting the network
+    - Idenifiers and labling are needed
+        - Color coding, bar coding, ect
+    - A centerlized database is nice and common to have now a days
+- System labling
+    - Unique system ID for every device
+        - Asset tag, name, serial number, ect
+    - This should be clearly visible and for the server as whole along with each componate
+- Circuit labling
+    - WAN circuits that are coming into the building
+        - Document all compantes of these WAN circuits
+        - Want to know the circuit ID, WAN provider phone number and other information to be able to communicate with them
+    - May want to put into place a monitoring system
+- Patch pannel labling
+    - Be able to see which port on the floor matches with which port on the patch pannel
+        - Ususally uses numbers
+- Baselines
+    - What the normal operation for the network is
+        - You can use this to spot abnoralities and predict when to upgrade what
+- Inventory management
+    - A record of every asset
+        - Make/model, config, purchase data, location, ect
+    - Have an asset tag with a barecode, RFID, tracking number, ect
+- Inventory management software
+    - A centerlized database of all of you assets
+    - May also have help desk and reporting functions
+
+## [Availability Concepts](https://www.youtube.com/watch?v=g36k1zgYuu4&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=62&ab_channel=ProfessorMesser)
+
+- Fault tolerence
+    - If a problem occurs than what?
+    - Adds complexity and costs to the network
+    - Redundant everything, load balanecing, RAID, ect
+- Redunacy
+    - An additional device to replace a failed device
+        - Power supplies, two completely different servers, RAID, UPS, ect
+- High availbility
+    - Redundant doesn’t always mean avabile right away
+    - When you cant afford to have any down time you need a redundancy that is always on and always avabile
+        - Always watch out for single points of failure
+    - Costs a lot more
+- Load balancing
+    - Spread the load between different servers or devices
+    - If one server is down the others can still perform the action needed
+- NIC teaming
+    - Load balancing on network cards / connections
+    - Redundant paths and aggregate bandwidth
+    - Done inside the OS
+    - Uses multicasts to do health checks with the other NICs
+
+## [Power Management](https://www.youtube.com/watch?v=ujhX3iSJXD8&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=63&ab_channel=ProfessorMesser)
+
+- UPS
+    - Uninterruptible power supply
+    - Good for blackouts, brownouts, power surge
+- Generators
+    - A long term power source that runs on fuel
+    - Could run the entire building or just part of it
+    - Can take some time to get up to speed (can run off the UPSs during this time)
+- Duel-power supplies
+    - Each one can handle 100% of the load so as long as one is working you are good
+    - Hot swappable
+
+## [Recovery Sites](https://www.youtube.com/watch?v=8Y-ykV42R_M&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=64&ab_channel=ProfessorMesser)
+
+- Cold site
+    - No hardware, just an empty building
+    - You bring everything including staff
+- Warm site
+    - Room and rack space, you bring the rest or maybe they even have the hardware there
+- Hot site
+    - An exact replica of everything
+    - Very costly
+    - Always updated with the latest information
+        - Usually automatic
+    - Very easy to move over to the hot site
+
+## [Backup and Recovery](https://www.youtube.com/watch?v=68hbHE6Zk4g&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=65&ab_channel=ProfessorMesser)
+
+- The archive attribute
+    - Be able to tell if a file change been changed since the last backup
+- Full backup
+    - Backup everything
+    - Change all of the archive bits to off afterwards
+    - Long time to backup, very quick to restore
+- Incremental backup
+    - Backup all of the files changed since the last incremental backup
+    - Quick to backup, but slow to restore
+- Differential backup
+    - Backup all files changed since the last full backup
+    - Medium amount of time to backup, medium amount of time to restore
+
+## [Process Monitoring](https://www.youtube.com/watch?v=ThXm2qbFIH8&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=66&ab_channel=ProfessorMesser)
+
+- Log management
+    - Ususally sent via syslog to a centeral log server
+    - Massive storage requirment
+    - Rolling up the data becomes important
+        - Take samples every minute for the day
+        - At the end of that day now keep 5 minute samples
+        - After 30 days start keeping 1 hour samples times, ect
+- Data graphing
+    - Raw logs or summarized logs
+    - Often managed through SIEM
+        - Turning reports into something visual (Graphs)
+    - Can require a lot of computing resources
+- Port scanning
+    - Nmap (network mapper)
+    - Find devices and open ports
+        - Can also do a lot more, find OS, find services, ect
+    - Use NSE for more options
+- Vulnerbility scanning
+    - Not that invasive
+    - See what is open and finding unknown devices
+    - Test from the inside and the outside
+- Vulnerbility scan results
+    - Can find lack of security controls
+    - Can find misconfigurations
+    - Can also just find real vulnerbilities
+- Patch mangement
+    - Sevice packs
+        - Many patches at once
+    - Monthly updates are also important
+    - Emergancy updates for Zero-day patches
+- Rollback options
+    - Go back to the previous version (known to work)
+- Baseline review
+    - See what is normal in your network so you can find what is abnormal
+- Protocol analyzers
+    - Get into the details of what applications are doing
+    - Capture packets from wired or wireless networks
+    - Make it very easy to see everything that is happening on the network
+    - Might need a lot of storage for this
+
+## [Event Management](https://www.youtube.com/watch?v=DjDfL3ic5Qo&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=67&ab_channel=ProfessorMesser)
+
+- Interface monitoring
+    - Up or Down? (Green is good, red is bad)
+    - Alarming and alerting when something fails
+    - Short term and long term reports
+- SIEM
+    - Security information and event management
+    - Monitoring and reporting on tons of logs from all over
+        - Can send out security alerts based on this info
+    - Short and long term reports
+        - Correlation between different data types
+    - Very good for forensic analysis
+- Syslog
+    - The standard for message logging and consolidating logs
+    - Ususaly logs are sent back to a centerlized SIEM using syslog
+    - Lots of disk space required
+- SIEM logs
+    - Look at all the events that you may need to see in one place
+- SIEM dashboard
+    - A broader view of what is happening in the logs
+    - Uses lots of graphs
+- SNMP
+    - Privdes queries to devices for more information
+    - v3 is the only one that is encypted so use that if your devices support it
+    - Can be very detailed so access should be limited
+- Graphing with SNMP
+    - Uptime, response time, traffic transfers, ect
+    - Many tools can be used to brows or walk the SNMP
+
+## [Performance Metrics](https://www.youtube.com/watch?v=7jBtOw1-3ow&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=68&ab_channel=ProfessorMesser)
+
+- Monitoring the interface
+    - Trying to find the signs that will hint at a possible failure currently or in the future
+    - Can be monitored with SNMP
+        - MIB-II are where most metrics are
+    - See the eroor rate, ultiization, packet drops, interface resets, speed, duplex and more
 # 4.0
 ## [Physical Security](https://www.youtube.com/watch?v=jMlbasNbgiY&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=71&ab_channel=ProfessorMesser)
 
