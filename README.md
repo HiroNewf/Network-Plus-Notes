@@ -63,13 +63,13 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 * 2.5 [WAN Technolgies](https://github.com/HiroNewf/Network-Notes#wan-technologies)
 * 2.5 [WAN Termination](https://github.com/HiroNewf/Network-Notes#wan-termination)
 ## 3.0 Network Operations (17% of the exam)
-* 3.1 Network Documentation
-* 3.2 Availability Concepts
-* 3.2 Power Management
-* 3.2 Backup and Recovery
-* 3.3 Process Monitoring
-* 3.3 Event Management
-* 3.3 Performance Metrics
+* 3.1 [Network Documentation](https://github.com/HiroNewf/Network-Plus-Notes/blob/main/README.md#network-documentation)
+* 3.2 [Availability Concepts](https://github.com/HiroNewf/Network-Plus-Notes/blob/main/README.md#availability-concepts)
+* 3.2 [Power Management](https://github.com/HiroNewf/Network-Plus-Notes/blob/main/README.md#power-management)
+* 3.2 [Backup and Recovery](https://github.com/HiroNewf/Network-Plus-Notes/blob/main/README.md#recovery-sites)
+* 3.3 [Process Monitoring](https://github.com/HiroNewf/Network-Plus-Notes/blob/main/README.md#process-monitoring)
+* 3.3 [Event Management](https://github.com/HiroNewf/Network-Plus-Notes/blob/main/README.md#event-management)
+* 3.3 [Performance Metrics](https://github.com/HiroNewf/Network-Plus-Notes/blob/main/README.md#performance-metrics)
 * 3.4 Remote Access
 * 3.5 Policies and Best Practices
 ## 4.0 Network Security (20% of the exam)
