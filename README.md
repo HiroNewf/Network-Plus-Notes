@@ -1664,6 +1664,113 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Can be monitored with SNMP
         - MIB-II are where most metrics are
     - See the error rate, utilization, packet drops, interface resets, speed, duplex and more
+## [Remote Access](https://www.youtube.com/watch?v=34ldGdtlvmk&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=69&ab_channel=ProfessorMesser)
+
+- IP sec
+    - Security for OSI layer 3
+    - Authenication and ecryption for packets
+        - Also has confidentiality and integity
+    - Uses AH and ESP
+    - Sit-to-site VPNs
+        - The common place to use IPsec
+        - Uses existing connections (often with VPN applicances)
+- SSL VPN
+    - Common for end user VPN access
+        - Client to site VPN
+    - Uses SSL/TLS protocol
+    - Often built into the OS (or browser)
+    - Can authenticate users
+    - TCP based
+- DTLS VPN
+    - Datagram transport layer security
+    - UDP based
+    - For real time needs
+- Remote desktop access
+    - Share a desktop from a remote location
+    - RDP is commong for this
+    - VNC is also quite common for this
+        - Some versions are free and open source
+    - Can be used for troubleshooting or often by scammers
+- SSH
+    - Encrypted console communication
+    - Good for connecting to network devices for many reasons
+- Web based Mangement console
+    - All in your browser
+    - Uses HTTPS for encryption
+    - May still need the command line for things not support via the browser’
+- Transferring files
+    - FTP, SFTP, TFTP, ect
+    - SFTP
+        - FTP with SSH
+    - FTPS
+        - FTP over SSL
+- Out of band management
+    - The network or device isn’t avaible what do you do?
+    - Most devices hav e a separate management interface
+        - Could connect a moden to this so you can do things remotely
+    - Management network not tied to or relying on the hardware of the normal network
+
+## [Policies and Best Practices](https://www.youtube.com/watch?v=D5ukHdq_JOk&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=70&ab_channel=ProfessorMesser)
+
+- PUA (Privaledge user agreement)
+    - Exspectations when dealing with data and devices
+    - A signed agreement at times
+- Password policies
+    - A written policy of what is expsected in a password and how to change / deal with passwords
+    - The recovery process should be difficult to avoid other people gaining access
+- On-boarding
+    - The process of adding a new employee and setting up all the physical and digital things that they need
+- Off-baording
+    - The process of getting rid of a former employee and all of their hardware and digital accounts need to be reassigned, deleted, archived, ect
+- Licsensing restrictions
+    - There are so many licsenes to manage
+    - Need to make sure you have aviability
+    - Need to have intergrity
+    - Watch out these expiring and how that would affect the company
+- International export controls
+    - Equipment, information, data and more being exporing to other countries
+    - Processes, procudures, laws and more
+- Data loss prevention (DLP)
+    - Where is your data?
+    - Detailed polcies to define what is and isn’t allowed with the data
+    - DLP and watch out for and notify you when it finds a policy violation
+- Remote access policies
+    - Hard to control external communication at times
+    - A policy for everyone included 3rd parties
+    - Very specific requirements to keep things safe
+- Security incidents
+    - How to handle something going wrong with security
+- Incident response policies
+    - How should you identify the incident
+    - How should you catagorize the incident
+    - Who needs to respond to the incident
+    - What process needs to be followed
+- BTOD
+    - Managing employee owned devices and how they can use them
+    - These can be hard to secure
+- AUP (acceptable use policy)
+    - What is the acceptable ways to use company assets
+    - Should cover all assets and the policies for them
+    - Good for limited the leagal liability of a company when something goes wrong
+- NDA
+    - Confidentialilty agreement
+    - Internally to proctect the company from exployees
+    - Externally to make sure two companies dont disclose each others information
+- System life cycle
+    - Managing the disposal of assets
+    - Make sure to completely destroy important information so no one else can see it
+    - Make sure to follow the laws when doing this
+- Physical destruction
+    - Shredder / pulverizer
+    - driller / hammer
+    - Electromagnetic
+    - Incinerating
+- Safty procedures and policies
+    - Equipment safty
+    - Personal safty
+    - Enviromental safty
+        - Toxic waste, batteries and the likes
+    - Local government regulations need to be known and followed
 # 4.0
 ## [Physical Security](https://www.youtube.com/watch?v=jMlbasNbgiY&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=71&ab_channel=ProfessorMesser)
 
