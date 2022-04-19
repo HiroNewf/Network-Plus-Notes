@@ -70,8 +70,8 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 * 3.3 [Process Monitoring](https://github.com/HiroNewf/Network-Plus-Notes/blob/main/README.md#process-monitoring)
 * 3.3 [Event Management](https://github.com/HiroNewf/Network-Plus-Notes/blob/main/README.md#event-management)
 * 3.3 [Performance Metrics](https://github.com/HiroNewf/Network-Plus-Notes/blob/main/README.md#performance-metrics)
-* 3.4 Remote Access
-* 3.5 Policies and Best Practices
+* 3.4 [Remote Access](https://github.com/HiroNewf/Network-Plus-Notes/blob/main/README.md#remote-access)
+* 3.5 [Policies and Best Practices](https://github.com/HiroNewf/Network-Plus-Notes/blob/main/README.md#policies-and-best-practices)
 ## 4.0 Network Security (20% of the exam)
 * 4.1 [Physical Security](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#physical-security)
 * 4.2 [Authorization, Authentication, and Accounting](https://github.com/HiroNewf/Network-Notes/blob/main/README.md#authorization-authentication-and-accounting)
