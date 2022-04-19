@@ -1483,55 +1483,55 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 - Document everything in a way that is easy to reference
 - Mapping the network
     - Both physical and logical maps
-    - This is important and very usful to everyone involved
+    - This is important and very useful to everyone involved
     - Logical network maps is a broad perspective of the network
         - Shows how things move across the network but not the physical hardware
     - Physical network maps shows all the physical cables and hardware and how they connect
         - Show interferences, IP addressing, server racks, ect
-- Change managment
+- Change management
     - The process of how and when to make a change
         - Documentation, fall back plans, installation process, ect
-    - This can be hard to impliment in a orginziation that is not already using it
+    - This can be hard to implement in a organization that is not already using it
 - Managing your cables
     - The ANSI/TIA/EIA 606 is the standard for documenting the network
-    - Idenifiers and labling are needed
+    - Identifiers and labeling are needed
         - Color coding, bar coding, ect
-    - A centerlized database is nice and common to have now a days
-- System labling
+    - A centralized database is nice and common to have now a days
+- System labeling
     - Unique system ID for every device
         - Asset tag, name, serial number, ect
-    - This should be clearly visible and for the server as whole along with each componate
-- Circuit labling
+    - This should be clearly visible and for the server as whole along with each component
+- Circuit labeling
     - WAN circuits that are coming into the building
-        - Document all compantes of these WAN circuits
+        - Document all companies of these WAN circuits
         - Want to know the circuit ID, WAN provider phone number and other information to be able to communicate with them
     - May want to put into place a monitoring system
-- Patch pannel labling
-    - Be able to see which port on the floor matches with which port on the patch pannel
-        - Ususally uses numbers
+- Patch panel labeling
+    - Be able to see which port on the floor matches with which port on the patch panel
+        - Usually uses numbers
 - Baselines
     - What the normal operation for the network is
-        - You can use this to spot abnoralities and predict when to upgrade what
+        - You can use this to spot abnormalities and predict when to upgrade what
 - Inventory management
     - A record of every asset
         - Make/model, config, purchase data, location, ect
-    - Have an asset tag with a barecode, RFID, tracking number, ect
+    - Have an asset tag with a barcode, RFID, tracking number, ect
 - Inventory management software
-    - A centerlized database of all of you assets
+    - A centralized database of all of you assets
     - May also have help desk and reporting functions
 
 ## [Availability Concepts](https://www.youtube.com/watch?v=g36k1zgYuu4&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=62&ab_channel=ProfessorMesser)
 
-- Fault tolerence
-    - If a problem occurs than what?
+- Fault tolerance
+    - If a problem occurs, then what?
     - Adds complexity and costs to the network
-    - Redundant everything, load balanecing, RAID, ect
-- Redunacy
+    - Redundant everything, load balancing, RAID, ect
+- Redundancy
     - An additional device to replace a failed device
         - Power supplies, two completely different servers, RAID, UPS, ect
-- High availbility
-    - Redundant doesn’t always mean avabile right away
-    - When you cant afford to have any down time you need a redundancy that is always on and always avabile
+- High availability
+    - Redundant doesn’t always mean available right away
+    - When you can't afford to have any down time you need a redundancy that is always on and always available
         - Always watch out for single points of failure
     - Costs a lot more
 - Load balancing
@@ -1552,7 +1552,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - A long term power source that runs on fuel
     - Could run the entire building or just part of it
     - Can take some time to get up to speed (can run off the UPSs during this time)
-- Duel-power supplies
+- Dual-power supplies
     - Each one can handle 100% of the load so as long as one is working you are good
     - Hot swappable
 
@@ -1588,8 +1588,8 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
 ## [Process Monitoring](https://www.youtube.com/watch?v=ThXm2qbFIH8&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=66&ab_channel=ProfessorMesser)
 
 - Log management
-    - Ususally sent via syslog to a centeral log server
-    - Massive storage requirment
+    - Usually sent via syslog to a central log server
+    - Massive storage requirement
     - Rolling up the data becomes important
         - Take samples every minute for the day
         - At the end of that day now keep 5 minute samples
@@ -1604,19 +1604,19 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Find devices and open ports
         - Can also do a lot more, find OS, find services, ect
     - Use NSE for more options
-- Vulnerbility scanning
+- Vulnerability scanning
     - Not that invasive
     - See what is open and finding unknown devices
     - Test from the inside and the outside
-- Vulnerbility scan results
+- Vulnerability scan results
     - Can find lack of security controls
     - Can find misconfigurations
-    - Can also just find real vulnerbilities
-- Patch mangement
-    - Sevice packs
+    - Can also just find real vulnerabilities
+- Patch management
+    - Service packs
         - Many patches at once
     - Monthly updates are also important
-    - Emergancy updates for Zero-day patches
+    - Emergency updates for Zero-day patches
 - Rollback options
     - Go back to the previous version (known to work)
 - Baseline review
@@ -1642,7 +1642,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Very good for forensic analysis
 - Syslog
     - The standard for message logging and consolidating logs
-    - Ususaly logs are sent back to a centerlized SIEM using syslog
+    - Usually logs are sent back to a centralized SIEM using syslog
     - Lots of disk space required
 - SIEM logs
     - Look at all the events that you may need to see in one place
@@ -1650,12 +1650,12 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - A broader view of what is happening in the logs
     - Uses lots of graphs
 - SNMP
-    - Privdes queries to devices for more information
-    - v3 is the only one that is encypted so use that if your devices support it
+    - Provides queries to devices for more information
+    - v3 is the only one that is encrypted so use that if your devices support it
     - Can be very detailed so access should be limited
 - Graphing with SNMP
     - Uptime, response time, traffic transfers, ect
-    - Many tools can be used to brows or walk the SNMP
+    - Many tools can be used to browse or walk the SNMP
 
 ## [Performance Metrics](https://www.youtube.com/watch?v=7jBtOw1-3ow&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=68&ab_channel=ProfessorMesser)
 
@@ -1663,7 +1663,7 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Trying to find the signs that will hint at a possible failure currently or in the future
     - Can be monitored with SNMP
         - MIB-II are where most metrics are
-    - See the eroor rate, ultiization, packet drops, interface resets, speed, duplex and more
+    - See the error rate, utilization, packet drops, interface resets, speed, duplex and more
 # 4.0
 ## [Physical Security](https://www.youtube.com/watch?v=jMlbasNbgiY&list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd&index=71&ab_channel=ProfessorMesser)
 
@@ -2496,4 +2496,5 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Confirm connectivity
         - Ping and traceroute likely won't work
     - Check the server itself
+
 
