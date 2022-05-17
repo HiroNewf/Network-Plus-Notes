@@ -2185,8 +2185,8 @@ Also there are some spelling errors that I will try and fix soon, but I can't be
     - Designated ports are other open ports
     - Blocked ports are blocked to prevent a loop
 - BPDU Guard
-    - STP could take quite a lot of time but you could bypass with a BPDU guard
     - Is the protocol used to communicate between STP devices (switches)
+    - Can't let non offical devices tells your stp switches what to do so you stop that from happening with a BPDU gaurd 
 - Root Guard
     - One switch will also be the root switch (or bridge)
         - Can be set manually
