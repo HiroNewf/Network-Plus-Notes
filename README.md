@@ -1,3 +1,5 @@
+# Gothub Pages Version
+https://hironewf.github.io/Network-Plus-Notes/
 # Table of contents
 The table of contents will take you right to the section you click on and the links for the headers of each section will take you to the Professor Messer video for that section. This probably isn't really going to help anyone else because it is for the 007 version of Network+ but it is here anyways
 
