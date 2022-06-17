@@ -1,4 +1,4 @@
-# Gothub Pages Version
+# Github Pages Version
 https://hironewf.github.io/Network-Plus-Notes/
 I think this version is more visually pleasing but the table of contents will not work properly when using the github pages version. 
 # Table of contents
