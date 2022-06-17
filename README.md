@@ -1,5 +1,6 @@
 # Gothub Pages Version
 https://hironewf.github.io/Network-Plus-Notes/
+I think this version is more visually pleasing but the table of contents will not work properly when using the github pages version. 
 # Table of contents
 The table of contents will take you right to the section you click on and the links for the headers of each section will take you to the Professor Messer video for that section. This probably isn't really going to help anyone else because it is for the 007 version of Network+ but it is here anyways
 
