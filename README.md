@@ -1,10 +1,5 @@
-# Github Pages Version
-https://hironewf.github.io/Network-Plus-Notes/
-I think this version is more visually pleasing but the table of contents will not work properly when using the github pages version. 
+My personal notes for the Network+ 007 exam
 # Table of contents
-The table of contents will take you right to the section you click on and the links for the headers of each section will take you to the Professor Messer video for that section. This probably isn't really going to help anyone else because it is for the 007 version of Network+ but it is here anyways
-
-Also there are some spelling errors that I will try and fix soon, but I can't be bothered too right now. On top of that at times you will find that I never typed the spelled out version for a certain acronym, this is either because I already knew the spelled out version or because I didn't feel like it was all that important to write down. Perhaps at some points I will go through this again and add all of the spelled out versions, but that is not important to me right now.
 ## 1.0 Networking Concepts (23% of the exam)
 * 1.1 [Introduction to IP](https://github.com/HiroNewf/Network-Plus-Notes#introduction-to-ip)
 * 1.1 [Common Ports](https://github.com/HiroNewf/Network-Plus-Notes#common-ports)
